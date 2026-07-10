@@ -1,0 +1,143 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    background-image: url(../imagenes/ChatGPT\ Image\ Jun\ 20\,\ 2026\,\ 09_37_37\ PM.png );
+}
+
+/* Formulario */
+.formulario-inicio{
+   position: relative;
+   left: 600px;
+   border-radius: 10px;
+   background-color: #fff;
+   width: 50%;
+   padding: 0px;
+   margin: 0px;
+   height: 800px; 
+}
+
+/* imagen logo */
+
+.logo{
+   display: flex;
+   justify-content: center;
+   margin: 0;
+   padding: auto;
+}
+
+/* texto central */
+.inicio-sesion{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight : 2px bold;
+    color: #001937;
+    text-align: center;
+    font-size: 35px;
+    padding: auto;
+    margin: auto;
+}
+
+.subtitulo{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    color: #04295d;
+    margin-bottom: 25px;
+}
+[for|="email"]{
+    padding: 50px;
+    margin: 50px; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    color: #04295d;
+
+}
+
+[for|="Contraseña"]{
+    padding: 50px;
+    margin: 50px; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    color: #04295d;
+    position: relative;
+}
+
+
+
+[type|="submit"]{
+   width: 70%;
+   height: 50px;
+   border-radius: 8px;
+   margin-left: 100px;
+   background-color: #04295d;
+   color: #fff;
+}
+
+[type|="email"],[type|="password"]{
+    border: none;
+    font-size: 18px;
+    width: 100%;
+}
+
+.cambioContraseña{
+    display: flex;
+    flex-direction: column;
+    padding-left: 380px;
+    margin: 8px;
+}
+
+.opcion{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #04295d;
+}
+
+
+.introducir-correo, 
+.introducir-contraseña {
+  display: flex;
+  align-items: center;  
+  justify-content: space-around;
+  width: 70%;
+  height: 50px;               
+  border: 1px solid;   
+  border-radius: 8px;          
+  padding: 0 15px;             
+  box-sizing: border-box;
+  margin-top: 8px;
+  margin-bottom: 20px;
+  margin-left: 100px;
+}
+/* ICONOS REDES*/
+
+.fa-facebook{
+    color: #1877f2;
+    font-size: 48px;
+    /* margin: 0 25px; */
+    text-align: center;
+    
+}
+
+.fa-google{
+    font-size: 48px;
+    color: #db4437;
+    margin: 50px 50px ;
+    text-align: center;
+
+}
+.icono-navegacion{
+ display: flex;
+ justify-content: center;
+ gap: 20px;
+}
+
+
+
+
+
+

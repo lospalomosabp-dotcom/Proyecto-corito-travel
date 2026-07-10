@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesion</title>
+    <meta name="descripcion" content="agencia de viajes, voletos aereos,tours,reservas...">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="js/iniciosesion.js"></script>
+
+
+
+</head>
+
+<body>
+    <!--Menu de  Navegacion  -->
+    <nav>
+        <a href="iniciosesion.html">Inicio</a>
+        <a href="#">Destinos</a>
+        <a href="#">Paquetes</a>
+        <a href="#">Vuelos</a>
+        <a href="#">Hoteles</a>
+        <a href="#">Ofertas</a>
+        <a href="#">Nosotros</a>
+        <a href="#">Mi cuenta</a>
+    </nav>
+    <main>
+        <!-- Formulario -->
+        <form action="" class="formulario-cuenta">
+            <!-- imagen logo -->
+            <figcaption class="logo">
+                <img src="imagenes/logo-agencia.png" alt="logo" width="300" height="200">
+            </figcaption>
+            <!-- Introducir datos -->
+
+            <h1 class="crear-cuenta"> Crear Cuenta</h1>
+            <h3 class="subtitulo">Unete a corito travel y comienza a planear tus proximas aventuras</h3>
+
+            
+            <input type="text" id="nombre" placeholder="Nombre">
+            <input type="text" id="apellido" placeholder="Apellido">
+
+            <div class="introducir-correo">
+                <i class="fa-regular fa-envelope"></i>
+                <input type="email" placeholder="Ingrese su correo electronico">
+            </div>
+            <div class="introducir-contraseña">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" placeholder="Ingrese su Contraseña">
+                <i class="fa-solid fa-eye"></i>
+            </div>
+
+            <div class="confirmarContraseña">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" placeholder="Confirme su Contraseña">
+                <i class="fa-solid fa-eye"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-phone"></i>
+                <input type="number" placeholder="Ingrese su numero de telefono">
+            </div>
+            
+            <!-- Boton Crear cuenta -->
+            <div class="crear-cuenta">
+                <input type="submit" value="Crear Cuenta">
+            </div>
+            
+            <!-- Terminos y condiciones -->
+            <div class="terminos-condiciones">
+                <input type="radio" value="termino">
+                <label>Acepto los <a href="#">terminos y condiciones</a> y la <a href="#">politica de privacidad.</a>
+                </label>
+            </div>
+            <!-- Confirmar si tiene otra cuenta -->
+            <div class="confirmacion">
+            <h4>Ya tienes una cuenta?<a href="#">Iniciar sesion</a></h4>
+            </div>
+            
+        </form>
+    </main>
+</body>
+
+</html>
