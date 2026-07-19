@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Corito Travel es una agencia de viajes comprometida con hacer realidad las experiencias de viaje de sus clientes. Nos especializamos en ofrecer paquetes turísticos, reservas de hoteles...">
+    <title>Hoteles</title>
+    <link rel="stylesheet" href="imagenes/Logo-sinletras.png">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="imagenes/Logo-corito.png" alt="Logo Corito" width="200" height="200"> 
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Destinos</a></li>
+            <li><a href="#">Paquetes</a></li>
+            <li><a href="#">Ofertas</a></li>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Contactos</a></li>
+            <li><a href="#">Iniciar Sesion</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+    <!-- Hoteles -->
+    <section class="imghotel">
+
+        <img src="imagenes/hoteleshero.jpg" alt="Hoteles">
+
+        <div class="textoimg">
+            <h1>HOTELES</h1>
+            <p>Comodidad, ubicación y el mejor precio para su próximo viaje.</p>
+        </div>
+
+        <!-- Buscador -->
+        
+        <form action="">
+        <div class="buscador">
+            <div>
+                <label for="pais">¿A dónde quieres ir?</label>
+                <input type="text" placeholder="Ej: Punta Cana" id="pais">
+            </div>
+
+            <div>
+                <label for="fsalida">Fecha de Salida</label>
+                <input type="date" id="fsalida">
+            </div>
+
+            <div>
+                <label for="fregreso">Fecha de Regreso</label>
+                <input type="date" id="fregreso">
+            </div>
+
+            <div>
+                <label for="ninos">Niños</label>
+                <select name="ninos" id="ninos">
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+            </div>
+
+            <div>
+                <label>Adultos</label>
+                <select name="adultos" id="adultos">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+            </div>
+
+            <div>
+                <label>Habitaciones</label>
+                <select name="habitaciones" id="habitaciones">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+            </div>
+
+            <button>Buscar Hoteles</button>
+        
+        </div>
+        </form>
+        
+
+    </section>
+
+    <!-- Menú de hoteles -->
+
+    <section class="menu-hoteles">
+
+        <a href="#">
+            <img src="imagenes/Hoteles/TODOS.png" alt="Todos">
+            Todos
+        </a>
+
+        <a href="#">
+            <img src="imagenes/Hoteles/FR.png" alt="Francia">
+            Francia
+        </a>
+
+        <a href="#">
+            <img src="imagenes/Hoteles/USA.png" alt="Estados Unidos">
+            USA
+        </a>
+
+        <a href="#">
+            <img src="imagenes/Hoteles/JP.png" alt="Japon">
+            Japón
+        </a>
+
+        <a href="#">
+            <img src="imagenes/Hoteles/TUR.png" alt="Turquia">
+            Turquía
+        </a>
+
+        <a href="#">
+            <img src="imagenes/Hoteles/BR.png" alt="Brasil">
+            Brasil
+        </a>
+
+        <a href="#">
+            <img src="imagenes/Hoteles/RD.png" alt="Republica Dominicana">
+            Rep. Dom
+        </a>
+
+    </section>
+
+    <!-- Hoteles -->
+
+    <section class="hoteles">
+
+        <div class="titulo">
+
+            <h2>Hoteles disponibles cerca de aeropuertos</h2>
+
+            <label for="orden">Ordenar por:</label>
+            <select name="orden" id="orden">
+                <option>Más populares</option>
+                <option>Precio menor</option>
+                <option>Precio mayor</option>
+            </select>
+
+        </div>
+
+        <div class="contenedor-hoteles">
+
+            <!-- Hotel 1 -->
+
+            <article class="hotel">
+
+                <img src="imagenes/Hoteles/hodelpa.jpg" alt="Hodelpa Garden Court">
+
+                <h3>Hodelpa Garden Court</h3>
+
+                <p>5 días / 4 noches</p>
+
+                <p>Este hotel está a solo 5 minutos del centro de Santiago de los Caballeros y cuenta con restaurante y piscina exterior grande. Además, facilita servicio de enlace gratuito con el aeropuerto municipal de Santiago.</p>
+
+                <div class="servicios">
+                    <span>WiFi</span>
+                    <span>Piscina</span>
+                    <span>Desayuno</span>
+                    <span>Transporte</span>
+                </div>
+
+                <h4>Desde</h4>
+
+                <span>USD$949</span>
+
+                <button>Ver detalles</button>
+
+            </article>
+
+            <!-- Hotel 2 -->
+
+            <article class="hotel">
+
+                <img src="imagenes/Hoteles/horus.webp" alt="Horus">
+
+                <h3>Horus Aparta Hotel</h3>
+
+                <p>6 días / 5 noches</p>
+
+                <p>Horus Aparta Hotel está a 5,8 km de Monumento a los Héroes de la Restauración y ofrece alojamiento con restaurante, jardín, salón de uso común y terraza. El apartahotel ofrece wifi y parking privado, ambos gratis.</p>
+
+                <div class="servicios">
+                    <span>WiFi</span>
+                    <span>Hotel</span>
+                    <span>Desayuno</span> 
+                </div>
+
+                <h4>Desde</h4>
+
+                <span>USD$499</span>
+
+                <button>Ver detalles</button>
+
+            </article>
+
+            <!-- Hotel 3 -->
+
+            <article class="hotel">
+
+                <img src="imagenes/Hoteles/marriot.jpg" alt="Marriot">
+
+                <h3>Residence Inn by Marriott Santiago de los Caballeros</h3>
+
+                <p>4 días / 3 noches</p>
+
+                <p>Residence Inn by Marriott Santiago de los Caballeros está en Santiago de los Caballeros, a 4,2 km de Monumento a los Héroes de la Restauración, y dispone de alojamiento con piscina al aire libre, parking privado gratis, centro de fitness y terraza. Todas las opciones de alojamiento de este hotel de 3 estrellas tienen vistas a la ciudad, restaurante y bar. El hotel libre de humo dispone de wifi gratis en todo el alojamiento.</p>
+
+                <div class="servicios">
+                    <span>WiFi</span>
+                    <span>Hotel</span>
+                    <span>3 Restaurantes</span>
+                    <span>Gym</span>
+                </div>
+
+                <h4>Desde</h4>
+
+                <span>USD$799</span>
+
+                <button>Ver detalles</button>
+
+            </article>
+
+            <!-- Hotel 4 -->
+
+            <article class="hotel">
+
+                <img src="imagenes/Hoteles/acmarriot.jpg" alt="AC Marriott">
+
+                <h3>AC Hotel by Marriott Santiago de los Caballeros</h3>
+
+                <p>2 días / 1 noches</p>
+
+                <p>AC Hotel Santiago de los Caballeros se encuentra en la zona centro de Santiago de los Caballeros. El monumento a los Heroes de la Restauración y Santiago Botanical Garden son puntos de interés locales, y aquellos que deseen ir de compras pueden visitar Centro comercial Bella Terra y Colinas Mall (centro comercial). También vale la pena conocer Jardín Botánico Profesor</p>
+
+                <div class="servicios">
+                    <span>Hotel</span>
+                    <span>Desayuno</span>
+                    <span>Parqueo gratis</span>
+                    <span>Gym</span>
+                </div>
+
+                <h4>Desde</h4>
+
+                <span>USD$499</span>
+
+                <button>Ver detalles</button>
+
+            </article>
+
+            <!-- Hotel 5 -->
+
+            <article class="hotel">
+
+                <img src="imagenes/Hoteles/hotelsantiago.jpg" alt="Hotel Santiago">
+
+                <h3>Hotel Santiago, Curio Collection By Hilton</h3>
+
+                <p>7 días / 6 noches</p>
+
+                <p>Hotel Santiago, Curio Collection By Hilton se encuentra en Santiago de los Caballeros, a 18 min a pie de Monumento a los Héroes de la Restauración, y ofrece alojamiento con piscina al aire libre, parking privado, salón de uso común y terraza. Este alojamiento ofrece restaurante, servicio de habitaciones y recepción 24 horas, además de wifi gratis en todo el alojamiento. Hay bar.</p>
+
+                <div class="servicios">
+                    <span>WiFi</span>
+                    <span>Desayuno</span>
+                    <span>Guía</span>
+                    <span>Servicio de habitaciones</span>
+                </div>
+
+                <h4>Desde</h4>
+
+                <span>USD$999</span>
+
+                <button>Ver detalles</button>
+
+            </article>
+
+            <!-- Hotel 6 -->
+
+            <article class="hotel">
+
+                <img src="imagenes/Hoteles/hampton.jpg" alt="">
+
+                <h3>Hotel Hampton By Hilton Santiago De Los Caballeros</h3>
+
+                <p>5 días / 4 noches</p>
+
+                <p>Ubicados en el corazón de Santiago, estan cerca del Monumento a los Héroes de la Restauración. A solo 11 minutos encontrará tiendas en la Plaza de las Ramblas, el Centro Cultural León y el Gran Teatro del Cibao. Tabacalera Palma, la Fábrica de Cigarros La Galera y el Aeropuerto Internacional del Cibao están a menos de 25 minutos. Disfrute de un bar en la azotea con vistas panorámicas.</p>
+
+                <div class="servicios">
+                    <span>WiFi</span>
+                    <span>Bar</span>
+                    <span>Piscina</span>
+                    <span>Desayuno</span>
+                </div>
+
+                <h4>Desde</h4>
+
+                <span>USD$860</span>
+
+                <button>Ver detalles</button>
+
+            </article>
+
+            <!-- Hotel 7 -->
+
+            <article class="hotel">
+
+                <img src="imagenes/Hoteles/hodelpaGA.webp" alt="Hodelpa Gran Almirante">
+
+                <h3>Hodelpa Gran Almirante</h3>
+
+                <p>5 días / 4 noches</p>
+
+                <p>Este hotel está ubicado en el centro de Santiago (República Dominicana) y ofrece un servicio de enlace con el aeropuerto internacional del Cibao. Cuenta con 3 restaurantes, casino y habitaciones elegantes con WiFi gratuita.</p>
+
+                <div class="servicios">
+                    <span>WiFi</span>
+                    <span>Casino</span>
+                    <span>Bar</span>
+                    <span>Desayuno</span>
+                </div>
+
+                <h4>Desde</h4>
+
+                <span>USD$899</span>
+
+                <button>Ver detalles</button>
+
+            </article>
+
+            <!-- Hotel 8 -->
+
+            <article class="hotel">
+
+                <img src="imagenes/Hoteles/Platinohotel.webp" alt="Platino Hotel">
+
+                <h3>Platino Hotel & Casino</h3>
+
+                <p>6 días / 5 noches</p>
+
+                <p>El Hotel Platino se encuentra a 5 km de la plaza principal de Santiago de los Caballeros y a 1,6 km del parque del Gran Teatro del Cibao. Ofrece un restaurante y conexión Wi-Fi gratuita en todas las instalaciones.</p>
+
+                <div class="servicios">
+                    <span>WiFi</span>
+                    <span>Desayuno</span>
+                    <span>Casino</span>
+                    <span>Restaurante</span>
+                </div>
+
+                <h4>Desde</h4>
+
+                <span>USD$499</span>
+
+                <button>Ver detalles</button>
+
+            </article>
+        </div>
+
+    </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="item-footer">
+            <h4>Mejores precios garantizados</h4>
+        </div>
+
+        <div class="item-footer">
+            <h4>Asistencia 24/7</h4>
+            <p>Siempre contigo</p>
+        </div>
+
+        <div class="item-footer">
+            <h4>Reserva segura</h4>
+            <p>Protegemos tus datos</p>
+        </div>
+
+        <div class="item-footer">
+            <h4>Cancelación flexible</h4>
+            <p>Planes que se adaptan a ti</p>
+        </div>
+
+    </footer>
+</body>
+</html>
