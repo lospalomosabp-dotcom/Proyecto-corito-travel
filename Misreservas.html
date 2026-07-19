@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Reservas</title>
+    <meta name="descripcion" content="agencia de viajes, voletos aereos,tours,reservas...">
+    <link rel="stylesheet" href="imagenes/logo-agencia.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="js/iniciosesion.js"></script>
+
+
+
+</head>
+
+<body>
+    <header>
+        <!--Menu de  Navegacion  -->
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Destinos</a>
+        <a href="#">Paquetes</a>
+        <a href="#">Vuelos</a>
+        <a href="#">Hoteles</a>
+        <a href="#">Ofertas</a>
+        <a href="#">Nosotros</a>
+        <div class="icono-inicio-sesion">
+            <a class="micuenta" href="#">Mi cuenta</a>
+        </div> 
+    </nav>
+
+    <!-- imagen logo -->
+    <figcaption class="logo">
+        <img src="imagenes/logo-agencia.png" alt="logo" width="200" height="200">
+    </figcaption>
+    </header>
+
+    <main class="visualizar-reservas">
+        <!-- Titulos -->
+        <div class="titulo">
+            <h1><i class="fa-sharp fa-solid fa-check"></i>TU AVENTURA ESTA CONFIRMADA</h1>
+            <h3>RESUMEN DEL ITINERARIO</h3>
+        </div>
+
+        <div class="Vuelo">
+            <div class="titulo-reserva-vuelo">
+                <p><i class="fa-mosaic fa-solid fa-plane"></i>VUELO:Madrid(MAD)<i class="fa-sharp fa-solid fa-arrow-right"></i>Paris(CDG)</p>
+           </div>  
+           <div class="despegue-vuelo">
+                <i class="fa-solid fa-plane-departure"></i><p>Salida:20 sep,2026,17:00pm(Iberia,IB3489)</p>
+           </div>  
+           <div class="aterrizaje-avion">
+                <i class="fa-sharp fa-solid fa-plane-arrival"></i><p>Llegada:20 sep,2026,21:00pm</p>
+           </div>
+           <div class="equipaje">
+            <i class="fa-solid fa-briefcase"></i><p>Equipaje: 1 maleta facturada + 1 de mano</p>
+           </div>
+        </div>
+
+        <div class="Alojamiento">
+            <div class="titulo-reserva-alojamiento">
+                <p>ALOJAMIENTO:Hotel Le Marais <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+           </div>  
+           <div class="Entrada-hotel">
+            <i class="fa-regular fa-calendar-days"></i> <p>Entrada:20 sep,2026,15:00pm</p>
+           </div>  
+           <div class="Salida-hotel">
+                <i class="fa-regular fa-calendar-days"></i><p>Salida:26 sep,2026,12:00pm <br>(6 noches)</p>
+           </div>
+           <div class="habitacion">
+                <i class="fa-jelly-duo fa-regular fa-bed"></i><p>Habitacion doble <br><i class="fa-solid fa-utensils"></i> Desayuno incluido</p>
+           </div>
+        </div>
+
+        <div class="Desglose-pago">
+            <table border="2" class="desglose">
+        
+                <thead>
+                    <tr>
+                        <th>Desglose de pagos  <i class="fa-brands fa-cc-visa"></i> <i class="fa-brands fa-cc-mastercard"></i> <i class="fa-brands fa-cc-paypal"></i></p> </th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Vuelo( 1 adulto)</td>
+                        <td>€580</td>  
+                    </tr>
+                    <tr>
+                        <td>Hotel( 6 noches)</td>
+                        <td>€750</td>
+                    </tr>
+                    <tr>
+                        <td>Translado a aeropuerto </td>
+                        <td>€50</td>
+                    </tr>
+                    <tr>
+                        <td>Seguro de viaje  </td>
+                        <td>€45</td>
+                    </tr>
+                    <tr>
+                        <td>Subtotal:</td>
+                        <td> €1425</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Impuestos y tasas</td>
+                        <td>€115</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td><strong></strong>Total Pagado</td>
+                        <td><strong>€1540</strong></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+
+        <div class="Datos-reserva">
+            <div class="titulo-reserva-datos">
+                <p><i class="fa-slab-press fa-regular fa-user"></i> Datos de reserva</p>
+           </div>  
+           <div class="">
+                <p></p><i class="fa-mosaic fa-solid fa-plane"></i> Numero de vuelo: <strong>AX789-PQR</strong></p>
+           </div>  
+           <div class="">
+                <p><i class="fa-slab-press fa-regular fa-user"></i> Nombre del titular: <strong>Rodolfo Rodriguez</strong> </p>
+           </div>
+           <div class="">
+                <p><i class="fa-regular fa-envelope"></i> Correo: <strong>Rodolfor02@gmail.com</strong></p>
+           </div>
+           <div class="">
+                <p><i class="fa-solid fa-phone"></i> Telefono: <strong>--- ---- ----</strong></p>
+           </div>
+        </div>
+        <div class="descargar">
+            <p><i class="fa-solid fa-download"></i> Descargar Confirmacion (PDF) </p>
+        </div>
+        <div>
+            <p><i class="fa-solid fa-headset"></i> Contactar Soporte</p>
+        </div>
+    </main>
+    <footer>
+        <div class="item-footer">
+            <h4>Mejores precios garantizados</h4>
+        </div>
+
+        <div class="item-footer">
+            <h4>Asistencia 24/7</h4>
+            <p>Siempre contigo</p>
+        </div>
+
+        <div class="item-footer">
+            <h4>Reserva segura</h4>
+            <p>Protegemos tus datos</p>
+        </div>
+
+        <div class="item-footer">
+        <h4>Cancelación flexible</h4>
+        <p>Planes que se adaptan a ti</p>
+        </div>
+    </footer>
+</body>
+
+</html>
