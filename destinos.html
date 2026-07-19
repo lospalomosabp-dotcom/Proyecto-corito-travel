@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinos</title>
+</head>
+<body>
+
+    <header>
+        <!-- Menú de navegación -->
+        <div class="menuPrincipal">
+            <nav class="menu">
+                <a href="#">Inicio</a>
+                <a href="#">Destinos</a>
+                <a href="#">Paquetes</a>
+                <a href="#">Vuelos</a>
+                <a href="#">Ofertas</a>
+                <a href="#">Nosotros</a>
+                <a href="#" class="esquinero">Mi Perfil</a>
+            </nav>
+        </div>
+
+        <!-- Imagen Principal -->
+        <div class="ImagenCabecera">
+            <figure>
+                <img src="imagenes/destinos/fondoDestinos.png" alt="">
+            </figure>
+
+        </div>
+
+        <div class="frase">
+            <h1>Descubre tu próximo destino </h1>
+            <h2>Explora playas paradisiacas, cuidades históricas, montañas, islas y mucho más! <br>
+            Encuentra el destino perfecto para tu próxima aventura.</h2>
+        </div>
+    </header>
+
+    <!-- Filtro para tipo de paquete -->
+    <div class="filtros_paquetes">
+
+        <div class="filtros">
+            <h2>Filtros</h2>
+
+            <form action="">
+                <label for="destinos">Destinos</label>
+                <input type="text" value="Buscar Destino"> 
+
+                <label for="Rango de precio (USD)"></label>
+                <span>$USD 100</span>
+                <input type="range" min="100" max="5000">
+                <span>$USD 5,000</span>
+
+                <label for="duracion">Seleccionar Duración</label>
+                <label for="duracion">Fecha Inicio</label>
+                <input type="date">
+                <label for="duracion">Fecha Fin</label>
+                <input type="date">
+            </form>
+        </div>
+
+    </div>
+
+    <!-- Filtro secundario -->
+
+    <div class="filtroSecundario">
+
+        <div class="tipoFiltro">
+
+            <form action="">
+                <label for="filtro">Tipo de Viaje</label>
+                <input type="checkbox" id="aventura"> Aventura
+                <input type="checkbox" id="relajación">Relajación
+                <input type="checkbox" id="cultural"> Cultural
+                <input type="checkbox" id="familiar"> Familiar
+                <input type="checkbox" id="romantico"> Romantico
+                <input type="checkbox" id="lujo"> Lujo
+            </form>
+        </div>
+        
+        <div class="tipoFiltro"> Filtros Populares 
+            <form action="">
+                <input type="checkbox" id="hoteles">Hoteles
+                <input type="checkbox" id="playa">Playa
+                <input type="checkbox" id="resort">Resort
+                <input type="checkbox" id="Villas">Villas
+                <input type="checkbox" id="Airbnb">Airbnb
+                <input type="submit" value="Aplicar Filtros">
+            </form>
+        </div>
+        
+        <a href="#">Limpiar Filtros</a>
+    </div>
+
+    <!-- Sección de paquetes  -->
+    <div class="paquetes">
+
+        <div class="ordenarPor">
+
+            <select name="Ordenar Por" id="ordenar">
+                <option value="populares">Más populares</option>
+                <option value="precioMenor">Precio menor a mayor</option>
+                <option value="precioMayor">Precio mayor a menor</option>
+            </select>
+
+        </div>
+
+    </div>
+
+    <!-- Destinos -->
+
+    <div class="destinos">
+
+        <div class="resort">
+
+            <figure>
+                <img src="imagenes/destinos/resort1Destinos.jpg" alt="">
+            </figure>
+            
+            <h2>Grand Bavaro Princess - All Suites Resort, Spa & Casino</h2>
+
+            <p>5 días / 4 noches</p>
+
+            <p>
+                Disfruta de unas vacaciones de lujo en Playa Bávaro, Punta Cana, en un resort
+                de 5 estrellas con acceso directo a la playa, múltiples piscinas, restaurantes
+                internacionales, spa, casino y entretenimiento para toda la familia.
+            </p>
+
+            <h3>Incluye:</h3>
+
+            <ul>
+                <li> 4 noches de alojamiento</li>
+                <li> Plan Todo Incluido</li>
+                <li> Desayuno, almuerzo y cena tipo buffet y a la carta</li>
+                <li> Bebidas nacionales e internacionales</li>
+                <li> Acceso a piscinas, playa privada y gimnasio</li>
+                <li> Actividades recreativas y entretenimiento nocturno</li>
+                <li> WiFi gratuito</li>
+            </ul>
+
+            <h3>Desde:</h3>
+
+            <h2>USD$580</h2>
+
+            <input type="button" name="detalles" value="Ver Detalles">
+        
+
+            <div class="DescripcionPaquete">
+                <h2>Disfruta de una experiencia de lujo en el Grand Bavaro Princess - All Suites Resort, Spa & Casino</h2>
+
+                <p>
+                    <span><strong>Grand Bavaro Princess - All Suites Resort, Spa & Casino</strong></span>
+                    se encuentra en Punta Cana, frente a la hermosa Playa Bávaro, y ofrece alojamiento
+                    con piscina al aire libre, aparcamiento privado gratuito, centro de fitness,
+                    spa y amplios jardines tropicales. Este resort de 5 estrellas cuenta con una
+                    zona de playa privada, habitaciones con aire acondicionado, conexión WiFi
+                    gratuita y baño privado. Además, dispone de casino, entretenimiento nocturno
+                    y club infantil para toda la familia.
+                </p>
+
+                <p>
+                    Las suites están equipadas con TV de pantalla plana con canales por cable,
+                    minibar, caja fuerte y cafetera. Algunas habitaciones ofrecen vistas al mar
+                    o a los jardines del complejo. Todas incluyen ropa de cama de alta calidad
+                    y toallas para garantizar una estancia cómoda y relajante.
+                </p>
+
+                <p>
+                    Cada mañana se sirve un completo desayuno buffet con una amplia variedad de
+                    opciones internacionales. El resort dispone de varios restaurantes especializados
+                    en cocina italiana, mexicana, asiática, mediterránea e internacional, además
+                    de bares distribuidos por todo el complejo donde podrás disfrutar de bebidas
+                    y cócteles durante todo el día.
+                </p>
+
+                <p>
+                    Los huéspedes pueden disfrutar de una gran variedad de actividades, como tenis,
+                    deportes acuáticos no motorizados, gimnasio, spa, espectáculos nocturnos y
+                    alquiler de bicicletas. También cuenta con recepción abierta las 24 horas,
+                    donde el personal habla español, inglés, francés y alemán para brindar una
+                    atención personalizada.
+                </p>
+
+                <p>
+                    El complejo se encuentra a pocos minutos del campo de golf White Sands y a
+                    aproximadamente 25 km del Aeropuerto Internacional de Punta Cana, lo que facilita
+                    el acceso a los principales atractivos turísticos de la zona.
+                </p>
+
+                <p>
+                    <span><strong>A las parejas les encanta su ubicación</strong></span>, calificándola con excelentes puntuaciones por ser un destino ideal para disfrutar de unas vacaciones
+                    románticas frente al mar.
+                </p>
+                <!-- Servicios -->
+
+                <div class="servicios">
+                    <h2>Servicios</h2>
+                    <ul>
+                        <li>WiFi gratis</li>
+                        <li>Restaurante</li>
+                        <li>Bar</li>
+                        <li>Piscina al aire libre</li>
+                        <li>Gimnasio</li>
+                        <li>Spa y centro de bienestar</li>
+                        <li>Zona de playa privada</li>
+                        <li>Entretenimiento nocturno</li>
+                        <li>Club infantil</li>
+                    </ul>
+                </div>
+                <!-- Opciones de disponibilidad -->
+                <div class="disponibilidad">
+                    <h2>Disponibilidad</h2>
+
+                    <p><span>Igualamos el precio</span></p>
+                    <p>Indica las fechas para ver la disponibilidad y los precios del alojamiento.</p>
+
+                    <form class="buscarDisponibilidad">
+                
+                        <label for="entrada">Fecha de entrada</label>
+                        <input type="date" id="entrada" name="entrada">
+                    
+                
+                        <label for="salida">Fecha de salida</label>
+                        <input type="date">
+            
+
+                        <div class="ocupacion">
+                            <label for="ocupacion">Ocupación</label>
+                            <select>
+                                <option>2 adultos · 0 niños · 1 habitación</option>
+                                <option>1 adulto · 0 niños · 1 habitación</option>
+                                <option>2 adultos · 1 niño · 1 habitación</option>
+                                <option>2 adultos · 2 niños · 1 habitación</option>
+                            </select>
+                        </div>
+
+                        <button type="submit">Buscar</button>
+
+                    </form>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Tipo de habitación</th>
+                                <th>Número de personas</th>
+                                <th>Camas</th>
+                                <th>Precio por noche</th>
+                                <th>Precio total <br><small>(Impuestos incluidos)</small></th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>Suite Junior Premium con vistas tropicales</td>
+                                <td>2 personas</td>
+                                <td>2 camas dobles o 1 cama doble extragrande</td>
+                                <td>US$145</td>
+                                <td>US$580</td>
+                            </tr>
+
+                            <tr>
+                                <td>Suite Junior Premium con vistas a la piscina</td>
+                                <td>2 personas</td>
+                                <td>1 cama doble extragrande o 2 camas dobles</td>
+                                <td>US$165</td>
+                                <td>US$660</td>
+                            </tr>
+
+                            <tr>
+                                <td>Suite Junior con vistas parciales al mar</td>
+                                <td>2 personas</td>
+                                <td>2 camas dobles o 1 cama doble extragrande</td>
+                                <td>US$180</td>
+                                <td>US$720</td>
+                            </tr>
+
+                            <tr>
+                                <td>Suite Junior Premium con vistas tropicales y jacuzzi</td>
+                                <td>2 personas</td>
+                                <td>1 cama doble grande o 2 camas dobles</td>
+                                <td>US$210</td>
+                                <td>US$840</td>
+                            </tr>
+
+                            <tr>
+                                <td>Suite Junior Premium con vistas al océano y jacuzzi</td>
+                                <td>2 personas</td>
+                                <td>1 cama doble grande o 2 camas dobles</td>
+                                <td>US$235</td>
+                                <td>US$940</td>
+                            </tr>
+
+                            <tr>
+                                <td>Suite Junior Premium con vistas directas al océano y jacuzzi</td>
+                                <td>2 personas</td>
+                                <td>1 cama doble grande o 2 camas dobles</td>
+                                <td>US$260</td>
+                                <td>US$1,040</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            
+            </div>
+        </div> 
+        
+        <div class="resort">
+
+        <figure>
+            <img src="imagenes/destinos/resort2Destinos.jpg" alt="Hard Rock Hotel & Casino Punta Cana">
+        </figure>
+
+        <h2>Hard Rock Hotel & Casino Punta Cana</h2>
+
+        <p>5 días / 4 noches</p>
+
+        <p>
+            Vive unas vacaciones inolvidables en el Hard Rock Hotel & Casino Punta Cana,
+            un exclusivo resort de 5 estrellas con playas de arena blanca, restaurantes
+            gourmet, casino, spa de lujo y entretenimiento para todas las edades.
+        </p>
+
+        <h3>Incluye:</h3>
+
+        <ul>
+            <li> 4 noches de alojamiento</li>
+            <li> Plan Todo Incluido</li>
+            <li> Desayuno, almuerzo y cena</li>
+            <li> Bebidas nacionales e internacionales</li>
+            <li> Acceso a piscinas, playa privada y gimnasio</li>
+            <li> Casino y entretenimiento nocturno</li>
+            <li> WiFi gratuito</li>
+        </ul>
+
+        <h3>Desde:</h3>
+
+        <h2>USD$780</h2>
+
+        <input type="button" name="detalles" value="Ver Detalles">
+
+        <div class="DescripcionDestino">
+
+            <h2>Disfruta de una experiencia de lujo en el Hard Rock Hotel & Casino Punta Cana</h2>
+
+            <p>
+                 <span><strong>Hard Rock Hotel & Casino Punta Cana</strong></span> está ubicado en la
+                impresionante costa de Punta Cana y ofrece un ambiente exclusivo con
+                habitaciones de lujo, múltiples piscinas, un gran casino, spa de clase
+                mundial y una amplia oferta gastronómica para todos los gustos.
+            </p>
+
+            <p>
+                Sus habitaciones cuentan con aire acondicionado, balcón privado,
+                minibar surtido, televisión de pantalla plana, cafetera, caja fuerte,
+                bañera de hidromasaje y conexión WiFi gratuita para una estancia cómoda.
+            </p>
+
+            <p>
+                El resort dispone de diversos restaurantes especializados en cocina
+                italiana, mexicana, brasileña, asiática, mediterránea e internacional,
+                además de bares y cafeterías distribuidos por todo el complejo.
+            </p>
+
+            <p>
+                Durante la estancia podrás disfrutar de actividades acuáticas,
+                espectáculos en vivo, gimnasio, spa, campo de golf cercano, deportes,
+                discoteca y uno de los casinos más grandes del Caribe.
+            </p>
+
+            <p>
+                El hotel se encuentra aproximadamente a 30 minutos del Aeropuerto
+                Internacional de Punta Cana, ofreciendo fácil acceso a las principales
+                atracciones turísticas de la zona.
+            </p>
+
+            <p>
+                <span><strong>Es uno de los resorts favoritos de familias y parejas</strong></span>,
+                    gracias a sus instalaciones modernas, entretenimiento y excelente
+                    servicio todo incluido.
+                </p>
+
+                <div class="servicios">
+
+                    <h2>Servicios</h2>
+
+                    <ul>
+                        <li>WiFi gratis</li>
+                        <li>Restaurantes gourmet</li>
+                        <li>Bares</li>
+                        <li>Piscinas al aire libre</li>
+                        <li>Casino</li>
+                        <li>Spa</li>
+                        <li>Gimnasio</li>
+                        <li>Playa privada</li>
+                        <li>Entretenimiento nocturno</li>
+                    </ul>
+
+                </div>
+
+                <div class="disponibilidad">
+
+                    <h2>Disponibilidad</h2>
+
+                    <p><span>Igualamos el precio</span></p>
+                    <p>Indica las fechas para ver la disponibilidad y los precios del alojamiento.</p>
+
+                    <form class="buscarDisponibilidad">
+
+                        <label for="entrada">Fecha de entrada</label>
+                        <input type="date" id="entrada">
+
+                        <label for="salida">Fecha de salida</label>
+                        <input type="date" id="salida">
+
+                        <div class="ocupacion">
+                            <label>Ocupación</label>
+                            <select>
+                                <option>2 adultos · 0 niños · 1 habitación</option>
+                                <option>2 adultos · 1 niño · 1 habitación</option>
+                                <option>2 adultos · 2 niños · 1 habitación</option>
+                            </select>
+                        </div>
+
+                        <button type="submit">Buscar</button>
+
+                    </form>
+
+                    <table>
+
+                        <thead>
+                            <tr>
+                                <th>Tipo de habitación</th>
+                                <th>Número de personas</th>
+                                <th>Camas</th>
+                                <th>Precio por noche</th>
+                                <th>Precio total<br><small>(Impuestos incluidos)</small></th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>Caribbean Suite</td>
+                                <td>2 personas</td>
+                                <td>1 cama King o 2 camas Queen</td>
+                                <td>US$195</td>
+                                <td>US$780</td>
+                            </tr>
+
+                            <tr>
+                                <td>Caribbean Sand Suite</td>
+                                <td>2 personas</td>
+                                <td>1 cama King</td>
+                                <td>US$225</td>
+                                <td>US$900</td>
+                            </tr>
+
+                            <tr>
+                                <td>Islander Junior Suite</td>
+                                <td>2 personas</td>
+                                <td>1 cama King</td>
+                                <td>US$260</td>
+                                <td>US$1,040</td>
+                            </tr>
+
+                            <tr>
+                                <td>Rock Royalty Level Suite</td>
+                                <td>2 personas</td>
+                                <td>1 cama King</td>
+                                <td>US$310</td>
+                                <td>US$1,240</td>
+                            </tr>
+
+                            <tr>
+                                <td>Rock Star Suite</td>
+                                <td>2 personas</td>
+                                <td>1 cama King</td>
+                                <td>US$420</td>
+                                <td>US$1,680</td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="villa">
+
+            <figure>
+                <img src="imagenes/destinos/villaDestinos.jpg" alt="Villa El Mirador - Jarabacoa">
+            </figure>
+
+            <h2>Villa El Mirador - Jarabacoa</h2>
+
+            <p>3 días / 2 noches</p>
+
+            <p>
+                Disfruta de una escapada inolvidable en Jarabacoa, conocida como la Ciudad de la
+                Eterna Primavera. Hospédate en una exclusiva villa privada rodeada de montañas,
+                naturaleza y un clima fresco, ideal para compartir con familiares o amigos.
+            </p>
+
+            <h3>Incluye:</h3>
+
+            <ul>
+                <li> Villa privada completa para hasta 15 personas</li>
+                <li> 2 noches de alojamiento</li>
+                <li> 5 habitaciones y 5 baños</li>
+                <li> Piscina privada</li>
+                <li> Jacuzzi climatizado</li>
+                <li> Área de BBQ</li>
+                <li> Cocina totalmente equipada</li>
+                <li> WiFi gratuito</li>
+                <li> Estacionamiento privado</li>
+            </ul>
+
+            <h3>Desde:</h3>
+
+            <h2>USD$900</h2>
+
+            <input type="button" name="detalles" value="Ver Detalles">
+
+            <div class="DescripcionPaquete">
+
+            <h2>Disfruta de una experiencia única en Villa El Mirador - Jarabacoa</h2>
+
+            <p>
+                <span><strong>Villa El Mirador</strong></span> está ubicada en una de las zonas más
+                tranquilas de Jarabacoa y ofrece un ambiente perfecto para descansar y
+                disfrutar de la naturaleza. Su privilegiada ubicación permite admirar las
+                montañas y el agradable clima de la región durante todo el año.
+            </p>
+
+            <p>
+                La villa tiene capacidad para <span><strong>15 personas</strong></span> y cuenta con
+                cinco habitaciones completamente amuebladas, cinco baños, una amplia sala,
+                comedor, cocina equipada, terraza, balcón y todas las comodidades necesarias
+                para una estancia confortable.
+            </p>
+
+            <p>
+                En el exterior encontrarás una piscina privada, jacuzzi climatizado,
+                gazebo, área de BBQ, jardines y espacios ideales para compartir en familia,
+                realizar reuniones o simplemente relajarte mientras disfrutas de un entorno
+                natural incomparable.
+            </p>
+
+            <p>
+                Durante tu visita podrás realizar diversas actividades como rafting en el
+                río Yaque del Norte, paseos a caballo, senderismo, excursiones al Salto de
+                Jimenoa y al Salto Baiguate, además de visitar restaurantes y cafeterías del
+                centro de Jarabacoa.
+            </p>
+
+            <p>
+                La villa dispone de estacionamiento privado, conexión WiFi gratuita, Smart TV,
+                aire acondicionado en las habitaciones y cocina equipada con nevera, estufa,
+                horno, microondas, cafetera y utensilios de cocina.
+            </p>
+
+            <p>
+                <span><strong>Es una excelente opción para vacaciones familiares, reuniones de amigos,
+                cumpleaños y escapadas de fin de semana</strong>, gracias a su privacidad,
+                comodidad y amplio espacio para grupos grandes.
+            </p>
+
+            <!-- Servicios -->
+
+            <div class="servicios">
+
+                <h2>Servicios</h2>
+
+                <ul>
+                    <li>WiFi gratis</li>
+                    <li>Piscina privada</li>
+                    <li>Jacuzzi climatizado</li>
+                    <li>Área de BBQ</li>
+                    <li>Cocina totalmente equipada</li>
+                    <li>5 habitaciones</li>
+                    <li>5 baños</li>
+                    <li>Aire acondicionado</li>
+                    <li>Smart TV</li>
+                    <li>Terraza con vista a las montañas</li>
+                    <li>Jardín</li>
+                    <li>Estacionamiento privado gratuito</li>
+                </ul>
+
+            </div>
+
+            <!-- Disponibilidad -->
+
+            <div class="disponibilidad">
+
+                <h2>Disponibilidad</h2>
+
+                <p><span>Igualamos el precio</span></p>
+                <p>Indica las fechas para ver la disponibilidad y el precio de la villa.</p>
+
+                <form class="buscarDisponibilidad">
+
+                    <label for="entrada">Fecha de entrada</label>
+                    <input type="date" id="entrada" name="entrada">
+
+                    <label for="salida">Fecha de salida</label>
+                    <input type="date" id="salida" name="salida">
+
+                    <div class="ocupacion">
+                        <label for="ocupacion">Ocupación</label>
+
+                        <select id="ocupacion">
+                            <option>1 - 5 personas</option>
+                            <option>6 - 10 personas</option>
+                            <option>11 - 15 personas</option>
+                        </select>
+                    </div>
+
+                    <button type="submit">Buscar</button>
+
+                </form>
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Tipo de alojamiento</th>
+                            <th>Capacidad máxima</th>
+                            <th>Habitaciones</th>
+                            <th>Precio por noche</th>
+                            <th>Precio total <br><small>(Impuestos incluidos)</small></th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>Villa Privada con Piscina y Jacuzzi</td>
+                            <td>15 personas</td>
+                            <td>
+                                5 habitaciones<br>
+                                7 camas<br>
+                                5 baños
+                            </td>
+                            <td>USD$450</td>
+                            <td>USD$900</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+            </div>
+
+        </div>
+
+        <div class="airbnb">
+
+            <figure>
+                <img src="imagenes/destinos/airbnbDestinos.jpg" alt="Airbnb Moderno en Santo Domingo">
+            </figure>
+
+            <h2>Airbnb Moderno en Santo Domingo</h2>
+
+            <p>4 días / 3 noches</p>
+
+            <p>
+                Disfruta de una estancia cómoda en un moderno apartamento tipo Airbnb,
+                ubicado en el corazón de Santo Domingo. Ideal para parejas, familias o
+                grupos pequeños que desean explorar la ciudad con todas las comodidades
+                de un hogar.
+            </p>
+
+            <h3>Incluye:</h3>
+
+            <ul>
+                <li> Apartamento completo para hasta 6 personas</li>
+                <li> 3 noches de alojamiento</li>
+                <li> Cocina totalmente equipada</li>
+                <li> WiFi de alta velocidad</li>
+                <li> Aire acondicionado</li>
+                <li> Smart TV con Netflix</li>
+                <li> Lavadora y secadora</li>
+                <li> Estacionamiento privado gratuito</li>
+            </ul>
+
+            <h3>Desde:</h3>
+
+            <h2>USD$360</h2>
+
+            <input type="button" name="detalles" value="Ver Detalles">
+
+            <div class="DescripcionPaquete">
+
+                <h2>Hospédate en un moderno Airbnb en Santo Domingo</h2>
+
+                <p>
+                    Este acogedor apartamento tipo Airbnb está ubicado en una zona
+                    céntrica y segura de Santo Domingo, a pocos minutos de restaurantes,
+                    supermercados, centros comerciales y los principales lugares de
+                    interés de la ciudad.
+                    </p>
+
+                    <p>
+                        El alojamiento tiene capacidad para <span><strong>6 personas</strong></span> y
+                        cuenta con dos habitaciones, dos baños, una amplia sala, comedor,
+                        cocina completamente equipada y un balcón con una hermosa vista de
+                        la ciudad.
+                    </p>
+
+                    <p>
+                        El apartamento ofrece todas las comodidades necesarias para una
+                        estancia agradable, incluyendo aire acondicionado en todas las
+                        habitaciones, Smart TV, internet de alta velocidad, lavadora,
+                        secadora, cafetera, microondas, nevera y utensilios de cocina.
+                    </p>
+
+                    <p>
+                        Gracias a su excelente ubicación podrás visitar fácilmente la Zona
+                        Colonial, el Malecón de Santo Domingo, Ágora Mall, BlueMall,
+                        restaurantes, bares y otros atractivos turísticos.
+                    </p>
+
+                    <p>
+                        El edificio cuenta con seguridad las 24 horas, ascensor,
+                        estacionamiento privado y acceso mediante cerradura electrónica para
+                        una mayor comodidad durante tu estancia.
+                    </p>
+
+                <p>
+                    <span><strong>Es una excelente opción para vacaciones, viajes de negocios
+                    o escapadas de fin de semana</strong></span>, ofreciendo la comodidad de un
+                    hogar con una ubicación privilegiada.
+                </p>
+
+        <!-- Servicios -->
+
+        <div class="servicios">
+
+            <h2>Servicios</h2>
+
+            <ul>
+                <li>WiFi gratis</li>
+                <li>Cocina equipada</li>
+                <li>2 habitaciones</li>
+                <li>2 baños</li>
+                <li>Aire acondicionado</li>
+                <li>Smart TV</li>
+                <li>Netflix</li>
+                <li>Lavadora y secadora</li>
+                <li>Balcón</li>
+                <li>Ascensor</li>
+                <li>Seguridad 24 horas</li>
+                <li>Estacionamiento privado</li>
+            </ul>
+
+        </div>
+
+        <!-- Disponibilidad -->
+
+        <div class="disponibilidad">
+
+            <h2>Disponibilidad</h2>
+
+            <p><span>Igualamos el precio</span></p>
+            <p>Indica las fechas para ver la disponibilidad y el precio del alojamiento.</p>
+
+            <form class="buscarDisponibilidad">
+
+                <label for="entrada">Fecha de entrada</label>
+                <input type="date" id="entrada" name="entrada">
+
+                <label for="salida">Fecha de salida</label>
+                <input type="date" id="salida" name="salida">
+
+                <div class="ocupacion">
+                    <label for="ocupacion">Ocupación</label>
+
+                    <select id="ocupacion">
+                        <option>1 - 2 personas</option>
+                        <option>3 - 4 personas</option>
+                        <option>5 - 6 personas</option>
+                    </select>
+                </div>
+
+                <button type="submit">Buscar</button>
+
+            </form>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Tipo de alojamiento</th>
+                        <th>Capacidad máxima</th>
+                        <th>Distribución</th>
+                        <th>Precio por noche</th>
+                        <th>Precio total <br><small>(Impuestos incluidos)</small></th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>Apartamento Completo</td>
+                        <td>6 personas</td>
+                        <td>
+                            2 habitaciones<br>
+                            3 camas<br>
+                            2 baños
+                        </td>
+                        <td>USD$120</td>
+                        <td>USD$360</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+            </div>
+
+    
+        </div>    
+    </div>
+
+    <!-- Pie de página -->
+
+        <footer>
+        
+            <div>
+                <p>Mejores precios</p>
+                <p>Garantizados</p>
+            </div>
+        
+            <div>
+                <p>Asistencia 24/7</p>
+                <p>Siempre contigo</p>
+            </div>
+        
+            <div>
+                <p>Reservas seguras</p>
+                <p>Protegemos tus datos</p>
+            </div>
+        
+            <div>
+                <p>Cancelación flexible</p>
+                <p>Planes que se adaptan a ti</p>
+            </div>
+        
+        </footer>
+</body>
+</html>

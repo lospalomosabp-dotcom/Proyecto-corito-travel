@@ -10,24 +10,25 @@
     <header>
     <!-- Menú de navegación -->
     <div class="menuPrincipal">
-    <nav class="menu">
-        <a href="#">Inicio</a>
-        <a href="#">Destinos</a>
-        <a href="#">Paquetes</a>
-        <a href="#">Vuelos</a>
-        <a href="#">Ofertas</a>
-        <a href="#">Nosotros</a>
-        <a href="#" class="esquinero">Mi Perfil</a>
-    </nav>
+        <nav class="menu">
+            <a href="#">Inicio</a>
+            <a href="#">Destinos</a>
+            <a href="#">Paquetes</a>
+            <a href="#">Vuelos</a>
+            <a href="#">Ofertas</a>
+            <a href="#">Nosotros</a>
+            <a href="#" class="esquinero">Mi Perfil</a>
+        </nav>
     </div>
 
     <!-- Imagen Principal -->
     <div class="ImagenCabecera">
         <figure>
-            <img src="imagenes/fondoPerfilPaquete.jpg" alt="">
+            <img src="imagenes/paquetes/fondoPerfilPaquete.jpg" alt="">
         </figure>
 
     </div>
+
     </header>
     
     <!-- Ruta actual -->
@@ -39,56 +40,62 @@
         </nav>
     </div>
 
+
+
     <!-- Filtro para tipo de paquete -->
     <div class="filtros_paquetes">
 
         <div class="filtros">
-        <h2>Filtros</h2>
+            <h2>Filtros</h2>
 
-        <form action="">
-        <label for="destinos">Destinos</label>
-        <input type="text" value="Buscar Destino"> 
+            <form action="">
+                <label for="destinos">Destinos</label>
+                    <input type="text" value="Buscar Destino"> 
 
-        <label for="Rango de precio (USD)"></label>
-        <span>$USD 100</span>
-        <input type="range" min="100" max="5000">
-        <span>$USD 5,000</span>
+                <label for="Rango de precio (USD)"></label>
+                <span>$USD 100</span>
+                <input type="range" min="100" max="5000">
+                <span>$USD 5,000</span>
 
-        <label for="duracion">Seleccionar Duración</label>
-        <label for="duracion">Fecha Inicio</label>
-        <input type="date">
-        <label for="duracion">Fecha Fin</label>
-        <input type="date">
-        </form>
+                <label for="duracion">Seleccionar Duración</label>
+                <label for="duracion">Fecha Inicio</label>
+                <input type="date">
+                <label for="duracion">Fecha Fin</label>
+                <input type="date">
+            </form>
         </div>
-
+    </div>
+        
+    <!-- Filtro Secundario -->
+      
+    <div class="filtroSecundario">
        <div class="tipoViaje">
-        <form action="">
-            <input type="checkbox" id="aventura"> Aventura
-            <input type="checkbox" id="relajación">Relajación
-            <input type="checkbox" id="cultural"> Cultural
-            <input type="checkbox" id="familiar"> Familiar
-            <input type="checkbox" id="romantico"> Romantico
-            <input type="checkbox" id="lujo"> Lujo
-            <input type="submit" value="Aplicar Filtros">
+            <form action="">
+                <input type="checkbox" id="aventura"> Aventura
+                <input type="checkbox" id="relajación">Relajación
+                <input type="checkbox" id="cultural"> Cultural
+                <input type="checkbox" id="familiar"> Familiar
+                <input type="checkbox" id="romantico"> Romantico
+                <input type="checkbox" id="lujo"> Lujo
+                <input type="submit" value="Aplicar Filtros">
+            </form>
             <a href="#">Limpiar Filtros</a>
-        </form>
-       </div>
-
-       <!-- Sección de paquetes  -->
-       <div class="paquetes">
-
+        </div>
+    </div>
+       
+     <!-- Sección de paquetes  -->
+    <div class="paquetes">
+               
         <div class="ordenarPor">
-
+                   
             <select name="Ordenar Por" id="ordenar">
                 <option value="populares">Más populares</option>
                 <option value="precioMenor">Precio menor a mayor</option>
                 <option value="precioMayor">Precio mayor a menor</option>
             </select>
-
+                    
         </div>
-
-        </div>
+                
     </div>
 
     <div>
@@ -99,7 +106,7 @@
     
     <div class="muestraPaquete">
         <figure>
-            <img src="imagenes/paquetesImagen1.jpg" alt="">
+            <img src="imagenes/paquetes/paquetesImagen1.jpg" alt="">
         </figure>
     
         <h2>Punta Cana Todo Incluido</h2>
@@ -116,7 +123,7 @@
     
     <div class="muestraPaquete">
         <figure>
-            <img src="imagenes/paquetesImagen2.jpg" alt="">
+            <img src="imagenes/paquetes/paquetesImagen2.jpg" alt="">
         </figure>
     
         <h2>Paris Romántico</h2>
@@ -133,7 +140,7 @@
     
     <div class="muestraPaquete">
         <figure>
-            <img src="imagenes/paquetesImagen3.jpg" alt="">
+            <img src="imagenes/paquetes/paquetesImagen3.jpg" alt="">
         </figure>
     
         <h2>Dubai Moderno</h2>
@@ -150,7 +157,7 @@
 
     <div class="muestraPaquete">
         <figure>
-            <img src="imagenes/paquetesImagen4.jpg" alt="">
+            <img src="imagenes/paquetes/paquetesImagen4.jpg" alt="">
         </figure>
     
         <h2>Machu Picchu Express</h2>
@@ -167,7 +174,7 @@
 
     <div class="muestraPaquete">
         <figure>
-            <img src="imagenes/paquetesImagen5.jpg" alt="">
+            <img src="imagenes/paquetes/paquetesImagen5.jpg" alt="">
         </figure>
     
         <h2>Japón Tradicional</h2>
@@ -184,7 +191,7 @@
 
     <div class="muestraPaquete">
         <figure>
-            <img src="imagenes/paquetesImagen6.jpg" alt="">
+            <img src="imagenes/paquetes/paquetesImagen6.jpg" alt="">
         </figure>
     
         <h2>Maldivas Paraíso Tropical</h2>
@@ -201,7 +208,7 @@
 
         <div class="muestraPaquete">
             <figure>
-                <img src="imagenes/paquetesImagen7.jpg" alt="">
+                <img src="imagenes/paquetes/paquetesImagen7.jpg" alt="">
             </figure>
         
             <h2>Nueva York Familiar</h2>
@@ -218,7 +225,7 @@
 
         <div class="muestraPaquete">
             <figure>
-                <img src="imagenes/paquetesImagen8.jpg" alt="">
+                <img src="imagenes/paquetes/paquetesImagen8.jpg" alt="">
             </figure>
         
             <h2>Grecia Clásica</h2>
@@ -235,7 +242,7 @@
 
         <div class="muestraPaquete">
             <figure>
-                <img src="imagenes/paquetesImagen9.jpg" alt="">
+                <img src="imagenes/paquetes/paquetesImagen9.jpg" alt="">
             </figure>
         
             <h2>Safari en Kenia</h2>
@@ -252,7 +259,7 @@
 
         <div class="muestraPaquete">
             <figure>
-                <img src="imagenes/paquetesImagen10.jpg" alt="">
+                <img src="imagenes/paquetes/paquetesImagen10.jpg" alt="">
             </figure>
         
             <h2>Aurora Boreal en Islandia</h2>
@@ -269,7 +276,7 @@
 
         <div class="muestraPaquete">
             <figure>
-                <img src="imagenes/paquetesImage11.jpg" alt="">
+                <img src="imagenes/paquetes/paquetesImage11.jpg" alt="">
             </figure>
         
             <h2>Costa Amalfitana</h2>
@@ -286,7 +293,7 @@
 
         <div class="muestraPaquete">
             <figure>
-                <img src="imagenes/paquetesImagen12.jpg" alt="">
+                <img src="imagenes/paquetes/paquetesImagen12.jpg" alt="">
             </figure>
         
             <h2>Egipto Milenario</h2>
