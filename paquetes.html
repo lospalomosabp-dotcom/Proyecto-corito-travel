@@ -10,6 +10,10 @@
     <header>
     <!-- Menú de navegación -->
     <div class="menuPrincipal">
+
+        <figure class="logo">
+            <img src="imagenes/Logo-corito.png" alt="Logo de Corito Travel" width="120px" height="80px">
+        </figure>
         <nav class="menu">
             <a href="#">Inicio</a>
             <a href="#">Destinos</a>
@@ -50,18 +54,18 @@
 
             <form action="">
                 <label for="destinos">Destinos</label>
-                    <input type="text" value="Buscar Destino"> 
+                    <input type="text" id="destinos" value="Buscar Destino"> 
 
                 <label for="Rango de precio (USD)"></label>
                 <span>$USD 100</span>
-                <input type="range" min="100" max="5000">
+                <input type="range" id="rangoPrecio" min="100" max="5000">
                 <span>$USD 5,000</span>
 
                 <label for="duracion">Seleccionar Duración</label>
                 <label for="duracion">Fecha Inicio</label>
-                <input type="date">
+                <input type="date" id="fechaInicio">
                 <label for="duracion">Fecha Fin</label>
-                <input type="date">
+                <input type="date" id="fechaFin">
             </form>
         </div>
     </div>
