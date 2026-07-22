@@ -4,10 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iniciar sesion</title>
+    <title>Restablecer contraseña</title>
     <meta name="descripcion" content="agencia de viajes, voletos aereos,tours,reservas...">
+    <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script src="js/iniciosesion.js"></script>
+
 
 
 
@@ -15,12 +17,13 @@
 
 <body>
     <!--Menu de  Navegacion  -->
-    <nav>
-       <a href="iniciosesion.html"><i class="fa-sharp fa-solid fa-arrow-left"></i></a>
-    </nav>
-    <main>
+    <main class="main-restablecer">
         <!-- Formulario -->
-        <form action="" class="formulario-cuenta">
+        <form action="" class="formulario-cuenta-restablecer">
+            <!--Menu de  Navegacion  -->
+            <nav class="direccional">
+                <a href="iniciosesion.html"><i class="fa-sharp fa-solid fa-arrow-left"></i></a>
+            </nav>
             <!-- imagen logo -->
             <figcaption class="logo">
                 <img src="imagenes/logo-agencia.png" alt="logo" width="300" height="200">
@@ -35,7 +38,7 @@
             </div>
             <!-- Boton enviar codigo -->
             <div class="enviar-codigo">
-                <input type="submit" value="Enviar Codigo">
+               <input type="submit" value="Enviar Codigo"> 
             </div>
         </form>
     </main>
