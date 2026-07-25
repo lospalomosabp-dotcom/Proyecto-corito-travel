@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="icon" href="imagenes/Logo-sinletras.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+
+<div class="dashboard">
+
+    <!-- Menu Admin -->
+    <div class="menu-izquierda">
+
+        <div class="logo">
+            <img src="imagenes/Logo-corito.png" alt="Corito Travel">
+        </div>
+
+        <nav>
+            <a href="#" class="azul"><i class="fa-solid fa-house"></i>Dashboard</a>
+
+            <a href="#"><i class="fa-regular fa-calendar"></i>Agendas</a>
+
+            <a href="#"><i class="fa-regular fa-calendar-check"></i>Reservas</a>
+
+            <a href="#"><i class="fa-regular fa-user"></i>Clientes</a>
+
+            <a href="#"><i class="fa-regular fa-map"></i>Destinos</a>
+
+            <a href="#"><i class="fa-solid fa-cube"></i>Paquetes</a>
+
+            <a href="#"><i class="fa-solid fa-tags"></i>Ofertas</a>
+
+            <a href="#"><i class="fa-regular fa-user"></i>Usuarios</a>
+
+            <a href="#"><i class="fa-regular fa-credit-card"></i>Pagos</a>
+
+            <a href="#"><i class="fa-solid fa-chart-column"></i>Reportes</a>
+
+            <a href="#"><i class="fa-solid fa-gear"></i>Configuración</a>
+        </nav>
+
+    </div>
+
+    <!-- Contenido de main -->
+    <main class="principal">
+
+        <!-- Menu barras -->
+        <header class="header">
+
+            <div class="izquierda">
+                <button class="boton">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <h2>Dashboard</h2>
+            </div>
+
+            <div class="derecha">
+                <button class="notificaciones">
+                    <i class="fa-regular fa-bell"></i>
+                </button>
+
+                <div class="usuario">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <div>
+                        <h4>Admin Corito</h4>
+                        <span>Administrador</span>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+
+        <!-- Recuadros -->
+        <section class="cuadros">
+
+            <div class="cuadro">
+
+                <div class="icono">
+                    <i class="fa-regular fa-calendar"></i>
+                </div>
+
+                <div>
+                    <h5>Agendas activas</h5>
+                    <h3>0</h3>
+                    <span>+0 esta semana</span>
+                </div>
+
+            </div>
+
+            <div class="cuadrado">
+                <div class="icono">
+                    <i class="fa-regular fa-calendar-check"></i>
+                </div>
+
+                <div>
+                    <h5>Reservas hoy</h5>
+                    <h3>0</h3>
+                    <span>+0% vs ayer</span>
+                </div>
+            </div>
+
+            <div class="cuadrado">
+                <div class="icono">
+                    <i class="fa-solid fa-dollar-sign"></i>
+                </div>
+                <div>
+                    <h5>Ventas del mes</h5>
+                    <h3>0</h3>
+                    <span>+0% mes anterior</span>
+                </div>
+            </div>
+
+            <div class="cuadrado">
+                <div class="icono">
+                    <i class="fa-solid fa-users"></i>
+                </div>
+                <div>
+                    <h5>Clientes totales</h5>
+                    <h3>0</h3>
+                    <span>+0 este mes</span>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Tabla y Calendario -->
+        <section class="apartado">
+            <div class="tabla">
+                <h3>Agendas próximas</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Fecha</th>
+                            <th>Actividad</th>
+                            <th>Destino</th>
+                            <th>Responsable</th>
+                            <th>Estado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>20 Jul 2026</td>
+                            <td>Tour de bienvenida</td>
+                            <td>Punta Cana</td>
+                            <td>Nombre1</td>
+                            <td>Confirmado</td>
+                        </tr>
+                        <tr>
+                            <td>21 Jul 2026</td>
+                            <td>Tour de bienvenida</td>
+                            <td>Punta Cana</td>
+                            <td>Nombre2</td>
+                            <td>Confirmado</td>
+                        </tr>
+                        <tr>
+                            <td>23 Jul 2026</td>
+                            <td>Tour Eiffel</td>
+                            <td>París</td>
+                            <td>Nombre3</td>
+                            <td>Pendiente</td>
+                        </tr>
+                        <tr>
+                            <td>25 Jul 2026</td>
+                            <td>Tour Eiffel</td>
+                            <td>París</td>
+                            <td>Nombre4</td>
+                            <td>Pendiente</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <a href="#">Ver todas las agendas</a>
+
+            </div>
+
+            <div class="calendario">
+                <h3>Calendario de agendas</h3>
+                <div class="calendar">
+                    <!-- Aquí va el calendario(No se como colocarlo) -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Reserva -->
+        <section class="reservas">
+            <div class="titulo">
+                <h3>Reservas recientes</h3>
+                <a href="#">Ver todas</a>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Código</th>
+                        <th>Cliente</th>
+                        <th>Destino</th>
+                        <th>Fecha de viaje</th>
+                        <th>Estado</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>RES-001</td>
+                        <td>Cliente1</td>
+                        <td>Punta Cana</td>
+                        <td>20 Jul 2026</td>
+                        <td>n/a</td>
+                        <td>0</td>
+                    </tr>
+
+                    <tr>
+                        <td>RES-002</td>
+                        <td>Cliente2</td>
+                        <td>Punta Cana</td>
+                        <td>21 Jul 2026</td>
+                        <td>n/a</td>
+                        <td>0</td>
+                    </tr>
+
+                    <tr>
+                        <td>RES-003</td>
+                        <td>Cliente3</td>
+                        <td>París</td>
+                        <td>23 Jul 2026</td>
+                        <td>n/a</td>
+                        <td>0</td>
+                    </tr>
+
+                    <tr>
+                        <td>RES-004</td>
+                        <td>Cliente4</td>
+                        <td>París</td>
+                        <td>25 Jul 2026</td>
+                        <td>n/a</td>
+                        <td>0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+<!-- FOOTER -->
+
+    <footer>
+
+        <div class="item-footer">
+            <h4>Mejores precios garantizados</h4>
+        </div>
+
+        <div class="item-footer">
+            <h4>Asistencia 24/7</h4>
+            <p>Siempre contigo</p>
+        </div>
+
+        <div class="item-footer">
+            <h4>Reserva segura</h4>
+            <p>Protegemos tus datos</p>
+        </div>
+
+        <div class="item-footer">
+            <h4>Cancelación flexible</h4>
+            <p>Planes que se adaptan a ti</p>
+        </div>
+
+    </footer>
+</div>
+</body>
+</html>
