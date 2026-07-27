@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendas | Corito Travel</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+
+<div class="agendas">
+
+    <!-- Menú lateral -->
+   <div class="menu-izquierda">
+
+        <div class="logo">
+            <img src="imagenes/Logo-corito.png" alt="Corito Travel">
+        </div>
+
+        <nav>
+            <a href="#"><i class="fa-solid fa-house"></i>Dashboard</a>
+
+            <a href="#" class="activo"><i class="fa-regular fa-calendar"></i>Agendas</a>
+
+            <a href="#"><i class="fa-regular fa-calendar-check"></i>Reservas</a>
+
+            <a href="#"><i class="fa-regular fa-user"></i>Clientes</a>
+
+            <a href="#"><i class="fa-regular fa-map"></i>Destinos</a>
+
+            <a href="#"><i class="fa-solid fa-cube"></i>Paquetes</a>
+
+            <a href="#"><i class="fa-solid fa-tags"></i>Ofertas</a>
+
+            <a href="#"><i class="fa-regular fa-user"></i>Usuarios</a>
+
+            <a href="#"><i class="fa-regular fa-credit-card"></i>Pagos</a>
+
+            <a href="#"><i class="fa-solid fa-chart-column"></i>Reportes</a>
+
+            <a href="#"><i class="fa-solid fa-gear"></i>Configuración</a>
+        </nav>
+
+    </div>
+
+    <main>
+
+        <!-- Parte superior -->
+        <header>
+            <div class="izquierda">
+                <button>
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <h3>Agendas</h3>
+            </div>
+
+            <div class="derecha">
+
+                <button>
+                    <i class="fa-regular fa-bell"></i>
+                </button>
+
+                <div class="usuario">
+                    <i class="fa-solid fa-circle-user"></i>
+                </div>
+
+                    <div>
+                        <span>Admin Corito</span>
+                        <span>Administrador</span>
+                    </div>
+                
+            </div>
+
+        </header>
+
+        <!-- Titulo -->
+        <section class="titulo">
+
+            <div>
+                <h1>Agendas</h1>
+                <p>Gestiona todas las actividades y agendas programadas.</p>
+            </div>
+
+            <button><i class="fa-solid fa-plus"></i>Nueva agenda</button>
+
+        </section>
+
+        <!-- cuadros -->
+        <section class="estadisticas">
+
+            <article>
+
+                <i class="fa-regular fa-calendar"></i>
+
+                <div>
+                    <span>Total agendas</span>
+                    <h2>0</h2>
+                    <span>+0 esta semana</span>
+                </div>
+
+            </article>
+
+            <article>
+
+                <i class="fa-regular fa-circle-check"></i>
+
+                <div>
+                    <span>Confirmadas</span>
+                    <h2>0</h2>
+                    <span>0% del total</span>
+                </div>
+
+            </article>
+
+            <article>
+
+                <i class="fa-solid fa-clock"></i>
+
+                <div>
+                    <span>Pendientes</span>
+                    <h2>0</h2>
+                    <span>0% del total</span>
+                </div>
+
+            </article>
+
+            <article>
+
+                <i class="fa-solid fa-xmark"></i>
+
+                <div>
+                    <span>Canceladas</span>
+                    <h2>0</h2>
+                    <span>0% del total</span>
+                </div>
+
+            </article>
+
+        </section>
+
+        <!-- Filtros -->
+        <section class="filtros">
+            <form action="">
+                <label for="desde">Fecha desde</label>
+                <input type="date">
+                
+                <label for="hasta">Fecha hasta</label>
+                <input type="date">
+    
+                <select>
+                    <option value="Destinos">Todos los destinos</option>
+                    <option>Santiago</option>
+                    <option>Santo Domingo</option>
+                    <option>Punta Cana</option>
+                    <option>La Romana</option>
+                </select>
+
+                <label for="Responsables">Responsable</label>
+                <select>
+                    <option>Todos</option>
+                    <option >Trabajador1</option>
+                    <option>Trabajador2</option>
+                </select>
+    
+                <button>
+                    <i class="fa-solid fa-filter"></i>
+                    Filtros
+                </button>
+    
+                <div class="buscar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <label for="buscar"></label>
+                    <input type="text" id="buscar" placeholder="Buscar agenda...">
+                </div>
+            </form>
+        </section>
+
+        <!-- Tabla y Panel -->
+        <section class="contenido">
+            <section class="tabla">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Fecha</th>
+                            <th>Actividad</th>
+                            <th>Destino</th>
+                            <th>Responsable</th>
+                            <th>Participantes</th>
+                            <th>Estado</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                         <td>
+                            20 Jul 2026 <br>
+                            10:00 AM
+                        </td>
+
+                        <td>Tour de bienvenida</td>
+
+                        <td>
+                            Punta Cana <br>
+                            Rep. Dom.
+                        </td>
+
+                        <td>
+                            Nombre1 <br>
+                            Guía
+                        </td>
+
+                        <td>0</td>
+
+                        <td>N/A</td>
+
+                        <td>
+                            <button>
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </button>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            21 Jul 2026 <br>
+                            11:00 AM
+                        </td>
+
+                        <td>Tour de bienvenida</td>
+
+                        <td>
+                            Punta Cana <br>
+                            Rep. Dom.
+                        </td>
+
+                        <td>
+                            Nombre2 <br>
+                            Guía
+                        </td>
+
+                        <td>0</td>
+
+                        <td>N/A</td>
+
+                        <td>
+                            <button>
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </button>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            23 Jul 2026 <br>
+                            02:00 PM
+                        </td>
+
+                        <td>Tour de bienvenida</td>
+
+                        <td>
+                            Rep. Dom <br>
+                            Punta Cana
+                        </td>
+
+                        <td>
+                            Nombre3 <br>
+                            Guía
+                        </td>
+
+                        <td>0</td>
+
+                        <td>N/A</td>
+
+                        <td>
+                            <button>
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </button>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            25 Jul 2026 <br>
+                            04:00 PM
+                        </td>
+
+                        <td>Tour de bienvenida</td>
+
+                        <td>
+                            Rep. Dom <br>
+                            Punta Cana
+                        </td>
+
+                        <td>
+                            Nombre4 <br>
+                            Guía
+                        </td>
+
+                        <td>0</td>
+
+                        <td>N/A</td>
+
+                        <td>
+                            <button>
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </button>
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+                <section class="partebaja">
+
+                    <span>Mostrando 1 al 4 de 1 agenda</span>
+
+                    <div class="botonestabla">
+
+                        <button>
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </button>
+
+                        <button>1</button>
+                        <button>2</button>
+                        <button>...</button>
+                        <button>6</button>
+
+                        <button>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+
+                    </div>
+
+                </section>
+
+            </section>
+
+            <!-- Panel de Derecha -->
+            <aside>
+
+                <div class="detalles">
+
+                    <h3>Detalles de la agenda</h3>
+
+                    <button>
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+
+                </div>
+
+                <img src="imagenes/puntacana(admin).jpeg" alt="Punta Cana">
+
+                <div class="detalle">
+
+                    <div class="tituloagenda">
+
+                        <h2>Tour de bienvenida</h2>
+
+                        <span>N/A</span>
+
+                    </div>
+
+                    <p>
+                        <i class="fa-solid fa-location-dot"></i>
+                        Punta Cana, Rep. Dominicana
+                    </p>
+
+                    <p>
+                        <i class="fa-regular fa-calendar"></i>
+                        20 Jul 2026
+                    </p>
+
+                    <p>
+                        <i class="fa-regular fa-clock"></i>
+                        10:00 AM
+                    </p>
+
+                    <h4>Descripción</h4>
+
+                    <p>
+                        Recepción en el aeropuerto y traslado al hotel.
+                        Charla de bienvenida e información general del viaje.
+                    </p>
+
+                    <div class="info">
+
+                        <div>
+
+                            <h4>Responsable</h4>
+
+                            <p>Nombre1</p>
+                            <span>Guía</span>
+
+                        </div>
+
+                        <div>
+
+                            <h4>Participantes</h4>
+
+                            <p>0 Personas</p>
+
+                        </div>
+
+                    </div>
+
+                    <div>
+
+                        <h4>Proveedor</h4>
+
+                        <p>Corito Travel</p>
+
+                    </div>
+
+                    <div>
+
+                        <h4>Notas</h4>
+
+                        <p>Notas sobre el viaje.</p>
+
+                    </div>
+
+                </div>
+
+                <div class="editar-cancelar">
+
+                    <button>
+                        <i class="fa-solid fa-pen"></i>
+                        Editar agenda
+                    </button>
+
+                    <button>
+                        <i class="fa-regular fa-circle-xmark"></i>
+                        Cancelar agenda
+                    </button>
+                </div>
+            </aside>
+        </section>
+    </main>
+    <footer>
+        <div class="item-footer">
+            <h4>Mejores precios garantizados</h4>
+        </div>
+
+        <div class="item-footer">
+            <h4>Asistencia 24/7</h4>
+            <p>Siempre contigo</p>
+        </div>
+
+        <div class="item-footer">
+            <h4>Reserva segura</h4>
+            <p>Protegemos tus datos</p>
+        </div>
+
+        <div class="item-footer">
+            <h4>Cancelación flexible</h4>
+            <p>Planes que se adaptan a ti</p>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

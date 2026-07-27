@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Perfil</title>
+</head>
+<body>
+
+    <header>
+        <!-- Menú de navegación -->
+        <div class="menuPrincipal">
+            <figure class="logo">
+                <img src="imagenes/Logo-corito.png" alt="Logo de Corito Travel" width="120px" height="80px">
+            </figure>
+            <nav class="menu">
+                <a href="#">Inicio</a>
+                <a href="#">Destinos</a>
+                <a href="#">Paquetes</a>
+                <a href="#">Vuelos</a>
+                <a href="#">Ofertas</a>
+                <a href="#">Nosotros</a>
+                <a href="#" class="esquinero">Mi Perfil</a>
+            </nav>
+        </div>
+        <!-- Información de la página -->
+        <h1>Mi perfil</h1>
+
+        <p>Administra tu información y revisa tus viajes</p>
+        <!-- Imagen de fondo (Cabecera) -->
+        <figure>
+            <img src="imagenes/fondoPerfilCliente.jpg" alt="">
+        </figure>
+
+    </header>
+
+    <!-- Información sobre el cliente -->
+    <div class="informacion_cliente">
+
+        <!-- Foto de perfil  -->
+        <div class="fotoPerfil">
+            <figure>
+                <img src="imagenes/logoFoto.png" alt="">
+            </figure>
+            <!-- Nombre del cliente -->
+            <h2>Nombre</h2>
+            <!-- Ciudad de residencia  -->
+            <h3>Ciudad</h3>
+        </div>
+        <!-- Menú para editar datos -->
+        <div class="opciones_cliente">
+            <nav>
+                <a href="#">Información Personal</a>
+                <a href="#">Métodos de pago</a>
+                <a href="cambiarContrasena.html">Cambiar Contraseña</a>
+                <a href="#">Notificaciones</a>
+            </nav>
+        </div>
+
+
+        <div class="formulariosEditables">
+
+        <!-- Formulario para editar su información personal -->
+
+
+        <div class="informacionPersonal">
+        <form action="">
+
+            <h2>Información Personal</h2>
+
+            <label for="nombre"> Nombre Completo </label>
+            <input type="text" id="nom"  autocomplete="off" required>
+
+            <label for="correo"> Correo Electrónico</label>
+            <input type="email" id="correo" autocomplete="off">
+
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono">
+
+            <label for="fecha">Fecha de nacimiento</label>
+            <input type="date" id="fecha">
+
+            <label for="nacionalidad"> Nacionalidad </label>
+            <input type="text" id="nac" autocomplete="off" required>
+
+            <label for="direccion"> Dirección </label>
+            <input type="text" id="dir" autocomplete="off" required>
+
+            <input type="submit" value="Guardar Cambios">
+
+        </form>
+        </div>
+
+        <!-- Formulario para editar métodos de pago -->
+        
+        
+        <div class="metodosPago">
+
+            <h2>Métodos de Pago</h2>
+
+            <div class="tarjetasAgregadas">
+
+            <span>Visa ************6162</span>
+            <span>Vence: 09/30</span>
+
+            <form action="">
+                <button>Editar</button>
+                <button>Eliminar</button>
+            
+            </div>
+        <!--Agregar tarjeta  -->
+            <div class="agregarTarjeta">
+                <button> Agregar Tarjeta </button>
+            </div>
+
+        </form>
+        </div>
+
+        </div>
+    </div>
+
+        <!-- Reservas activas -->
+    <div class="reservas">
+
+        <div>
+            <nav class="reservas_activas">
+                <h3>Reservas Activas</h3>
+                <h3>2</h3>
+                <a href="#">Ver reservas</a>
+            </nav>
+        </div>
+
+        <!--Notificaciones  -->
+        <div class="notificaciones">
+            <div class="notificacion">
+                <h3>Vuelo comprado exitosamente</h3>
+                <p>Su vuelo de Santiago, República Dominicana hacia París, Francia ha sido comprado de manera exitosa!</p>
+                <nav>
+                    <a href="#">Ver detalles</a>
+                </nav>
+            </div>
+
+            <div class="notificacion">
+                <h3>Reserva realizada exitosamente</h3>
+                <p>Su reservación para 2 Personas en Hodelpa ha sido realizada de manera exitosa!  </p>
+                <nav>
+                    <a href="#">Ver detalles</a>
+                </nav>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+
+        <div>
+            <p>Mejores precios</p>
+            <p>Garantizados</p>
+        </div>
+
+        <div>
+            <p>Asistencia 24/7</p>
+            <p>Siempre contigo</p>
+        </div>
+
+        <div>
+            <p>Reservas seguras</p>
+            <p>Protegemos tus datos</p>
+        </div>
+
+        <div>
+            <p>Cancelación flexible</p>
+            <p>Planes que se adaptan a ti</p>
+        </div>
+
+    </footer>
+
+
+</body>
+</html>

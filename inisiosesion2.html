@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesion</title>
+    <meta name="descripcion" content="agencia de viajes, voletos aereos,tours,reservas...">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="js/iniciosesion.js"></script>
+
+   
+
+</head>
+<body>
+    <!--Menu de  Navegacion  -->
+        <nav class="menu">
+            <a href="#">Inicio</a>
+            <a href="#">Destinos</a>
+            <a href="#">Paquetes</a>
+            <a href="#">Vuelos</a>
+            <a href="#">Hoteles</a>
+            <a href="#">Ofertas</a>
+            <a href="#">Nosotros</a>
+           <div class="icono-inicio-sesion">
+            <a class="micuenta" href="#"></i>Mi cuenta</a>
+           </div> 
+        </nav>
+    <main class="main-iniciosesion">
+
+        <!-- Formulario -->
+        <form action="" class="formulario-inicio">
+             <!-- imagen logo -->
+            <figcaption class="logo">
+            <img src="imagenes/logo-agencia.png" alt="logo" width="300" height="200">
+            </figcaption>
+            <!-- Introducir datos -->
+
+            <h1 class="inicio-sesion"> Iniciar Sesion</h1>
+            <h3 class="subtitulo">Accede a tu cuenta de Corito Tavel</h3>
+
+            <label for="email">Correo electronico</label>
+
+            <div class="introducir-correo">
+              <i class="fa-regular fa-envelope"></i>
+              <input type="email" placeholder="Ingrese su correo electronico" >
+            </div>
+
+           <label  for="Contraseña">Contraseña</label>
+           <div class="introducir-contraseña">
+              <i class="fa-solid fa-lock"></i>
+              <input type="password" placeholder="Ingrese su Contraseña">
+              <i class="fa-solid fa-eye"></i>
+           </div>
+
+            <nav class="cambioContraseña">
+                <a href="#">¿Olvidadeste tu contraseña?</a>
+                <a href="#">Crear cuenta</a>
+            </nav>
+            
+            <input  type="submit" value="Iniciar sesion">
+
+            <p class="opcion">O</p>
+            <div class="icono-facebook-google">
+                <nav class="icono-navegacion">
+                   <a href="#"><i class="fa-brands fa-facebook"><i class="fa-brands fa-google"></i></i> </a>
+                </nav>
+            </div>
+            
+        </form>
+    </main> 
+</body>
+</html>

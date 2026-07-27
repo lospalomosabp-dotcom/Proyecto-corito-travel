@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Corito Travel es una agencia de viajes comprometida con hacer realidad las experiencias de viaje de sus clientes. Nos especializamos en ofrecer paquetes turísticos, reservas de hoteles...">
+    <title>Corito Travel</title>
+    <link rel="icon" href="imagenes/Logo-sinletras.png">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="imagenes/Logo-corito.png" alt="Logo Corito" width="200" height="200"> 
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="destinos.html">Destinos</a></li>
+            <li><a href="paquetes.html">Paquetes</a></li>
+            <li><a href="ofertas.html">Ofertas</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="iniciosesion.html">Iniciar Sesion</a></li>
+        </ul>
+    </nav>
+
+    <!-- IMG principal -->
+
+    <main>
+        <section class="inicio-centro">
+        <div class="contenido-centro">
+            <h1>TU PRÓXIMO VIAJE</h1>
+            <h2 class="Color-diferente">TE ESPERA</h2>
+            <p>Descubre, explora y vive experiencias inolvidables en los mejores destinos del mundo.</p>
+        </div>
+
+        <form action="">
+             <div class="busqueda">
+
+            <div class="campo">
+                <label for="viaje">A dónde quieres ir?</label>
+                <input type="text" placeholder="Ej: Punta Cana" id="viaje">
+            </div>
+
+            <div class="campo">
+                <label for="salida">Fecha de Salida</label>
+                <input type="date" id="salida">
+            </div>
+
+            <div class="campo">
+                <label for="regreso">Fecha de Regreso</label>
+                <input type="date" id="regreso">
+            </div>
+
+            <div class="campo">
+                <label for="viajeros">Viajeros</label>
+                <select name="viajeros" id="viajeros">
+                    <option value="1">1 Persona</option>
+                    <option value="2">2 Personas</option>
+                    <option value="3">3 Personas</option>
+                    <option value="4">4 Personas</option>
+                </select>
+            </div>
+            
+            <button type="submit">Buscar Viaje</button>
+        </form>
+    </section>
+
+    <!-- OFERTAS -->
+
+        <section class="ofertas">
+
+        <div class="titulo">
+            <h2>OFERTAS</h2>
+            <a href="#">Ver todas las ofertas</a>
+        </div>
+
+        <div class="cuadros">
+            <article class="cuadro">
+                <img src="imagenes/Puerto-plata.jpg" alt="Puerto Plata" width="500" height="500">
+
+                <div>
+                    <h3>Puerto Plata</h3>
+                    <p><span>US$500</span></p>
+                    <h4>Ahora US$300</h4>
+                </div>
+            </article>
+
+            <article class="cuadro">
+                <img src="imagenes/bogota.png" alt="Bogota" width="500" height="500">
+
+                <div>
+                    <h3>Bogota</h3>
+                    <p><span>US$900</span></p>
+                    <h4>Ahora US$750</h4>
+                </div>
+            </article>
+
+            <article class="cuadro">
+                <img src="imagenes/peru.jpg" alt="Peru" width="500" height="500">
+
+                <div>
+                    <h3>Peru</h3>
+                    <p><span>US$700</span></p>
+                    <h4>Ahora US$500</h4>
+                </div>
+            </article>
+        </div>
+        </section>
+
+    <!-- DESTINOS -->
+
+        <section class="destinos">
+
+        <div class="titulo">
+            <h2>Destinos</h2>
+            <a href="#">Ver todos los destinos</a>
+        </div>
+
+        <div class="cuadros">
+            <article class="cuadro">
+                <img src="imagenes/puntacanaa.jpeg" alt="Punta Cana" width="500" height="500">
+
+                <div>
+                    <h3>Punta Cana</h3>
+                    <h4>Desde US$499</h4>
+                </div>
+            </article>
+
+            <article class="cuadro">
+                <img src="imagenes/paris.jpg" alt="Paris" width="500" height="500">
+
+                <div>
+                    <h3>Paris</h3>
+                    <h4>Desde US$799</h4>
+                </div>
+            </article>
+
+            <article class="cuadro">
+                <img src="imagenes/dubai.jpg" alt="Dubai" width="500" height="500">
+
+                <div>
+                    <h3>Dubai</h3>
+                    <h4>Desde US$1,199</h4>
+                </div>
+            </article>
+        </div>
+        </section>
+    </main>
+
+      <!-- FOOTER -->
+
+    <footer>
+
+        <div class="item-footer">
+            <h4>Mejores precios garantizados</h4>
+        </div>
+
+        <div class="item-footer">
+            <h4>Asistencia 24/7</h4>
+            <p>Siempre contigo</p>
+        </div>
+
+        <div class="item-footer">
+            <h4>Reserva segura</h4>
+            <p>Protegemos tus datos</p>
+        </div>
+
+        <div class="item-footer">
+            <h4>Cancelación flexible</h4>
+            <p>Planes que se adaptan a ti</p>
+        </div>
+
+    </footer>
+</body>
+</html>

@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paquetes</title>
+</head>
+<body>
+
+    <header>
+    <!-- Menú de navegación -->
+    <div class="menuPrincipal">
+
+        <figure class="logo">
+            <img src="imagenes/Logo-corito.png" alt="Logo de Corito Travel" width="120px" height="80px">
+        </figure>
+        <nav class="menu">
+            <a href="#">Inicio</a>
+            <a href="#">Destinos</a>
+            <a href="#">Paquetes</a>
+            <a href="#">Vuelos</a>
+            <a href="#">Ofertas</a>
+            <a href="#">Nosotros</a>
+            <a href="#" class="esquinero">Mi Perfil</a>
+        </nav>
+    </div>
+
+    <!-- Imagen Principal -->
+    <div class="ImagenCabecera">
+        <figure>
+            <img src="imagenes/paquetes/fondoPerfilPaquete.jpg" alt="">
+        </figure>
+
+    </div>
+
+    </header>
+    
+    <!-- Ruta actual -->
+    <div class="ruta">
+        <nav>
+            <a href="#">Inicio</a>
+            <span>></span>
+            <a href="#">Paquetes</a>
+        </nav>
+    </div>
+
+
+
+    <!-- Filtro para tipo de paquete -->
+    <div class="filtros_paquetes">
+
+        <div class="filtros">
+            <h2>Filtros</h2>
+
+            <form action="">
+                <label for="destinos">Destinos</label>
+                    <input type="text" id="destinos" value="Buscar Destino"> 
+
+                <label for="Rango de precio (USD)"></label>
+                <span>$USD 100</span>
+                <input type="range" id="rangoPrecio" min="100" max="5000">
+                <span>$USD 5,000</span>
+
+                <label for="duracion">Seleccionar Duración</label>
+                <label for="duracion">Fecha Inicio</label>
+                <input type="date" id="fechaInicio">
+                <label for="duracion">Fecha Fin</label>
+                <input type="date" id="fechaFin">
+            </form>
+        </div>
+    </div>
+        
+    <!-- Filtro Secundario -->
+      
+    <div class="filtroSecundario">
+       <div class="tipoViaje">
+            <form action="">
+                <input type="checkbox" id="aventura"> Aventura
+                <input type="checkbox" id="relajación">Relajación
+                <input type="checkbox" id="cultural"> Cultural
+                <input type="checkbox" id="familiar"> Familiar
+                <input type="checkbox" id="romantico"> Romantico
+                <input type="checkbox" id="lujo"> Lujo
+                <input type="submit" value="Aplicar Filtros">
+            </form>
+            <a href="#">Limpiar Filtros</a>
+        </div>
+    </div>
+       
+     <!-- Sección de paquetes  -->
+    <div class="paquetes">
+               
+        <div class="ordenarPor">
+                   
+            <select name="Ordenar Por" id="ordenar">
+                <option value="populares">Más populares</option>
+                <option value="precioMenor">Precio menor a mayor</option>
+                <option value="precioMayor">Precio mayor a menor</option>
+            </select>
+                    
+        </div>
+                
+    </div>
+
+    <div>
+        <p>Mostrando 12 de 36 paquetes</p>
+    </div>
+
+    <!-- Visualización del paquete 1 -->
+    
+    <div class="muestraPaquete">
+        <figure>
+            <img src="imagenes/paquetes/paquetesImagen1.jpg" alt="">
+        </figure>
+    
+        <h2>Punta Cana Todo Incluido</h2>
+        <p>5 días / 4 noches</p>
+        <p>Disfruta de las playas paradisiacas con alojamiento todo incluido.</p>
+        <h3>Incluye:</h3>
+        <h3>Desde:</h3>
+        <h2>USD$499</h2>
+    
+        <input type="button" name="detalles" value="Ver Detalles">
+    </div>
+
+    <!-- Visualización del paquete 2 -->
+    
+    <div class="muestraPaquete">
+        <figure>
+            <img src="imagenes/paquetes/paquetesImagen2.jpg" alt="">
+        </figure>
+    
+        <h2>Paris Romántico</h2>
+        <p>6 días / 5 noches</p>
+        <p>Vive la magia de París, la ciudad del amor y la luz.</p>
+        <h3>Incluye:</h3>
+        <h3>Desde:</h3>
+        <h2>USD$799</h2>
+    
+        <input type="button" name="detalles" value="Ver Detalles">
+    </div>
+
+    <!-- Visualización del paquete 3 -->
+    
+    <div class="muestraPaquete">
+        <figure>
+            <img src="imagenes/paquetes/paquetesImagen3.jpg" alt="">
+        </figure>
+    
+        <h2>Dubai Moderno</h2>
+        <p>4 días / 3 noches</p>
+        <p>Descubre el lujo y la modernidad en el corazón de los Emiratos.</p>
+        <h3>Incluye:</h3>
+        <h3>Desde:</h3>
+        <h2>USD$1,199</h2>
+    
+        <input type="button" name="detalles" value="Ver Detalles">
+    </div>
+
+    <!-- Visualización del paquete 4 -->
+
+    <div class="muestraPaquete">
+        <figure>
+            <img src="imagenes/paquetes/paquetesImagen4.jpg" alt="">
+        </figure>
+    
+        <h2>Machu Picchu Express</h2>
+        <p>3 días / 2 noches</p>
+        <p>Aventura y cultura en una de las maravillas del mundo.</p>
+        <h3>Incluye:</h3>
+        <h3>Desde:</h3>
+        <h2>USD$399</h2>
+    
+        <input type="button" name="detalles" value="Ver Detalles">
+    </div>
+
+    <!-- Visualización del paquete 5 -->
+
+    <div class="muestraPaquete">
+        <figure>
+            <img src="imagenes/paquetes/paquetesImagen5.jpg" alt="">
+        </figure>
+    
+        <h2>Japón Tradicional</h2>
+        <p>7 días / 6 noches</p>
+        <p>Descubre templos milenarios, jardines zen y la auténtica cultura japonesa.</p>
+        <h3>Incluye:</h3>
+        <h3>Desde:</h3>
+        <h2>USD$1,899</h2>
+    
+        <input type="button" name="detalles" value="Ver Detalles">
+    </div>
+
+    <!-- Visualización del paquete 6 -->
+
+    <div class="muestraPaquete">
+        <figure>
+            <img src="imagenes/paquetes/paquetesImagen6.jpg" alt="">
+        </figure>
+    
+        <h2>Maldivas Paraíso Tropical</h2>
+        <p>5 días / 4 noches</p>
+        <p>Relájate en playas de arena blanca, aguas cristalinas y exclusivos bungalows sobre el mar.</p>
+        <h3>Incluye:</h3>
+        <h3>Desde:</h3>
+        <h2>USD$2,299</h2>
+    
+        <input type="button" name="detalles" value="Ver Detalles">
+    </div>
+
+    <!-- Visualización del paquete 7 -->
+
+        <div class="muestraPaquete">
+            <figure>
+                <img src="imagenes/paquetes/paquetesImagen7.jpg" alt="">
+            </figure>
+        
+            <h2>Nueva York Familiar</h2>
+            <p>5 días / 4 noches</p>
+            <p>Disfruta en familia de los principales atractivos de la Gran Manzana, con diversión para todas las edades.</p>
+            <h3>Incluye:</h3>
+            <h3>Desde:</h3>
+            <h2>USD$1,299</h2>
+        
+            <input type="button" name="detalles" value="Ver Detalles">
+        </div>
+        
+        <!-- Visualización del paquete 8 -->
+
+        <div class="muestraPaquete">
+            <figure>
+                <img src="imagenes/paquetes/paquetesImagen8.jpg" alt="">
+            </figure>
+        
+            <h2>Grecia Clásica</h2>
+            <p>7 días / 6 noches</p>
+            <p>Descubre la cuna de la civilización occidental entre templos históricos, islas encantadoras y paisajes inolvidables.</p>
+            <h3>Incluye:</h3>
+            <h3>Desde:</h3>
+            <h2>USD$1,799</h2>
+        
+            <input type="button" name="detalles" value="Ver Detalles">
+        </div>
+
+        <!-- Visualización del paquete 9 -->
+
+        <div class="muestraPaquete">
+            <figure>
+                <img src="imagenes/paquetes/paquetesImagen9.jpg" alt="">
+            </figure>
+        
+            <h2>Safari en Kenia</h2>
+            <p>6 días / 5 noches</p>
+            <p>Vive una aventura inolvidable observando la vida salvaje en los parques nacionales más emblemáticos de África.</p>
+            <h3>Incluye:</h3>
+            <h3>Desde:</h3>
+            <h2>USD$2,199</h2>
+        
+            <input type="button" name="detalles" value="Ver Detalles">
+        </div>
+        
+        <!-- Visualización del paquete 10 -->
+
+        <div class="muestraPaquete">
+            <figure>
+                <img src="imagenes/paquetes/paquetesImagen10.jpg" alt="">
+            </figure>
+        
+            <h2>Aurora Boreal en Islandia</h2>
+            <p>5 días / 4 noches</p>
+            <p>Descubre paisajes volcánicos, glaciares y el mágico espectáculo de las luces del norte.</p>
+            <h3>Incluye:</h3>
+            <h3>Desde:</h3>
+            <h2>USD$2,499</h2>
+        
+            <input type="button" name="detalles" value="Ver Detalles">
+        </div>
+
+        <!-- Visualización del paquete 11 -->
+
+        <div class="muestraPaquete">
+            <figure>
+                <img src="imagenes/paquetes/paquetesImage11.jpg" alt="">
+            </figure>
+        
+            <h2>Costa Amalfitana</h2>
+            <p>7 días / 6 noches</p>
+            <p>Recorre pintorescos pueblos costeros, disfruta del mar Mediterráneo y saborea la auténtica gastronomía italiana.</p>
+            <h3>Incluye:</h3>
+            <h3>Desde:</h3>
+            <h2>USD$1,899</h2>
+        
+            <input type="button" name="detalles" value="Ver Detalles">
+        </div>
+
+        <!-- Visualización del paquete 12 -->
+
+        <div class="muestraPaquete">
+            <figure>
+                <img src="imagenes/paquetes/paquetesImagen12.jpg" alt="">
+            </figure>
+        
+            <h2>Egipto Milenario</h2>
+            <p>8 días / 7 noches</p>
+            <p>Explora las pirámides, los templos faraónicos y navega por el legendario río Nilo.</p>
+            <h3>Incluye:</h3>
+            <h3>Desde:</h3>
+            <h2>USD$2,099</h2>
+        
+            <input type="button" name="detalles" value="Ver Detalles">
+        </div>
+
+        <!-- Pie de página -->
+
+        <footer>
+        
+            <div>
+                <p>Mejores precios</p>
+                <p>Garantizados</p>
+            </div>
+        
+            <div>
+                <p>Asistencia 24/7</p>
+                <p>Siempre contigo</p>
+            </div>
+        
+            <div>
+                <p>Reservas seguras</p>
+                <p>Protegemos tus datos</p>
+            </div>
+        
+            <div>
+                <p>Cancelación flexible</p>
+                <p>Planes que se adaptan a ti</p>
+            </div>
+        
+        </footer>
+        
+        
+       
+
+        
+    
+        
+    
+    
+    
+</body>
+</html>
