@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paquetes</title>
+</head>
+<body>
+
+    <header>
+    <!-- Menu Admin -->
+    <div class="menu-izquierda">
+
+        <div class="logo">
+            <img src="imagenes/Logo-corito.png" alt="Corito Travel">
+        </div>
+
+        <nav>
+            <a href="#" class="azul"><i class="fa-solid fa-house"></i>Dashboard</a>
+
+            <a href="#"><i class="fa-regular fa-calendar"></i>Agendas</a>
+
+            <a href="#"><i class="fa-regular fa-calendar-check"></i>Reservas</a>
+
+            <a href="#"><i class="fa-regular fa-user"></i>Clientes</a>
+
+            <a href="#"><i class="fa-regular fa-map"></i>Destinos</a>
+
+            <a href="#"><i class="fa-solid fa-cube"></i>Paquetes</a>
+
+            <a href="#"><i class="fa-solid fa-tags"></i>Ofertas</a>
+
+            <a href="#"><i class="fa-regular fa-user"></i>Usuarios</a>
+
+            <a href="#"><i class="fa-regular fa-credit-card"></i>Pagos</a>
+
+            <a href="#"><i class="fa-solid fa-chart-column"></i>Reportes</a>
+
+            <a href="#"><i class="fa-solid fa-gear"></i>Configuración</a>
+        </nav>
+
+    </div>
+
+        <!-- Ruta actual -->
+
+<div class="ruta">
+    <nav>
+        <a href="#">Inicio</a>
+        <span>></span>
+        <a href="#">Panel Administrativo</a>
+        <span>></span>
+        <a href="#">Gestión de Reservas</a>
+    </nav>
+</div>
+
+
+<!-- Título de la página -->
+
+<div class="gestionReservas">
+
+    <h2>Gestión de Reservas</h2>
+
+    <p>Consulta, administra y da seguimiento a las reservas realizadas por los clientes.</p>
+
+</div>
+
+
+<!-- Buscador y filtros -->
+
+<div class="filtrosReservas">
+
+    <form action="">
+
+        <label for="buscarReserva">Buscar reserva</label>
+        <input type="text" id="buscarReserva" placeholder="Código o nombre del cliente">
+
+        <label for="destino">Destino</label>
+        <select id="destino">
+            <option value="todos">Todos los destinos</option>
+            <option value="puntaCana">Punta Cana</option>
+            <option value="bayahibe">Bayahíbe</option>
+            <option value="samana">Samaná</option>
+            <option value="puertoPlata">Puerto Plata</option>
+            <option value="jarabacoa">Jarabacoa</option>
+            <option value="constanza">Constanza</option>
+            <option value="lasTerrenas">Las Terrenas</option>
+            <option value="bocaChica">Boca Chica</option>
+            <option value="juanDolio">Juan Dolio</option>
+            <option value="santoDomingo">Santo Domingo</option>
+        </select>
+
+        <label for="estado">Estado</label>
+        <select id="estado">
+            <option value="todos">Todos</option>
+            <option value="confirmada">Confirmada</option>
+            <option value="pendiente">Pendiente</option>
+            <option value="cancelada">Cancelada</option>
+        </select>
+
+        <label for="fechaInicio">Fecha desde</label>
+        <input type="date" id="fechaInicio">
+
+        <label for="fechaFin">Fecha hasta</label>
+        <input type="date" id="fechaFin">
+
+        <input type="submit" value="Filtrar">
+
+    </form>
+
+</div>
+
+<!-- Listado de reservas -->
+
+<div class="listadoReservas">
+
+    <div class="encabezadoReservas">
+
+        <h3>Destino</h3>
+        <h3>Código</h3>
+        <h3>Cliente</h3>
+        <h3>Entrada</h3>
+        <h3>Salida</h3>
+        <h3>Estado</h3>
+        <h3>Acciones</h3>
+
+    </div>
+
+
+    <!-- Reserva 1 -->
+
+    <div class="reserva">
+
+        <figure>
+            <img src="imagenes/reservas/puntaCana.jpg" alt="Hotel ubicado en Punta Cana">
+        </figure>
+
+        <p>PC-000125</p>
+        <p>María Pérez</p>
+        <p>15/08/2026</p>
+        <p>19/08/2026</p>
+        <p>Confirmada</p>
+
+        <input type="button" value="Ver">
+
+    </div>
+
+
+    <!-- Reserva 2 -->
+
+    <div class="reserva">
+
+        <figure>
+            <img src="imagenes/reservas/jarabacoa.jpg" alt="Villa ubicada en Jarabacoa">
+        </figure>
+
+        <p>JB-000126</p>
+        <p>Daniel Herrera</p>
+        <p>21/08/2026</p>
+        <p>24/08/2026</p>
+        <p>Pendiente</p>
+
+        <input type="button" value="Ver">
+
+    </div>
+
+
+    <!-- Reserva 3 -->
+
+    <div class="reserva">
+
+        <figure>
+            <img src="imagenes/reservas/puertoPlata.jpg" alt="Hotel ubicado en Puerto Plata">
+        </figure>
+
+        <p>PP-000127</p>
+        <p>Ana Rodríguez</p>
+        <p>02/09/2026</p>
+        <p>06/09/2026</p>
+        <p>Confirmada</p>
+
+        <input type="button" value="Ver">
+
+    </div>
+
+
+    <!-- Reserva 4 -->
+
+    <div class="reserva">
+
+        <figure>
+            <img src="imagenes/reservas/samana.jpg" alt="Hotel ubicado en Samaná">
+        </figure>
+
+        <p>SM-000128</p>
+        <p>Carlos Gómez</p>
+        <p>10/09/2026</p>
+        <p>14/09/2026</p>
+        <p>Cancelada</p>
+
+        <input type="button" value="Ver">
+
+    </div>
+
+
+    <!-- Reserva 5 -->
+
+    <div class="reserva">
+
+        <figure>
+            <img src="imagenes/reservas/bayahibe.jpg" alt="Hotel ubicado en Bayahíbe">
+        </figure>
+
+        <p>BY-000129</p>
+        <p>Laura Medina</p>
+        <p>18/09/2026</p>
+        <p>22/09/2026</p>
+        <p>Confirmada</p>
+
+        <input type="button" value="Ver">
+
+    </div>
+
+</div>
+        
+<!-- Detalles de la reserva -->
+
+<div class="detalleReserva">
+
+    <h2>Detalle de la Reserva</h2>
+
+    <div class="informacionReserva">
+
+        <h3>Información General</h3>
+
+        <p><strong>Código:</strong> PC-000125</p>
+        <p><strong>Estado:</strong> Confirmada</p>
+        <p><strong>Fecha de reserva:</strong> 10/08/2026</p>
+
+    </div>
+
+    <div class="informacionCliente">
+
+        <h3>Datos del Cliente</h3>
+
+        <p><strong>Nombre:</strong> María Pérez</p>
+        <p><strong>Correo:</strong> mariaperez@email.com</p>
+        <p><strong>Teléfono:</strong> (809) 555-1234</p>
+        <p><strong>Documento:</strong> 402-1234567-8</p>
+
+    </div>
+
+    <div class="informacionDestino">
+
+        <h3>Información del Destino</h3>
+
+        <p><strong>Destino:</strong> Punta Cana</p>
+        <p><strong>Hotel:</strong> Grand Bavaro Princess</p>
+        <p><strong>Entrada:</strong> 15/08/2026</p>
+        <p><strong>Salida:</strong> 19/08/2026</p>
+        <p><strong>Habitaciones:</strong> 1</p>
+        <p><strong>Huéspedes:</strong> 2 Adultos</p>
+
+    </div>
+
+    <div class="informacionPago">
+
+        <h3>Pago</h3>
+
+        <p><strong>Total:</strong> USD$1,250.00</p>
+        <p><strong>Método:</strong> Tarjeta de Crédito</p>
+        <p><strong>Estado del pago:</strong> Aprobado</p>
+
+    </div>
+
+    <div class="accionesReserva">
+
+        <input type="button" value="Confirmar">
+
+        <input type="button" value="Cancelar">
+
+        <input type="button" value="Imprimir">
+
+        <input type="button" value="Volver">
+
+    </div>
+
+</div>
+
+<!-- Paginación -->
+
+<div class="paginacionReservas">
+
+    <input type="button" value="Anterior">
+
+    <a href="#">1</a>
+    <a href="#">2</a>
+    <a href="#">3</a>
+    <a href="#">4</a>
+    <a href="#">5</a>
+
+    <input type="button" value="Siguiente">
+
+</div>
+
+
+<!-- Acciones generales -->
+
+<div class="accionesGenerales">
+
+    <input type="button" value="Nueva Reserva">
+
+    <input type="button" value="Exportar Reservas">
+
+    <input type="button" value="Generar Reporte">
+
+</div>
+
+</body>
+</html>
