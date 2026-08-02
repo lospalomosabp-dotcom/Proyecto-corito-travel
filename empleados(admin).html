@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empleados - Corito Travel</title>
+    <link rel="icon" href="imagenes/Logo-sinletras.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <div class="empleados">
+     <!-- Menu Admin -->
+        <div class="menu-izquierda">
+
+            <div class="logo">
+                <img src="imagenes/Logo-corito.png" alt="Corito Travel">
+            </div>
+
+            <nav>
+                <a href="#"><i class="fa-solid fa-house"></i>Dashboard</a>
+
+                <a href="#"><i class="fa-regular fa-calendar"></i>Agendas</a>
+
+                <a href="#"><i class="fa-regular fa-calendar-check"></i>Reservas</a>
+
+                <a href="#"><i class="fa-regular fa-user"></i>Clientes</a>
+
+                <a href="#"><i class="fa-regular fa-map"></i>Destinos</a>
+
+                <a href="#"><i class="fa-solid fa-cube"></i>Paquetes</a>
+
+                <a href="#"><i class="fa-solid fa-tags"></i>Ofertas</a>
+
+                <a href="#"><i class="fa-regular fa-user"></i>Usuarios</a>
+
+                <a href="#" class="azul"><i class="fas fa-users"></i> Empleados</a>
+
+                <a href="#"><i class="fa-regular fa-credit-card"></i>Pagos</a>
+
+                <a href="#"><i class="fa-solid fa-chart-column"></i>Reportes</a>
+
+                <a href="#"><i class="fa-solid fa-gear"></i>Configuración</a>
+            </nav>
+        </div>
+
+        <main class="principal">
+        <header class="header">
+
+            <div class="izquierda">
+                <button class="boton">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <h2>Dashboard</h2>
+            </div>
+
+            <div class="derecha">
+                <button class="notificaciones">
+                    <i class="fa-regular fa-bell"></i>
+                </button>
+
+                <div class="usuario">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <div>
+                        <h4>Admin Corito</h4>
+                        <span>Administrador</span>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+
+        <section class="casillas">
+
+            <div class="casilla">
+                <div class="iconos">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h4>Total empleados</h4>
+                <h2>0</h2>
+                <p>+0 este mes</p>
+            </div>
+
+            <div class="casilla">
+                <div class="iconos">
+                    <i class="fas fa-user-check"></i>
+                </div>
+                <h4>Activos</h4>
+                <h2>16</h2>
+                <p>89%</p>
+            </div>
+
+            <div class="casilla">
+                <div class="iconos">
+                    <i class="fas fa-umbrella-beach"></i>
+                </div>
+                <h4>Vacaciones</h4>
+                <h2>1</h2>
+                <p>Actualmente</p>
+            </div>
+
+            <div class="casilla">
+                <div class="iconos">
+                    <i class="fas fa-user-xmark"></i>
+                </div>
+                <h4>Inactivos</h4>
+                <h2>2</h2>
+                <p>11%</p>
+            </div>
+        </section>
+
+        <!-- Filtros -->
+
+        <section class="filtro-empleado">
+
+            <form>
+
+                <input type="search" placeholder="Buscar empleado">
+                
+                <label for="empleados">Empleados</label>
+                <select id="empleados">
+                    <option>Todos los departamentos</option>
+                    <option>Administración</option>
+                    <option>Ventas</option>
+                    <option>Marketing</option>
+                    <option>Operaciones</option>
+                    <option>Reservas</option>
+                </select>
+
+                <label for="cargo">Cargo</label>
+                <select id="cargo">
+                    <option>Todos los cargos</option>
+                    <option>Gerente</option>
+                    <option>Ejecutivo de Ventas</option>
+                    <option>Guia</option>
+                    <option>Contador</option>
+                </select>
+
+                <label for="estado">Estado</label>
+                <select id="estado">
+                    <option>Todos los estados</option>
+                    <option>Activo</option>
+                    <option>Vacaciones</option>
+                    <option>Inactivo</option>
+                </select>
+
+                <button type="button">Nuevo empleado</button>
+
+            </form>
+
+        </section>
+         <!-- Tabla -->
+        <section class="tabla-empleados">
+
+            <h2>Lista de empleados</h2>
+
+            <table border="1">
+
+                <thead>
+
+                    <tr>
+                        <th>Código</th>
+                        <th>Nombre</th>
+                        <th>Cargo</th>
+                        <th>Departamento</th>
+                        <th>Teléfono</th>
+                        <th>Correo</th>
+                        <th>Estado</th>
+                        <th>Acciones</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>emp01</td>
+                        <td>empleado1</td>
+                        <td>Gerente General</td>
+                        <td>Administración</td>
+                        <td>809-000-0000</td>
+                        <td>correo1@corito.com</td>
+                        <td>Activo</td>
+                        <td>
+                            <button>Ver</button>
+                            <button>Editar</button>
+                            <button>Eliminar</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>emp02</td>
+                        <td>empleado2</td>
+                        <td>Ejecutiv0 de Ventas</td>
+                        <td>Ventas</td>
+                        <td>829-111-1111</td>
+                        <td>correo2@corito.com</td>
+                        <td>Activo</td>
+                        <td>
+                            <button>Ver</button>
+                            <button>Editar</button>
+                            <button>Eliminar</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>emp03</td>
+                        <td>empleado3</td>
+                        <td>Guía Turístico</td>
+                        <td>Operaciones</td>
+                        <td>849-111-0000</td>
+                        <td>correo3@corito.com</td>
+                        <td>Vacaciones</td>
+                        <td>
+                            <button>Ver</button>
+                            <button>Editar</button>
+                            <button>Eliminar</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>emp04</td>
+                        <td>empleado4</td>
+                        <td>Contador</td>
+                        <td>Administración</td>
+                        <td>809-888-2233</td>
+                        <td>correo4@corito.com</td>
+                        <td>Inactivo</td>
+                        <td>
+                            <button>Ver</button>
+                            <button>Editar</button>
+                            <button>Eliminar</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>emp05</td>
+                        <td>empleado5</td>
+                        <td>Marketing Digital</td>
+                        <td>Marketing</td>
+                        <td>829-333-4455</td>
+                        <td>correo5@corito.com</td>
+                        <td>Activo</td>
+                        <td>
+                            <button>Ver</button>
+                            <button>Editar</button>
+                            <button>Eliminar</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>emp06</td>
+                        <td>empleado6</td>
+                        <td>Agente de Reservas</td>
+                        <td>Reservas</td>
+                        <td>809-234-7777</td>
+                        <td>correo6@corito.com</td>
+                        <td>Activo</td>
+                        <td>
+                            <button>Ver</button>
+                            <button>Editar</button>
+                            <button>Eliminar</button>
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+            
+            <button type="button"><i class="fa-solid fa-chevron-left"></i></button>
+            <button type="button">1</button>
+            <button type="button">2</button>
+            <button type="button">3</button>
+            <button type="button"><i class="fa-solid fa-chevron-right"></i></button>
+        </section>
+        </main>
+
+        <!-- FOOTER -->
+
+    <footer>
+
+        <div class="item-footer">
+            <h4>Mejores precios garantizados</h4>
+        </div>
+
+        <div class="item-footer">
+            <h4>Asistencia 24/7</h4>
+            <p>Siempre contigo</p>
+        </div>
+
+        <div class="item-footer">
+            <h4>Reserva segura</h4>
+            <p>Protegemos tus datos</p>
+        </div>
+
+        <div class="item-footer">
+            <h4>Cancelación flexible</h4>
+            <p>Planes que se adaptan a ti</p>
+        </div>
+
+    </footer>
+    </div>
+</body>
+</html>
