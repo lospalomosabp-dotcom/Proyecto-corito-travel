@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Destinos</title>
+</head>
+<body>
+
+    <header>
+
+        <!-- Menu Admin -->
+
+        <div class="menu-izquierda">
+
+            <div class="logo">
+                <img src="imagenes/Logo-corito.png" alt="Corito Travel">
+            </div>
+
+            <nav>
+                <a href="#"><i class="fa-solid fa-house"></i>Dashboard</a>
+
+                <a href="#"><i class="fa-regular fa-calendar"></i>Agendas</a>
+
+                <a href="#"><i class="fa-regular fa-calendar-check"></i>Reservas</a>
+
+                <a href="#"><i class="fa-regular fa-user"></i>Clientes</a>
+
+                <a href="#" class="azul"><i class="fa-regular fa-map"></i>Destinos</a>
+
+                <a href="#"><i class="fa-solid fa-cube"></i>Paquetes</a>
+
+                <a href="#"><i class="fa-solid fa-tags"></i>Ofertas</a>
+
+                <a href="#"><i class="fa-regular fa-user"></i>Usuarios</a>
+
+                <a href="#"><i class="fas fa-users"></i>Empleados</a>
+
+                <a href="#"><i class="fa-regular fa-credit-card"></i>Pagos</a>
+
+                <a href="#"><i class="fa-solid fa-chart-column"></i>Reportes</a>
+
+                <a href="#"><i class="fa-solid fa-gear"></i>Configuración</a>
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- Ruta actual -->
+
+    <div class="ruta">
+
+        <nav>
+            <a href="#">Inicio</a>
+            <span>></span>
+            <a href="#">Panel Administrativo</a>
+            <span>></span>
+            <a href="#">Gestión de Destinos</a>
+        </nav>
+
+    </div>
+
+
+    <!-- Título de la página -->
+
+    <div class="gestionDestinos">
+
+        <div class="tituloDestinos">
+
+            <h2>Gestión de Destinos</h2>
+
+            <p>Administra los resorts, villas y Airbnb disponibles en República Dominicana.</p>
+
+        </div>
+
+        <div class="agregarDestino">
+
+            <input type="button" value="+ Agregar Destino">
+
+        </div>
+
+    </div>
+
+
+    <!-- Estadísticas de destinos -->
+
+    <div class="estadisticasDestinos">
+
+        <div class="estadisticaDestino">
+
+
+            <h2>24</h2>
+
+            <h3>Resorts</h3>
+
+            <p>Resorts registrados en el sistema.</p>
+
+        </div>
+
+        <div class="estadisticaDestino">
+
+
+            <h2>16</h2>
+
+            <h3>Villas</h3>
+
+            <p>Villas registradas en el sistema.</p>
+
+        </div>
+
+        <div class="estadisticaDestino">
+
+            <h2>18</h2>
+
+            <h3>Airbnb</h3>
+
+            <p>Airbnb registrados en el sistema.</p>
+
+        </div>
+
+        <div class="estadisticaDestino">
+
+            <h2>58</h2>
+
+            <h3>Imágenes Totales</h3>
+
+            <p>Fotos asociadas a los destinos.</p>
+
+        </div>
+
+    </div>
+
+
+    <!-- Buscador y filtros -->
+
+    <div class="filtrosDestinos">
+
+        <form action="">
+
+            <label for="buscarDestino">Buscar destino</label>
+            <input type="text" id="buscarDestino" placeholder="Nombre del destino">
+
+            <label for="tipoDestino">Tipo</label>
+            <select id="tipoDestino">
+
+                <option value="todos">Todos los tipos</option>
+                <option value="resort">Resort</option>
+                <option value="villa">Villa</option>
+                <option value="airbnb">Airbnb</option>
+
+            </select>
+
+            <label for="provincia">Provincia</label>
+            <select id="provincia">
+
+                <option value="todas">Todas las provincias</option>
+                <option value="laAltagracia">La Altagracia</option>
+                <option value="laVega">La Vega</option>
+                <option value="puertoPlata">Puerto Plata</option>
+                <option value="samana">Samaná</option>
+                <option value="santoDomingo">Santo Domingo</option>
+                <option value="barahona">Barahona</option>
+                <option value="pedernales">Pedernales</option>
+
+            </select>
+
+            <label for="estadoDestino">Estado</label>
+            <select id="estadoDestino">
+
+                <option value="todos">Todos</option>
+                <option value="activo">Activo</option>
+                <option value="inactivo">Inactivo</option>
+
+            </select>
+
+            <label for="ordenarDestino">Ordenar por</label>
+            <select id="ordenarDestino">
+
+                <option value="recientes">Más recientes</option>
+                <option value="antiguos">Más antiguos</option>
+                <option value="nombreAscendente">Nombre de A a Z</option>
+                <option value="nombreDescendente">Nombre de Z a A</option>
+
+            </select>
+
+            <input type="submit" value="Filtrar">
+
+        </form>
+
+    </div>
+
+
+    <!-- Lista de destinos -->
+
+    <div class="listaDestinos">
+
+        <!-- Encabezado de la lista -->
+
+        <div class="encabezadoDestinos">
+
+            <h3>Imagen</h3>
+            <h3>Nombre del destino</h3>
+            <h3>Tipo</h3>
+            <h3>Provincia</h3>
+            <h3>Estado</h3>
+            <h3>Descripción</h3>
+            <h3>Acciones</h3>
+
+        </div>
+
+
+        <!-- Destino 1 -->
+
+        <div class="destinoAdmin">
+
+            <figure>
+                <img src="imagenes/destinos/grandBavaroPrincess.jpg" alt="Grand Bavaro Princess">
+            </figure>
+
+            <div class="nombreDestino">
+
+                <h3>Grand Bavaro Princess</h3>
+
+                <p>Punta Cana</p>
+
+            </div>
+
+            <p>Resort</p>
+
+            <p>La Altagracia</p>
+
+            <p>Activo</p>
+
+            <p>Resort todo incluido frente a la playa con múltiples piscinas y servicios.</p>
+
+            <div class="accionesDestino">
+
+                <input type="button" value="Editar">
+
+                <input type="button" value="Eliminar">
+
+            </div>
+
+        </div>
+
+
+        <!-- Destino 2 -->
+
+        <div class="destinoAdmin">
+
+            <figure>
+                <img src="imagenes/destinos/villaMontanaVerde.jpg" alt="Villa Montaña Verde">
+            </figure>
+
+            <div class="nombreDestino">
+
+                <h3>Villa Montaña Verde</h3>
+
+                <p>Jarabacoa</p>
+
+            </div>
+
+            <p>Villa</p>
+
+            <p>La Vega</p>
+
+            <p>Activo</p>
+
+            <p>Villa privada con piscina climatizada, área de BBQ y vista a la montaña.</p>
+
+            <div class="accionesDestino">
+
+                <input type="button" value="Editar">
+
+                <input type="button" value="Eliminar">
+
+            </div>
+
+        </div>
+
+
+        <!-- Destino 3 -->
+
+        <div class="destinoAdmin">
+
+            <figure>
+                <img src="imagenes/destinos/apartamentoOceanView.jpg" alt="Apartamento Ocean View">
+            </figure>
+
+            <div class="nombreDestino">
+
+                <h3>Apartamento Ocean View</h3>
+
+                <p>Puerto Plata</p>
+
+            </div>
+
+            <p>Airbnb</p>
+
+            <p>Puerto Plata</p>
+
+            <p>Activo</p>
+
+            <p>Apartamento moderno con vista al mar, cerca de playas y restaurantes.</p>
+
+            <div class="accionesDestino">
+
+                <input type="button" value="Editar">
+
+                <input type="button" value="Eliminar">
+
+            </div>
+
+        </div>
+
+
+        <!-- Destino 4 -->
+
+        <div class="destinoAdmin">
+
+            <figure>
+                <img src="imagenes/destinos/villaTropical.jpg" alt="Villa Tropical">
+            </figure>
+
+            <div class="nombreDestino">
+
+                <h3>Villa Tropical</h3>
+
+                <p>Samaná</p>
+
+            </div>
+
+            <p>Villa</p>
+
+            <p>Samaná</p>
+
+            <p>Activo</p>
+
+            <p>Villa de lujo rodeada de naturaleza con piscina y acceso a la playa.</p>
+
+            <div class="accionesDestino">
+
+                <input type="button" value="Editar">
+
+                <input type="button" value="Eliminar">
+
+            </div>
+
+        </div>
+
+
+        <!-- Destino 5 -->
+
+        <div class="destinoAdmin">
+
+            <figure>
+                <img src="imagenes/destinos/bungalowBayahibe.jpg" alt="Bungalow Bayahíbe">
+            </figure>
+
+            <div class="nombreDestino">
+
+                <h3>Bungalow Bayahíbe</h3>
+
+                <p>Bayahíbe</p>
+
+            </div>
+
+            <p>Airbnb</p>
+
+            <p>La Altagracia</p>
+
+            <p>Inactivo</p>
+
+            <p>Bungalow acogedor a pocos minutos de la playa Dominicus.</p>
+
+            <div class="accionesDestino">
+
+                <input type="button" value="Editar">
+
+                <input type="button" value="Eliminar">
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Paginación -->
+
+    <div class="paginacionDestinos">
+
+        <input type="button" value="Anterior">
+
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+
+        <input type="button" value="Siguiente">
+
+        <p>Mostrando 1 a 5 de 15 destinos</p>
+
+    </div>
+
+</body>
+</html>
