@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Administrador de Ofertas | Corito Travel</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+<div class="contenedor">
+
+     <!-- Cabecera -->
+    <header>
+
+        <div class="logo">
+            <figure>
+                <img src="imagenes/logo-agencia.png" alt="" width="200" height="200">
+            </figure>
+        </div>
+        <h4><i class="fa-sharp fa-solid fa-align-justify"></i> Administrador <i class="fa-solid fa-greater-than"></i> Ofertas</h1>
+        <div>
+            <h4><i class="fa-solid fa-bell"></i>|<i class="fa-solid fa-circle-user"></i>Admin-Corito <i class="fa-solid fa-chevron-down"></i></h4>
+        </div>
+    </header>
+
+<!-- Menu Lateral-->
+
+<div class="barra-lateral">
+
+    <div class="menu-admin">
+
+        <a href="#"><p><i class="fa-solid fa-house"></i>Dashboard </p></a>
+
+        <a href="agendas(admin).html"> <p><i class="fa-chisel fa-regular fa-calendar"></i>Agenda </p></a>
+
+        <a href="#"> <p><i class="fa-solid fa-users"></i> Usuarios </p></a>
+
+        <a href="#"><p><i class="fa-solid fa-user-group"></i>Clientes </p></a>
+
+        <a href="paquetes.html"><p><i class="fa-solid fa-suitcase"></i> Paquetes </p></a>
+
+        <div class="activo">
+            <a href="ofertasAdmin.html"><p><i class="fa-solid fa-tags"></i> Ofertas </p></a>
+        </div>
+
+        <a href="#"><p><i class="fa-solid fa-users"></i> Usuarios</p></a>
+
+        <a href="#"><p><i class="fa-sharp fa-solid fa-cash-register"></i> Pagos</p></a>
+
+        <a href="#"><p><i class="fa-sharp-duotone fa-solid fa-chart-column"></i> Reportes</p></a>
+
+        <a href="#"><p><i class="fa-etch fa-solid fa-gear"></i> Configuracion</p></a>
+
+        <a href="cambiarContrasenaAdmin.html"><i class="fa-solid fa-shield"></i>Seguridad</a>
+    </div>
+
+    <div>
+        <h4><i class="fa-solid fa-right-from-bracket"></i>Cerrar sesion</h4>
+    </div>
+
+    <!-- CONTENIDO -->
+
+    <main class="contenido">
+
+        <!-- Detalles-->
+
+        <section class="detalles">
+
+            <div class="detalle-azul">
+
+                <i class="fa-regular fa-calendar"></i>
+
+                <div>
+
+                    <h3>142</h3>
+
+                    <p>Ofertas Totales</p>
+
+                </div>
+
+            </div>
+
+            <div class="detalle-verde">
+
+                <i class="fa-regular fa-square-check"></i>
+
+                <div>
+
+                    <h3>98</h3>
+
+                    <p>Publicadas</p>
+
+                </div>
+
+            </div>
+
+            <div class="detalle-amarillo">
+
+                <i class="fa-solid fa-clock-rotate-left"></i>
+
+                <div>
+
+                    <h3>28</h3>
+
+                    <p>Borradores</p>
+
+                </div>
+
+            </div>
+
+            <div class="detalle-morado">
+
+                <i class="fa-solid fa-circle-xmark"></i>
+
+                <div>
+
+                    <h3>16</h3>
+
+                    <p>Inactivas</p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <section class="contenido-principal">
+
+            <!-- TABLA -->
+
+            <div class="tabla">
+
+                <h3>Lista de ofertas</h3>
+
+                <div class="filtros">
+
+                    <input type="text" placeholder="Buscar por título, destino o categoría">
+
+                    <select>
+
+                        <option>Destino</option>
+                        <option value="puntaCana">Punta Cana</option>
+                        <option value="bayahibe">Bayahíbe</option>
+                        <option value="samana">Samaná</option>
+                        <option value="puertoPlata">Puerto Plata</option>
+                        <option value="jarabacoa">Jarabacoa</option>
+                        <option value="constanza">Constanza</option>
+                        <option value="lasTerrenas">Las Terrenas</option>
+                        <option value="bocaChica">Boca Chica</option>
+                        <option value="juanDolio">Juan Dolio</option>
+                        <option value="santoDomingo">Santo Domingo</option>
+
+                    </select>
+
+                    <select>
+
+                        <option>Estado</option>
+                        <option >Activo</option>
+                        <option >Inactivo</option>
+
+                    </select>
+
+                    <button>
+
+                        <i class="fa-solid fa-magnifying-glass"></i>
+
+                        Buscar
+
+                    </button>
+
+                    <button>
+
+                        <i class="fa-solid fa-file-arrow-down"></i>
+
+                        Exportar
+
+                    </button>
+
+                </div>
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Oferta</th>
+
+                            <th>Destino</th>
+
+                            <th>Precio</th>
+
+                            <th>Fecha</th>
+
+                            <th>Estado</th>
+
+                            <th>Acciones</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>Hotel Bahia Principe Explore El Portillo</td>
+
+                            <td>Samana</td>
+
+                            <td>RD$25,500</td>
+
+                            <td>20 Jul</td>
+
+                            <td>
+
+                                <span class="publicada">
+
+                                    Publicada
+
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <i class="fa-solid fa-eye"></i>
+
+                                <i class="fa-solid fa-pen"></i>
+
+                                <i class="fa-solid fa-trash"></i>
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Occidental Punta Cana - All Inclusive</td>
+
+                            <td>Punta Cana</td>
+
+                            <td>RD$34,000</td>
+
+                            <td>28 Jul</td>
+
+                            <td>
+
+                                <span class="borrador">
+
+                                    Borrador
+
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <i class="fa-solid fa-eye"></i>
+
+                                <i class="fa-solid fa-pen"></i>
+
+                                <i class="fa-solid fa-trash"></i>
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Cofresi Palm Beach & Spa Resort</td>
+
+                            <td>Puerto Plata</td>
+
+                            <td>RD$19,000</td>
+
+                            <td>28 agosto</td>
+
+                            <td>
+
+                                <span class="publicado">
+
+                                    Publicado
+
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <i class="fa-solid fa-eye"></i>
+
+                                <i class="fa-solid fa-pen"></i>
+
+                                <i class="fa-solid fa-trash"></i>
+
+                            </td>
+
+                        </tr>
+
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+
+
+            <!-- BARRA LATERAL DERECHA -->
+
+            <aside class="resumen">
+
+                <div class="panel">
+
+                    <h3>Resumen</h3>
+
+                    <p> <i class="fa-solid fa-circle-calendar"></i>Total: 142</p>
+
+                    <p> <i class="fa-regular fa-circle"></i>Publicadas: 98</p>
+
+                    <p> <i class="fa-regular fa-circle"></i>Borradores: 28</p>
+
+                    <p><i class="fa-regular fa-circle"></i> Inactivas: 16</p>
+
+                </div>
+
+                </div>
+
+                <div class="panel">
+
+                    <h3>Acciones rápidas</h3>
+
+                    <button>Nueva oferta</button>
+
+                    <button>Publicadas</button>
+
+                    <button>Borradores</button>
+
+                    <button>Inactivas</button>
+
+                </div>
+
+            </aside>
+
+        </section>
+
+    </main>
+
+    <!-- Cambio de pagina-->
+
+        <div>
+            <p>Mostrando 1 de 10 paginas</p>
+        </div>
+
+        <nav class="cambio-pagina">
+
+            <ul class="pagination">
+
+                <li class="pagina">
+                    <a class="pagina-link" href="#">«</a>
+                </li>
+
+                <li class="pagina-activo">
+                    <a class="pagina-link" href="#">1</a>
+                </li>
+
+                <li class="pagina">
+                    <a class="pagina-link" href="#">2</a>
+                </li>
+
+                <li class="pagina">
+                    <a class="pagina-link" href="#">3</a>
+                </li>
+
+                <li class="pagina">
+                    <a class="pagina-link" href="#">»</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+</div>
+
+</body>
+</html>

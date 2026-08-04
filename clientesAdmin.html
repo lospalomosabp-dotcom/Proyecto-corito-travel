@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Clientes</title>
+</head>
+<body>
+
+    <header>
+
+        <!-- Menu Admin -->
+
+        <div class="menu-izquierda">
+
+            <div class="logo">
+                <img src="imagenes/Logo-corito.png" alt="Corito Travel">
+            </div>
+
+            <nav>
+                <a href="#"><i class="fa-solid fa-house"></i>Dashboard</a>
+
+                <a href="#"><i class="fa-regular fa-calendar"></i>Agendas</a>
+
+                <a href="#"><i class="fa-regular fa-calendar-check"></i>Reservas</a>
+
+                <a href="#" class="azul"><i class="fa-regular fa-user"></i>Clientes</a>
+
+                <a href="#"><i class="fa-regular fa-map"></i>Destinos</a>
+
+                <a href="#"><i class="fa-solid fa-cube"></i>Paquetes</a>
+
+                <a href="#"><i class="fa-solid fa-tags"></i>Ofertas</a>
+
+                <a href="#"><i class="fa-regular fa-user"></i>Usuarios</a>
+
+                <a href="#"><i class="fas fa-users"></i>Empleados</a>
+
+                <a href="#"><i class="fa-regular fa-credit-card"></i>Pagos</a>
+
+                <a href="#"><i class="fa-solid fa-chart-column"></i>Reportes</a>
+
+                <a href="#"><i class="fa-solid fa-gear"></i>Configuración</a>
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- Ruta actual -->
+
+    <div class="ruta">
+
+        <nav>
+            <a href="#">Inicio</a>
+            <span>></span>
+            <a href="#">Panel Administrativo</a>
+            <span>></span>
+            <a href="#">Gestión de Clientes</a>
+        </nav>
+
+    </div>
+
+
+    <!-- Título de la página -->
+
+    <div class="gestionClientes">
+
+        <div class="tituloClientes">
+
+            <h2>Gestión de Clientes</h2>
+
+            <p>Administra la información de todos los clientes registrados en el sistema.</p>
+
+        </div>
+
+        <div class="agregarCliente">
+
+            <input type="button" value="+ Nuevo Cliente">
+
+        </div>
+
+    </div>
+
+
+    <!-- Estadísticas de clientes -->
+
+    <div class="estadisticasClientes">
+
+        <div class="estadisticaCliente">
+
+            <h2>1,248</h2>
+
+            <h3>Clientes Totales</h3>
+
+            <p>Clientes registrados en el sistema.</p>
+
+        </div>
+
+        <div class="estadisticaCliente">
+
+            <h2>1,102</h2>
+
+            <h3>Activos</h3>
+
+            <p>Clientes activos y con reservas.</p>
+
+        </div>
+
+        <div class="estadisticaCliente">
+
+            <h2>98</h2>
+
+            <h3>Pendientes</h3>
+
+            <p>Clientes que todavía no han realizado una reserva.</p>
+
+        </div>
+
+        <div class="estadisticaCliente">
+
+            <h2>48</h2>
+
+            <h3>Nuevos este mes</h3>
+
+            <p>Clientes registrados durante este mes.</p>
+
+        </div>
+
+    </div>
+
+
+    <!-- Buscador y filtros -->
+
+    <div class="filtrosClientes">
+
+        <form action="">
+
+            <label for="buscarCliente">Buscar cliente</label>
+            <input type="text" id="buscarCliente" placeholder="Nombre, correo o teléfono">
+
+            <label for="estadoCliente">Estado</label>
+            <select id="estadoCliente">
+
+                <option value="todos">Todos</option>
+                <option value="activo">Activo</option>
+                <option value="pendiente">Pendiente</option>
+                <option value="inactivo">Inactivo</option>
+
+            </select>
+
+            <label for="fechaRegistro">Fecha de registro</label>
+            <select id="fechaRegistro">
+
+                <option value="todas">Todas</option>
+                <option value="hoy">Hoy</option>
+                <option value="ultimaSemana">Última semana</option>
+                <option value="ultimoMes">Último mes</option>
+                <option value="ultimoAno">Último año</option>
+
+            </select>
+
+            <label for="ordenarCliente">Ordenar por</label>
+            <select id="ordenarCliente">
+
+                <option value="recientes">Más recientes</option>
+                <option value="antiguos">Más antiguos</option>
+                <option value="nombreAscendente">Nombre de A a Z</option>
+                <option value="nombreDescendente">Nombre de Z a A</option>
+                <option value="masReservas">Mayor número de reservas</option>
+
+            </select>
+
+            <input type="submit" value="Filtrar">
+
+        </form>
+
+    </div>
+
+
+    <!-- Listado de clientes -->
+
+    <div class="listadoClientes">
+
+        <!-- Encabezado del listado -->
+
+        <div class="encabezadoClientes">
+
+            <h3>Cliente</h3>
+            <h3>Contacto</h3>
+            <h3>Fecha de registro</h3>
+            <h3>Estado</h3>
+            <h3>Reservas</h3>
+            <h3>Acciones</h3>
+
+        </div>
+
+
+        <!-- Cliente 1 -->
+
+        <div class="cliente">
+
+            <div class="informacionCliente">
+
+                <figure>
+                    <img src="imagenes/clientes/clienteImagen1.jpg" alt="Fotografía de María Pérez">
+                </figure>
+
+                <div class="nombreCliente">
+
+                    <h3>María Pérez</h3>
+
+                    <p>mariaperez@email.com</p>
+
+                </div>
+
+            </div>
+
+            <p>(809) 555-1234</p>
+
+            <p>10/06/2026</p>
+
+            <p>Activo</p>
+
+            <p>3</p>
+
+            <div class="accionesCliente">
+
+                <input type="button" value="Ver">
+
+                <input type="button" value="Editar">
+
+                <input type="button" value="Eliminar">
+
+            </div>
+
+        </div>
+
+
+        <!-- Cliente 2 -->
+
+        <div class="cliente">
+
+            <div class="informacionCliente">
+
+                <figure>
+                    <img src="imagenes/clientes/clienteImagen2.jpg" alt="Fotografía de Daniel Herrera">
+                </figure>
+
+                <div class="nombreCliente">
+
+                    <h3>Daniel Herrera</h3>
+
+                    <p>danielherrera@email.com</p>
+
+                </div>
+
+            </div>
+
+            <p>(829) 444-5678</p>
+
+            <p>08/06/2026</p>
+
+            <p>Activo</p>
+
+            <p>1</p>
+
+            <div class="accionesCliente">
+
+                <input type="button" value="Ver">
+
+                <input type="button" value="Editar">
+
+                <input type="button" value="Eliminar">
+
+            </div>
+
+        </div>
+
+
+        <!-- Cliente 3 -->
+
+        <div class="cliente">
+
+            <div class="informacionCliente">
+
+                <figure>
+                    <img src="imagenes/clientes/clienteImagen3.jpg" alt="Fotografía de Ana Rodríguez">
+                </figure>
+
+                <div class="nombreCliente">
+
+                    <h3>Ana Rodríguez</h3>
+
+                    <p>anarodriguez@email.com</p>
+
+                </div>
+
+            </div>
+
+            <p>(809) 333-9876</p>
+
+            <p>05/06/2026</p>
+
+            <p>Activo</p>
+
+            <p>2</p>
+
+            <div class="accionesCliente">
+
+                <input type="button" value="Ver">
+
+                <input type="button" value="Editar">
+
+                <input type="button" value="Eliminar">
+
+            </div>
+
+        </div>
+
+
+        <!-- Cliente 4 -->
+
+        <div class="cliente">
+
+            <div class="informacionCliente">
+
+                <figure>
+                    <img src="imagenes/clientes/clienteImagen4.jpg" alt="Fotografía de Carlos Gómez">
+                </figure>
+
+                <div class="nombreCliente">
+
+                    <h3>Carlos Gómez</h3>
+
+                    <p>carlosgomez@email.com</p>
+
+                </div>
+
+            </div>
+
+            <p>(849) 555-6677</p>
+
+            <p>03/06/2026</p>
+
+            <p>Pendiente</p>
+
+            <p>0</p>
+
+            <div class="accionesCliente">
+
+                <input type="button" value="Ver">
+
+                <input type="button" value="Editar">
+
+                <input type="button" value="Eliminar">
+
+            </div>
+
+        </div>
+
+
+        <!-- Cliente 5 -->
+
+        <div class="cliente">
+
+            <div class="informacionCliente">
+
+                <figure>
+                    <img src="imagenes/clientes/clienteImagen5.jpg" alt="Fotografía de Laura Medina">
+                </figure>
+
+                <div class="nombreCliente">
+
+                    <h3>Laura Medina</h3>
+
+                    <p>lauramedina@email.com</p>
+
+                </div>
+
+            </div>
+
+            <p>(829) 777-2233</p>
+
+            <p>01/06/2026</p>
+
+            <p>Activo</p>
+
+            <p>4</p>
+
+            <div class="accionesCliente">
+
+                <input type="button" value="Ver">
+
+                <input type="button" value="Editar">
+
+                <input type="button" value="Eliminar">
+
+            </div>
+
+        </div>
+
+
+        <!-- Cliente 6 -->
+
+        <div class="cliente">
+
+            <div class="informacionCliente">
+
+                <figure>
+                    <img src="imagenes/clientes/clienteImagen6.jpg" alt="Fotografía de José Sánchez">
+                </figure>
+
+                <div class="nombreCliente">
+
+                    <h3>José Sánchez</h3>
+
+                    <p>josesanchez@email.com</p>
+
+                </div>
+
+            </div>
+
+            <p>(809) 888-4455</p>
+
+            <p>28/05/2026</p>
+
+            <p>Inactivo</p>
+
+            <p>0</p>
+
+            <div class="accionesCliente">
+
+                <input type="button" value="Ver">
+
+                <input type="button" value="Editar">
+
+                <input type="button" value="Eliminar">
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Detalles del cliente -->
+
+    <div class="detalleCliente">
+
+        <h2>Detalle del Cliente</h2>
+
+        <div class="datosPersonalesCliente">
+
+            <h3>Información personal</h3>
+
+            <p><strong>Nombre:</strong> María Pérez</p>
+
+            <p><strong>Correo electrónico:</strong> mariaperez@email.com</p>
+
+            <p><strong>Teléfono:</strong> (809) 555-1234</p>
+
+            <p><strong>Documento:</strong> 402-1234567-8</p>
+
+            <p><strong>Fecha de registro:</strong> 10/06/2026</p>
+
+            <p><strong>Estado:</strong> Activo</p>
+
+        </div>
+
+        <div class="reservasCliente">
+
+            <h3>Información de reservas</h3>
+
+            <p><strong>Reservas realizadas:</strong> 3</p>
+
+            <p><strong>Reservas confirmadas:</strong> 2</p>
+
+            <p><strong>Reservas pendientes:</strong> 1</p>
+
+            <p><strong>Reservas canceladas:</strong> 0</p>
+
+            <p><strong>Última reserva:</strong> PC-000125</p>
+
+        </div>
+
+        <div class="accionesDetalleCliente">
+
+            <input type="button" value="Editar Cliente">
+
+            <input type="button" value="Ver Reservas">
+
+            <input type="button" value="Desactivar">
+
+            <input type="button" value="Volver">
+
+        </div>
+
+    </div>
+
+
+    <!-- Paginación -->
+
+    <div class="paginacionClientes">
+
+        <input type="button" value="Anterior">
+
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+
+        <input type="button" value="Siguiente">
+
+        <p>Mostrando 1 a 6 de 30 clientes</p>
+
+    </div>
+
+</body>
+</html>
