@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reporte de Pagos - Corito Travel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="contenedor">
+
+    <!-- CABECERA -->
+        <header>
+            <div class="logo">
+            <figure>
+                <img src="imagenes/logo-agencia.png" alt="corito travel" width="200" height="200">
+            </figure>
+        </div>
+
+            <div class="notificacion">
+                <i class="fa-regular fa-bell"></i>
+                <span>3</span>
+            </div>
+
+            <div class="usuario">
+                <div class="usuario-info">
+                    <strong>Admin</strong>
+                    <span>Administrador</span><i class="fa-solid fa-chevron-down"></i>
+                </div>
+            </div>
+
+        </header>
+
+
+<!-- Menu Lateral-->
+
+<div class="dashboard">
+
+     <!-- Menú lateral -->
+   <div class="menu-izquierda">
+
+        <nav>
+            <a href="#"><i class="fa-solid fa-house"></i>Dashboard</a>
+
+            <a href="#" ><i class="fa-regular fa-calendar"></i>Agendas</a>
+
+            <a href="#"><i class="fa-regular fa-calendar-check"></i>Reservas</a>
+
+            <a href="#"><i class="fa-regular fa-user"></i>Clientes</a>
+
+            <a href="#"><i class="fa-regular fa-map"></i>Destinos</a>
+
+            <a href="#" class="azul"><i class="fa-solid fa-cube"></i>Paquetes</a>
+
+            <a href="#"><i class="fa-solid fa-tags"></i>Ofertas</a>
+
+            <a href="#"><i class="fa-regular fa-user"></i>Usuarios</a>
+
+            <a href="#"><i class="fas fa-users"></i> Empleados</a>
+
+            <div class="activo">
+                <a href="#"><i class="fa-regular fa-credit-card"></i>Pagos</a>
+            </div>
+
+            <a href="#"><i class="fa-solid fa-chart-column"></i>Reportes</a>
+
+            <a href="#"><i class="fa-solid fa-gear"></i>Configuración</a>
+        </nav>
+
+    </div>
+
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <div class="contenido-principal">
+
+        <main>
+            <!-- TITULO -->
+            <div class="titulo">
+
+                <div>
+                    <h1>Reporte de Pagos a Empleados</h1>
+                    <p>Resumen de pagos realizados a los empleados de la agencia.</p>
+                </div>
+
+                <div class="acciones">
+
+                    <div class="fecha">
+                        <i class="fa-regular fa-calendar"></i>
+                        01/06/2025 - 05/08/2025
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+
+                    <button class="exportar">
+                        <i class="fa-solid fa-download"></i>
+                        Exportar
+                    </button>
+                </div>
+
+            </div>
+
+
+            <!-- cuadros detalles-->
+            <section class="detalles">
+
+                <div class="detalle-verde">
+
+                    <div class="icono-detalle-verde">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+
+                    <div>
+                        <p>Total Pagado</p>
+                        <h2>RD$ 685,750.00</h2>
+                        <span>En el período seleccionado</span>
+                    </div>
+
+                </div>
+
+
+                <div class="detalle-azul">
+
+                    <div class="icono-detalle-azul">
+                        <i class="fa-solid fa-money-bill-transfer"></i>
+                    </div>
+
+                    <div>
+                        <p>Pagos Realizados</p>
+                        <h2>28</h2>
+                        <span>Transacciones</span>
+                    </div>
+
+                </div>
+
+
+                <div class="detalle-morado">
+
+                    <div class="icono-detalle-morado">
+                        <i class="fa-solid fa-calendar-days"></i>
+                    </div>
+
+                    <div>
+                        <p>Pago Promedio</p>
+                        <h2>RD$ 24,491.07</h2>
+                        <span>Por empleado</span>
+                    </div>
+
+                </div>
+
+
+                <div class="detalle-naranja">
+
+                    <div class="icono-detalle-naranja">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                    <div>
+                        <p>Empleados</p>
+                        <h2>12</h2>
+                        <span>Activos</span>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- REPORTES -->
+            <section class="contenido-reportes">
+
+                <!-- TABLA DE DETALLES -->
+                <div class="panel">
+
+                    <div class="panel-titulo">
+                        Detalle de Pagos
+                    </div>
+
+                    <div class="tabla-contenido">
+
+                        <table border="1">
+
+                            <thead>
+                                <tr>
+                                    <th>Empleado</th>
+                                    <th>Puesto</th>
+                                    <th>Fecha de Pago</th>
+                                    <th>Período</th>
+                                    <th>Monto</th>
+                                    <th>Método de Pago</th>
+                                    <th>Estado</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+                                    <td>
+                                        <div class="empleado">
+                                            <img src=" ">
+                                            <div>
+                                                <strong>Juan Pérez</strong>
+                                                <span>ID: EMP001</span>
+                                            </div>
+                                        </div>
+                                    </td>
+
+                                    <td>Agente de Ventas</td>
+                                    <td>05/08/2025</td>
+                                    <td>Julio 2025</td>
+                                    <td>RD$ 28,000.00</td>
+                                    <td>Transferencia</td>
+                                    <td><span class="estado">Completado</span></td>
+                                </tr>
+
+
+                                <tr>
+                                    <td>
+                                        <div class="empleado">
+                                            <img src=" ">
+                                            <div>
+                                                <strong>María García</strong>
+                                                <span>ID: EMP002</span>
+                                            </div>
+                                        </div>
+                                    </td>
+
+                                    <td>Asesora de Viajes</td>
+                                    <td>05/08/2025</td>
+                                    <td>Julio 2025</td>
+                                    <td>RD$ 26,500.00</td>
+                                    <td>Transferencia</td>
+                                    <td><span class="estado">Completado</span></td>
+                                </tr>
+
+
+                                <tr>
+                                    <td>
+                                        <div class="empleado">
+                                            <img src="">
+                                            <div>
+                                                <strong>Carlos Martínez</strong>
+                                                <span>ID: EMP003</span>
+                                            </div>
+                                        </div>
+                                    </td>
+
+                                    <td>Coordinador de Tours</td>
+                                    <td>05/08/2025</td>
+                                    <td>Julio 2025</td>
+                                    <td>RD$ 30,000.00</td>
+                                    <td>Transferencia</td>
+                                    <td><span class="estado">Completado</span></td>
+                                </tr>
+
+
+                                <tr>
+                                    <td>
+                                        <div class="empleado">
+                                            <img src=" ">
+                                            <div>
+                                                <strong>Ana Rodríguez</strong>
+                                                <span>ID: EMP004</span>
+                                            </div>
+                                        </div>
+                                    </td>
+
+                                    <td>Agente de Ventas</td>
+                                    <td>05/08/2025</td>
+                                    <td>Julio 2025</td>
+                                    <td>RD$ 28,000.00</td>
+                                    <td>Efectivo</td>
+                                    <td><span class="estado">Completado</span></td>
+                                </tr>
+
+
+                                <tr>
+                                    <td>
+                                        <div class="empleado">
+                                            <img src=" ">
+                                            <div>
+                                                <strong>Luis Fernández</strong>
+                                                <span>ID: EMP005</span>
+                                            </div>
+                                        </div>
+                                    </td>
+
+                                    <td>Encargado de Marketing</td>
+                                    <td>05/08/2025</td>
+                                    <td>Julio 2025</td>
+                                    <td>RD$ 25,000.00</td>
+                                    <td>Transferencia</td>
+                                    <td><span class="estado">Completado</span></td>
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+
+                <div class="cambio-pagina">
+
+                        <span>Mostrando 1 a 5 de 12 resultados</span>
+
+                    <nav class="cambio-pagina">
+
+                        <ul class="pagination">
+
+                            <li class="pagina">
+                                <a class="pagina-link" href="#">«</a>
+                            </li>
+
+                            <li class="pagina-activo">
+                                <a class="pagina-link" href="#">1</a>
+                            </li>
+
+                            <li class="pagina">
+                                <a class="pagina-link" href="#">2</a>
+                            </li>
+
+                            <li class="pagina">
+                                <a class="pagina-link" href="#">3</a>
+                            </li>
+
+                            <li class="pagina">
+                                <a class="pagina-link" href="#">»</a>
+                            </li>
+
+                        </ul>
+
+                    </nav>
+
+
+                </div>
+                
+
+                <!-- COLUMNA DERECHA -->
+                <div>
+
+                    <div class="panel-detalles">
+
+                        <div class="panel-titulo">
+                            Resumen por Método de Pago
+                        </div>
+
+                        <div class="metodos">
+
+                            <div class="grafico"></div>
+
+                            <div class="metodo">
+                                <div class="metodo-nombre">
+                                    <span class="circulo-azul"></span>
+                                    <i class="fa-regular fa-circle"></i>Transferencia
+                                </div>
+                                <strong>RD$ 520,750.00</strong>
+                            </div>
+
+                            <div class="metodo">
+                                <div class="metodo-nombre">
+                                    <span class="circulo-verde"></span>
+                                    <i class="fa-regular fa-circle"></i>Efectivo
+                                </div>
+                                <strong>RD$ 120,000.00</strong>
+                            </div>
+
+                            <div class="metodo">
+                                <div class="metodo-nombre">
+                                    <span class="circulo-naranja"></span>
+                                    <i class="fa-regular fa-circle"></i>Cheque
+                                </div>
+                                <strong>RD$ 30,000.00</strong>
+                            </div>
+
+                            <div class="metodo">
+                                <div class="metodo-nombre">
+                                    <span class="circulo-morado"></span>
+                                    <i class="fa-regular fa-circle"></i> Otro
+                                </div>
+                                <strong>RD$ 15,000.00</strong>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="panel-informacion">
+
+                        <h3>
+                            <i class="fa-solid fa-circle-info"></i>
+                            Información
+                        </h3>
+
+                        <p>
+                            Este reporte muestra todos los pagos
+                            realizados a los empleados en el período
+                            seleccionado.
+                        </p>
+
+                        <div class="actualizacion">
+                            <i class="fa-solid fa-rotate"></i>
+                            Última actualización: 05/08/2024 10:30 AM
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+        <footer>
+            © 2024 Corito Travel Agencia de Viajes. Todos los derechos reservados.
+        </footer>
+
+    </div>
+
+</div>
+
+</body>
+</html>
+
