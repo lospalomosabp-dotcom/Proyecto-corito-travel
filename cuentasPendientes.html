@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuentas Pendientes</title>
+</head>
+<body>
+
+    <header>
+
+        <!-- Menu Admin -->
+
+        <div class="menu-izquierda">
+
+            <div class="logo">
+                <img src="imagenes/Logo-corito.png" alt="Corito Travel">
+            </div>
+
+            <nav>
+                <a href="#"><i class="fa-solid fa-house"></i>Dashboard</a>
+
+                <a href="#"><i class="fa-regular fa-calendar"></i>Agendas</a>
+
+                <a href="#"><i class="fa-regular fa-calendar-check"></i>Reservas</a>
+
+                <a href="#"><i class="fa-regular fa-user"></i>Clientes</a>
+
+                <a href="#"><i class="fa-regular fa-map"></i>Destinos</a>
+
+                <a href="#"><i class="fa-solid fa-cube"></i>Paquetes</a>
+
+                <a href="#"><i class="fa-solid fa-tags"></i>Ofertas</a>
+
+                <a href="#"><i class="fa-regular fa-user"></i>Usuarios</a>
+
+                <a href="#"><i class="fas fa-users"></i>Empleados</a>
+
+                <a href="#" class="azul"><i class="fa-regular fa-credit-card"></i>Pagos</a>
+
+                <a href="#"><i class="fa-solid fa-chart-column"></i>Reportes</a>
+
+                <a href="#"><i class="fa-solid fa-gear"></i>Configuración</a>
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- Ruta actual -->
+
+    <div class="ruta">
+
+        <nav>
+            <a href="#">Inicio</a>
+            <span>></span>
+            <a href="#">Panel Administrativo</a>
+            <span>></span>
+            <a href="#">Finanzas</a>
+            <span>></span>
+            <a href="#">Cuentas Pendientes</a>
+        </nav>
+
+    </div>
+
+
+    <!-- Título de la página -->
+
+    <div class="tituloCuentasPendientes">
+
+        <div class="tituloPendientes">
+
+            <h2>Cuentas Pendientes</h2>
+
+            <p>Lista de pagos pendientes de clientes.</p>
+
+        </div>
+
+
+        <!-- Total pendiente -->
+
+        <div class="totalPendiente">
+
+            <i class="fa-regular fa-credit-card"></i>
+
+            <p>Total pendiente</p>
+
+            <h2>RD$ 582,450.00</h2>
+
+        </div>
+
+    </div>
+
+
+    <!-- Buscador y filtros -->
+
+    <div class="filtrosCuentasPendientes">
+
+        <form action="">
+
+            <label for="buscarCuenta">Buscar cliente o reserva</label>
+
+            <input type="text" id="buscarCuenta" placeholder="Buscar...">
+
+
+            <label for="estadoCuenta">Estado</label>
+
+            <select id="estadoCuenta">
+
+                <option value="todos">Todos</option>
+
+                <option value="pendiente">Pendiente</option>
+
+                <option value="porVencer">Por vencer</option>
+
+                <option value="vencido">Vencido</option>
+
+            </select>
+
+
+            <label for="fechaDesde">Fecha desde</label>
+
+            <input type="date" id="fechaDesde">
+
+
+            <label for="fechaHasta">Fecha hasta</label>
+
+            <input type="date" id="fechaHasta">
+
+
+            <input type="submit" value="Filtrar">
+
+        </form>
+
+    </div>
+
+
+    <!-- Listado de cuentas pendientes -->
+
+    <div class="listadoCuentasPendientes">
+
+
+        <!-- Encabezado -->
+
+        <div class="encabezadoCuentasPendientes">
+
+            <h3>Reserva</h3>
+
+            <h3>Cliente</h3>
+
+            <h3>Fecha</h3>
+
+            <h3>Descripción</h3>
+
+            <h3>Monto total</h3>
+
+            <h3>Pendiente</h3>
+
+            <h3>Vencimiento</h3>
+
+            <h3>Estado</h3>
+
+            <h3>Acción</h3>
+
+        </div>
+
+
+        <!-- Cuenta 1 -->
+
+        <div class="cuentaPendiente">
+
+            <p>PC-000245</p>
+
+            <p>María Rodríguez</p>
+
+            <p>25/07/2026</p>
+
+            <p>Impressive Premium Punta Cana</p>
+
+            <p>RD$ 45,000.00</p>
+
+            <p>RD$ 20,000.00</p>
+
+            <p>05/08/2026</p>
+
+            <p>Vencido</p>
+
+            <input type="button" value="Ver">
+
+        </div>
+
+
+        <!-- Cuenta 2 -->
+
+        <div class="cuentaPendiente">
+
+            <p>JB-000246</p>
+
+            <p>Carlos Pérez</p>
+
+            <p>26/07/2026</p>
+
+            <p>Villa Montaña Verde - Jarabacoa</p>
+
+            <p>RD$ 28,000.00</p>
+
+            <p>RD$ 8,000.00</p>
+
+            <p>06/08/2026</p>
+
+            <p>Vencido</p>
+
+            <input type="button" value="Ver">
+
+        </div>
+
+
+        <!-- Cuenta 3 -->
+
+        <div class="cuentaPendiente">
+
+            <p>SM-000247</p>
+
+            <p>Ana Martínez</p>
+
+            <p>28/07/2026</p>
+
+            <p>Airbnb Vista al Mar - Samaná</p>
+
+            <p>RD$ 32,000.00</p>
+
+            <p>RD$ 12,000.00</p>
+
+            <p>08/08/2026</p>
+
+            <p>Vencido</p>
+
+            <input type="button" value="Ver">
+
+        </div>
+
+
+        <!-- Cuenta 4 -->
+
+        <div class="cuentaPendiente">
+
+            <p>PC-000248</p>
+
+            <p>Luis Sánchez</p>
+
+            <p>30/07/2026</p>
+
+            <p>Grand Bavaro Princess</p>
+
+            <p>RD$ 60,000.00</p>
+
+            <p>RD$ 25,000.00</p>
+
+            <p>12/08/2026</p>
+
+            <p>Por vencer</p>
+
+            <input type="button" value="Ver">
+
+        </div>
+
+
+        <!-- Cuenta 5 -->
+
+        <div class="cuentaPendiente">
+
+            <p>SD-000249</p>
+
+            <p>Sofía Vargas</p>
+
+            <p>31/07/2026</p>
+
+            <p>Airbnb Colonial - Santo Domingo</p>
+
+            <p>RD$ 22,000.00</p>
+
+            <p>RD$ 10,000.00</p>
+
+            <p>15/08/2026</p>
+
+            <p>Por vencer</p>
+
+            <input type="button" value="Ver">
+
+        </div>
+
+
+        <!-- Cuenta 6 -->
+
+        <div class="cuentaPendiente">
+
+            <p>PP-000250</p>
+
+            <p>Pedro González</p>
+
+            <p>01/08/2026</p>
+
+            <p>Resort Playa Dorada - Puerto Plata</p>
+
+            <p>RD$ 35,000.00</p>
+
+            <p>RD$ 15,000.00</p>
+
+            <p>01/09/2026</p>
+
+            <p>Pendiente</p>
+
+            <input type="button" value="Ver">
+
+        </div>
+
+    </div>
+
+
+    <!-- Detalle de cuenta pendiente -->
+
+    <div class="detalleCuentaPendiente">
+
+        <h2>Detalle de Cuenta Pendiente</h2>
+
+
+        <div class="informacionCuenta">
+
+            <h3>Información de la reserva</h3>
+
+            <p><strong>Código:</strong> PC-000245</p>
+
+            <p><strong>Cliente:</strong> María Rodríguez</p>
+
+            <p><strong>Alojamiento:</strong> Impressive Premium Punta Cana</p>
+
+            <p><strong>Fecha de reserva:</strong> 25/07/2026</p>
+
+        </div>
+
+
+        <div class="informacionMonto">
+
+            <h3>Información del pago</h3>
+
+            <p><strong>Monto total:</strong> RD$ 45,000.00</p>
+
+            <p><strong>Monto pagado:</strong> RD$ 25,000.00</p>
+
+            <p><strong>Monto pendiente:</strong> RD$ 20,000.00</p>
+
+            <p><strong>Fecha de vencimiento:</strong> 05/08/2026</p>
+
+            <p><strong>Estado:</strong> Vencido</p>
+
+        </div>
+
+
+        <div class="accionesCuentaPendiente">
+
+            <input type="button" value="Registrar Pago">
+
+            <input type="button" value="Ver Reserva">
+
+            <input type="button" value="Volver">
+
+        </div>
+
+    </div>
+
+
+    <!-- Paginación -->
+
+    <div class="paginacionCuentas">
+
+        <p>Mostrando 1 a 6 de 6 cuentas</p>
+
+        <input type="button" value="Anterior">
+
+        <a href="#">1</a>
+
+        <input type="button" value="Siguiente">
+
+    </div>
+
+</body>
+</html>

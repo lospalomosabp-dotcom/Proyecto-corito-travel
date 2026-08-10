@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuración</title>
+</head>
+<body>
+
+    <header>
+
+    <!-- Menu Admin -->
+    <div class="menu-izquierda">
+
+        <div class="logo">
+            <img src="imagenes/Logo-corito.png" alt="Corito Travel">
+        </div>
+
+        <nav>
+            <a href="#" class="azul"><i class="fa-solid fa-house"></i>Dashboard</a>
+
+            <a href="#"><i class="fa-regular fa-calendar"></i>Agendas</a>
+
+            <a href="#"><i class="fa-regular fa-calendar-check"></i>Reservas</a>
+
+            <a href="#"><i class="fa-regular fa-user"></i>Clientes</a>
+
+            <a href="#"><i class="fa-regular fa-map"></i>Destinos</a>
+
+            <a href="#"><i class="fa-solid fa-cube"></i>Paquetes</a>
+
+            <a href="#"><i class="fa-solid fa-tags"></i>Ofertas</a>
+
+            <a href="#"><i class="fa-regular fa-user"></i>Usuarios</a>
+
+            <a href="#"><i class="fas fa-users"></i> Empleados</a>
+
+            <a href="#"><i class="fa-regular fa-credit-card"></i>Pagos</a>
+
+            <a href="#"><i class="fa-solid fa-chart-column"></i>Reportes</a>
+
+            <a href="#"><i class="fa-solid fa-gear"></i>Configuración</a>
+        </nav>
+        </div>
+    </header>
+
+
+    <!-- Ruta actual -->
+
+    <div class="ruta">
+
+        <nav>
+            <a href="#">Inicio</a>
+            <span>></span>
+            <a href="#">Panel Administrativo</a>
+            <span>></span>
+            <a href="#">Configuración</a>
+        </nav>
+
+    </div>
+
+
+    <!-- Título de la página -->
+
+    <div class="tituloConfiguracion">
+
+        <h2>Configuración</h2>
+
+        <p>Personaliza los ajustes principales del sistema.</p>
+
+    </div>
+
+
+    <!-- Menú de configuración -->
+
+    <div class="menuConfiguracion">
+
+        <a href="#">General</a>
+
+        <a href="#">Reservas</a>
+
+        <a href="#">Pagos</a>
+
+        <a href="#">Notificaciones</a>
+
+        <a href="#">Seguridad</a>
+
+        <a href="#">Sistema</a>
+
+    </div>
+
+
+    <!-- Configuración general -->
+
+    <div class="configuracionGeneral">
+
+        <h2>General</h2>
+
+        <form action="">
+
+            <div class="opcionConfiguracion">
+
+                <label for="nombreEmpresa">Nombre de la empresa</label>
+
+                <p>Este nombre se mostrará en el sistema.</p>
+
+                <input type="text" id="nombreEmpresa" value="Corito Travel">
+
+            </div>
+
+
+            <div class="opcionConfiguracion">
+
+                <label for="moneda">Moneda predeterminada</label>
+
+                <p>Moneda principal utilizada para precios y pagos.</p>
+
+                <select id="moneda">
+
+                    <option value="usd">USD - Dólar Americano</option>
+
+                    <option value="dop">DOP - Peso Dominicano</option>
+
+                </select>
+
+            </div>
+
+
+            <div class="opcionConfiguracion">
+
+                <label for="zonaHoraria">Zona horaria</label>
+
+                <p>Zona horaria utilizada por el sistema.</p>
+
+                <select id="zonaHoraria">
+
+                    <option value="santoDomingo">(GMT-04:00) Santo Domingo</option>
+
+                </select>
+
+            </div>
+
+
+            <div class="opcionConfiguracion">
+
+                <label for="idioma">Idioma del sistema</label>
+
+                <p>Idioma principal del panel administrativo.</p>
+
+                <select id="idioma">
+
+                    <option value="espanol">Español</option>
+
+                    <option value="ingles">Inglés</option>
+
+                </select>
+
+            </div>
+
+
+            <div class="opcionConfiguracion">
+
+                <label for="impuestos">Impuestos por defecto (%)</label>
+
+                <p>Porcentaje de impuesto aplicado a los servicios.</p>
+
+                <input type="number" id="impuestos" value="18">
+
+            </div>
+
+
+            <div class="opcionConfiguracion">
+
+                <label for="reservaMismoDia">Permitir reservas el mismo día</label>
+
+                <p>Los clientes podrán realizar una reserva para el mismo día.</p>
+
+                <input type="checkbox" id="reservaMismoDia">
+
+            </div>
+
+
+            <div class="opcionConfiguracion">
+
+                <label for="preciosImpuestos">Mostrar precios con impuestos incluidos</label>
+
+                <p>Los precios publicados mostrarán los impuestos incluidos.</p>
+
+                <input type="checkbox" id="preciosImpuestos">
+
+            </div>
+
+
+            <input type="submit" value="Guardar cambios">
+
+        </form>
+
+    </div>
+<!-- Configuración de reservas -->
+
+    <div class="configuracionReservas">
+
+        <h2>Reservas</h2>
+
+         <form action="">
+
+         <div class="opcionConfiguracion">
+
+            <label for="reservaMismoDia">Permitir reservas el mismo día</label>
+
+            <p>Permite que los clientes reserven un alojamiento para el mismo día.</p>
+
+            <input type="checkbox" id="reservaMismoDia">
+
+        </div>
+
+
+        <div class="opcionConfiguracion">
+
+            <label for="confirmacionAutomatica">Confirmación automática</label>
+
+            <p>Las reservas se confirmarán automáticamente después de realizar el pago.</p>
+
+            <input type="checkbox" id="confirmacionAutomatica">
+
+        </div>
+
+
+        <div class="opcionConfiguracion">
+
+            <label for="cancelacionGratuita">Cancelación gratuita</label>
+
+            <p>Cantidad de días antes de la llegada en que el cliente puede cancelar gratuitamente.</p>
+
+            <input type="number" id="cancelacionGratuita" value="3">
+
+        </div>
+
+
+        <div class="opcionConfiguracion">
+
+            <label for="tiempoPago">Tiempo para completar el pago</label>
+
+            <p>Tiempo máximo que tendrá el cliente para completar una reserva pendiente.</p>
+
+            <select id="tiempoPago">
+
+                <option value="30">30 minutos</option>
+
+                <option value="60">1 hora</option>
+
+                <option value="120">2 horas</option>
+
+                <option value="1440">24 horas</option>
+
+            </select>
+
+        </div>
+
+
+        <div class="opcionConfiguracion">
+
+            <label for="cancelarPendientes">Cancelar reservas pendientes automáticamente</label>
+
+            <p>La reserva se cancelará si el pago no se completa dentro del tiempo establecido.</p>
+
+            <input type="checkbox" id="cancelarPendientes">
+
+        </div>
+
+
+        <div class="opcionConfiguracion">
+
+            <label for="maximoHuespedes">Máximo de huéspedes por reserva</label>
+
+            <p>Cantidad máxima de huéspedes permitidos en una misma reserva.</p>
+
+            <input type="number" id="maximoHuespedes" value="15">
+
+        </div>
+
+
+        <input type="submit" value="Guardar cambios">
+
+    </form>
+
+    </div>
+
+    <!-- Configuración de pagos -->
+
+    <div class="configuracionPagos">
+
+        <h2>Pagos</h2>
+
+        <form action="">
+
+            <div class="opcionConfiguracion">
+
+                <label for="pagoTarjeta">Permitir pagos con tarjeta</label>
+
+                    <p>Permite que los clientes paguen sus reservas utilizando tarjetas.</p>
+
+                <input type="checkbox" id="pagoTarjeta">
+
+            </div>
+
+
+        <div class="opcionConfiguracion">
+
+            <label for="transferenciaBancaria">Permitir transferencias bancarias</label>
+
+            <p>Permite que los clientes paguen sus reservas mediante transferencia bancaria.</p>
+
+            <input type="checkbox" id="transferenciaBancaria">
+
+        </div>
+
+
+        <div class="opcionConfiguracion">
+
+            <label for="monedaPago">Moneda para los pagos</label>
+
+            <p>Selecciona la moneda utilizada para procesar los pagos.</p>
+
+            <select id="monedaPago">
+
+                <option value="dop">DOP - Peso Dominicano</option>
+
+                <option value="usd">USD - Dólar Americano</option>
+
+            </select>
+
+        </div>
+
+
+        <div class="opcionConfiguracion">
+
+            <label for="pagoCompleto">Exigir pago completo</label>
+
+            <p>El cliente deberá pagar el monto total para confirmar la reserva.</p>
+
+            <input type="checkbox" id="pagoCompleto">
+
+        </div>
+
+
+        <div class="opcionConfiguracion">
+
+            <label for="comprobantePago">Solicitar comprobante de pago</label>
+
+            <p>Solicita un comprobante cuando el cliente realice una transferencia bancaria.</p>
+
+            <input type="checkbox" id="comprobantePago">
+
+        </div>
+
+
+        <input type="submit" value="Guardar cambios">
+
+    </form>
+
+    </div>
+
+    <!-- Configuración de notificaciones -->
+
+    <div class="configuracionNotificaciones">
+
+        <h2>Notificaciones</h2>
+
+        <form action="">
+
+        <div class="opcionConfiguracion">
+
+            <label for="notificarNuevaReserva">Notificar nuevas reservas</label>
+
+            <p>Recibe una notificación cuando un cliente realice una nueva reserva.</p>
+
+            <input type="checkbox" id="notificarNuevaReserva">
+
+        </div>
+
+
+        <div class="opcionConfiguracion">
+
+            <label for="notificarCancelacion">Notificar cancelaciones</label>
+
+            <p>Recibe una notificación cuando una reserva sea cancelada.</p>
+
+            <input type="checkbox" id="notificarCancelacion">
+
+        </div>
+
+
+        <div class="opcionConfiguracion">
+
+            <label for="notificarPago">Notificar pagos recibidos</label>
+
+            <p>Recibe una notificación cuando se registre el pago de una reserva.</p>
+
+            <input type="checkbox" id="notificarPago">
+
+        </div>
+
+
+        <div class="opcionConfiguracion">
+
+            <label for="confirmacionCliente">Enviar confirmación al cliente</label>
+
+            <p>Envía una confirmación al cliente cuando su reserva sea realizada correctamente.</p>
+
+            <input type="checkbox" id="confirmacionCliente">
+
+        </div>
+
+
+        <div class="opcionConfiguracion">
+
+            <label for="recordatorioReserva">Enviar recordatorio de reserva</label>
+
+            <p>Envía un recordatorio al cliente antes de la fecha de entrada.</p>
+
+            <input type="checkbox" id="recordatorioReserva">
+
+        </div>
+
+
+        <div class="opcionConfiguracion">
+
+            <label for="correoNotificaciones">Correo para notificaciones</label>
+
+            <p>Correo electrónico donde se recibirán las notificaciones administrativas.</p>
+
+            <input type="email" id="correoNotificaciones" value="coritotravel@gmail.com">
+
+        </div>
+
+
+        <input type="submit" value="Guardar cambios">
+
+    </form>
+
+</div>
+
+    <!-- Configuración de seguridad -->
+
+    <div class="configuracionSeguridad">
+
+        <h2>Seguridad</h2>
+
+            <form action="">
+
+            <div class="opcionConfiguracion">
+
+            <label for="verificacionDosPasos">Verificación en dos pasos</label>
+
+            <p>Solicita un segundo método de verificación al iniciar sesión.</p>
+
+            <input type="checkbox" id="verificacionDosPasos">
+
+            </div>
+
+
+        <div class="opcionConfiguracion">
+
+            <label for="intentosInicioSesion">Intentos de inicio de sesión</label>
+
+            <p>Cantidad máxima de intentos permitidos antes de bloquear temporalmente el acceso.</p>
+
+            <select id="intentosInicioSesion">
+
+                <option value="3">3 intentos</option>
+
+                <option value="5">5 intentos</option>
+
+                <option value="10">10 intentos</option>
+
+            </select>
+
+        </div>
+
+
+        <div class="opcionConfiguracion">
+
+            <label for="cerrarSesion">Cerrar sesión automáticamente</label>
+
+            <p>Cierra la sesión después de un periodo de inactividad.</p>
+
+            <select id="cerrarSesion">
+
+                <option value="15">15 minutos</option>
+
+                <option value="30">30 minutos</option>
+
+                <option value="60">1 hora</option>
+
+                <option value="120">2 horas</option>
+
+            </select>
+
+        </div>
+
+
+        <div class="opcionConfiguracion">
+
+            <label for="cambioContrasena">Solicitar cambio de contraseña</label>
+
+            <p>Solicita periódicamente a los usuarios administrativos cambiar su contraseña.</p>
+
+            <input type="checkbox" id="cambioContrasena">
+
+        </div>
+
+
+        <input type="submit" value="Guardar cambios">
+
+    </form>
+
+</div>
+
+    <!-- Configuración del sistema -->
+
+    <div class="configuracionSistema">
+
+    <h2>Sistema</h2>
+
+    <form action="">
+
+        <div class="opcionConfiguracion">
+
+            <label for="modoMantenimiento">Modo mantenimiento</label>
+
+            <p>Impide temporalmente que los clientes utilicen la página mientras se realizan cambios.</p>
+
+            <input type="checkbox" id="modoMantenimiento">
+
+        </div>
+
+
+        <div class="opcionConfiguracion">
+
+            <label for="registroClientes">Permitir registro de clientes</label>
+
+            <p>Permite que nuevos clientes creen una cuenta en Corito Travel.</p>
+
+            <input type="checkbox" id="registroClientes">
+
+        </div>
+
+
+        <div class="opcionConfiguracion">
+
+            <label for="formatoFecha">Formato de fecha</label>
+
+            <p>Selecciona cómo se mostrarán las fechas dentro del sistema.</p>
+
+            <select id="formatoFecha">
+
+                <option value="diaMesAno">DD/MM/AAAA</option>
+
+                <option value="mesDiaAno">MM/DD/AAAA</option>
+
+                <option value="anoMesDia">AAAA/MM/DD</option>
+
+            </select>
+
+        </div>
+
+
+        <div class="opcionConfiguracion">
+
+            <label for="registrosPagina">Registros por página</label>
+
+            <p>Cantidad de registros que se mostrarán en los listados administrativos.</p>
+
+            <select id="registrosPagina">
+
+                <option value="5">5 registros</option>
+
+                <option value="10">10 registros</option>
+
+                <option value="20">20 registros</option>
+
+                <option value="50">50 registros</option>
+
+            </select>
+
+        </div>
+
+
+        <input type="submit" value="Guardar cambios">
+
+    </form>
+
+</div>
+
+</body>
+</html>
