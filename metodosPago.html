@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Métodos de Pago</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <header>
+
+        <!-- Menú de navegación -->
+        <div class="menuPrincipal">
+
+            <figure class="logo">
+                <img src="imagenes/Logo-corito.png" alt="Logo de Corito Travel" width="120px" height="80px">
+            </figure>
+
+            <nav class="menu">
+                <a href="index.html">Inicio</a>
+                <a href="destinos.html">Destinos</a>
+                <a href="paquetes.html">Paquetes</a>
+                <a href="ofertas.html">Ofertas</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="perfilCliente.html" class="esquinero">Mi Perfil</a>
+            </nav>
+
+        </div>
+
+        <!-- Información de la página -->
+        <h1>Mi perfil</h1>
+
+        <p>Administra tu información y revisa tus viajes</p>
+
+        <!-- Imagen de fondo -->
+        <figure>
+            <img src="imagenes/perfilCliente/fondoPerfilCliente.jpg" alt="">
+        </figure>
+
+    </header>
+
+
+    <!-- Información sobre el cliente -->
+    <div class="informacion_cliente">
+
+
+        <!-- Foto de perfil -->
+        <div class="fotoPerfil">
+
+            <figure>
+                <img src="imagenes/logoFoto.png" alt="">
+            </figure>
+
+            <h2>Nombre</h2>
+
+            <h3>Ciudad</h3>
+
+        </div>
+
+
+        <!-- Menú de opciones del perfil -->
+        <div class="opciones_cliente">
+
+            <nav>
+
+                <a href="perfilCliente.html">
+                    Información Personal
+                </a>
+
+                <a href="metodosPago.html">
+                    Métodos de pago
+                </a>
+
+                <a href="cambiarContrasena.html">
+                    Cambiar Contraseña
+                </a>
+
+                <a href="notificacionesCliente.html">
+                    Notificaciones
+                </a>
+
+            </nav>
+
+        </div>
+
+
+        <!-- Métodos de pago -->
+        <div class="formulariosEditables">
+
+            <div class="metodosPagoCliente">
+
+                <h2>Métodos de Pago</h2>
+
+                <p>
+                    Administra las tarjetas asociadas a tu cuenta.
+                </p>
+
+
+                <!-- Tarjetas guardadas -->
+                <div class="tarjetasAgregadas">
+
+                    <div class="informacionTarjeta">
+
+                        <h3>Visa</h3>
+
+                        <p>************6162</p>
+
+                        <span>Vence: 09/30</span>
+
+                    </div>
+
+
+                    <div class="opcionesTarjeta">
+
+                        <button type="button">
+                            Editar
+                        </button>
+
+                        <button type="button">
+                            Eliminar
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Agregar nueva tarjeta -->
+                <div class="agregarTarjeta">
+
+                    <h3>Agregar nueva tarjeta</h3>
+
+                    <form action="">
+
+                        <label for="titular">
+                            Nombre del titular
+                        </label>
+
+                        <input type="text"
+                               id="titular"
+                               autocomplete="off"
+                               required>
+
+
+                        <label for="numeroTarjeta">
+                            Número de tarjeta
+                        </label>
+
+                        <input type="text"
+                               id="numeroTarjeta"
+                               autocomplete="off"
+                               required>
+
+
+                        <label for="vencimiento">
+                            Fecha de vencimiento
+                        </label>
+
+                        <input type="month"
+                               id="vencimiento"
+                               required>
+
+
+                        <label for="cvv">
+                            CVV
+                        </label>
+
+                        <input type="text"
+                               id="cvv"
+                               maxlength="4"
+                               autocomplete="off"
+                               required>
+
+
+                        <input type="submit"
+                               value="Agregar Tarjeta">
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Reservas activas -->
+    <div class="reservas">
+
+        <div>
+
+            <nav class="reservas_activas">
+
+                <h3>Reservas Activas</h3>
+
+                <h3>2</h3>
+
+                <a href="#">
+                    Ver reservas
+                </a>
+
+            </nav>
+
+        </div>
+
+
+        <!-- Notificaciones -->
+        <div class="notificaciones">
+
+            <div class="notificacion">
+
+                <h3>Vuelo comprado exitosamente</h3>
+
+                <p>
+                    Su vuelo de Santiago, República Dominicana hacia París,
+                    Francia ha sido comprado de manera exitosa!
+                </p>
+
+                <nav>
+                    <a href="#">Ver detalles</a>
+                </nav>
+
+            </div>
+
+
+            <div class="notificacion">
+
+                <h3>Reserva realizada exitosamente</h3>
+
+                <p>
+                    Su reservación para 2 Personas en Hodelpa ha sido
+                    realizada de manera exitosa!
+                </p>
+
+                <nav>
+                    <a href="#">Ver detalles</a>
+                </nav>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <footer>
+
+        <div>
+            <p>Mejores precios</p>
+            <p>Garantizados</p>
+        </div>
+
+        <div>
+            <p>Asistencia 24/7</p>
+            <p>Siempre contigo</p>
+        </div>
+
+        <div>
+            <p>Reservas seguras</p>
+            <p>Protegemos tus datos</p>
+        </div>
+
+        <div>
+            <p>Cancelación flexible</p>
+            <p>Planes que se adaptan a ti</p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
