@@ -1,216 +1,881 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-.main-iniciosesion,.main-recuperarC,.main-registro,.main-restablecer {
-    background-image: url(../imagenes/backgroung-fondo.png );
-    width: 100%;
-    height: 900px;
+body {
+    font-family: 'Trebuchet MS',
+        'Lucida Sans Unicode',
+        'Lucida Grande',
+        'Lucida Sans',
+        Arial,
+        sans-serif;
 }
-.menu{
+
+
+/* CONTENEDORES PRINCIPALES */
+
+.main-iniciosesion,
+.main-recuperarC,
+.main-registro,
+.main-restablecer {
+    background-image: url("../imagenes/backgroung-fondo.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
-    margin: 10px 20px 10px;
-    justify-content: space-between;
-    background-color: #fff;
+    align-items: center;
     width: 100%;
-    font-weight: 600; 
-   
-} 
-.micuenta{
-    color: #fff;
-    font-style: none;
-    padding: 10px 10px 15px;
-    margin: 10px 10px 15px;
-}
-
-a:visited{
-    color: #082b59; 
- }
-
-
-.icono-inicio-sesion{
-    background-color: #082b59;
-    color: #fff;
-    padding: 2px;
-}
-
-/* Formularios */
-.formulario-inicio{
-   position: relative;
-   left: 600px;
-   border-radius: 10px;
-   background-color: #fff;
-   width: 50%;
-   padding: 0px;
-   top: 20px;
-   height: 800px; 
-}
-.formulario-cuenta{
+    min-height: 100vh;
     position: relative;
-    left: 600px;
+    padding: 40px 5%;
+}
+
+
+/* FORMULARIOS */
+
+.formulario-inicio,
+.formulario-cuenta {
+    position: relative;
     border-radius: 10px;
     background-color: #fff;
-    width: 50%;
+    width: 100%;
+    max-width: 600px;
+    min-height: 500px;
+    margin-left: auto;
+    margin-right: 3%;
     top: 20px;
-    padding: 0px;
-    margin: 0px;
-    height: 850px;
-}
-.formulario-recuperar-cuenta, .formulario-cuenta-restablecer{
-   position:relative;
-   left: 400px;
-   background-color: #fff;
-   width: 50%;
-   height:600px;
-   top: 50px;
-   border-radius: 20px;
-   margin: 10px;
-
+    padding: 30px 45px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.20);
 }
 
 
-/* imagen logo */
+/*  RECUPERAR Y RESTABLECER */
 
-.logo{
-   display: flex;
-   justify-content: center;
-   margin: 0;
-   padding: auto;
+.formulario-recuperar-cuenta,
+.formulario-cuenta-restablecer {
+    position: relative;
+    background-color: #fff;
+    width: 100%;
+    max-width: 600px;
+    min-height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    padding: 35px 45px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.20);
 }
 
-/* texto central */
-.inicio-sesion,.crear-cuenta,.restablecer-contraseña {
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight : 2px bold;
+
+/*LOGO*/
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    width: 300px;
+    height: 200px;
+    object-fit: contain;
+}
+
+
+/* TÍTULOS */
+
+.inicio-sesion,
+.crear-cuenta,
+.restablecer-contraseña {
+
+    font-family: 'Trebuchet MS',
+        'Lucida Sans Unicode',
+        'Lucida Grande',
+        'Lucida Sans',
+        Arial,
+        sans-serif;
+    font-weight: bold;
     color: #001937;
     text-align: center;
     font-size: 35px;
-    padding: auto;
-    margin: auto;
+    margin-bottom: 15px;
 }
-/* Subtitulos */
-.subtitulo{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+
+/* SUBTÍTULOS*/
+
+.subtitulo {
+    font-family: 'Trebuchet MS',
+        'Lucida Sans Unicode',
+        'Lucida Grande',
+        'Lucida Sans',
+        Arial,
+        sans-serif;
     text-align: center;
     color: #04295d;
     margin-bottom: 25px;
+    line-height: 1.5;
 }
-/* Imput eamil */
-[for|="email"]{
-    padding: 50px;
-    margin: 50px; 
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+
+/* LABELS*/
+
+label {
+    display: block;
     font-size: 16px;
     color: #04295d;
-
-}
-/* input contraseña */
-[for|="Contraseña"]{
-    padding: 50px;
-    margin: 50px; 
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 16px;
-    color: #04295d;
-    position: relative;
+    margin-bottom: 7px;
 }
 
 
-/* Boton de enviar  en registrar clientes*/
+/* INPUTS */
 
-[type|="submit"]{
-   width: 70%;
-   height: 50px;
-   border-radius: 8px;
-   margin-left: 100px;
-   background-color: #04295d;
-   color: #fff;
-}
-
-
-
-/* imput email,password  en recuperar cuenta*/
-[type|="email"],
-[type|="password"],
-[type|="text"]{
+[type="email"],
+[type="password"],
+[type="text"],
+[type="tel"] {
     border: none;
     font-size: 18px;
     width: 100%;
+    background-color: transparent;
 }
 
 
-.cambioContraseña{
+/* INPUT DE DATOS*/
+
+.introducir-correo,
+.introducir-contraseña,
+.introducir-codigo,
+.confirmarContraseña,
+.introducir-telefono,
+.nombre,
+.apellido {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 50px;
+    border: 1px solid #b8c1cc;
+    border-radius: 8px;
+    padding: 0 15px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    transition: 0.3s;
+}
+
+
+
+/* ICONOS DE LOS INPUTS */
+.introducir-correo i,
+.introducir-contraseña i,
+.introducir-codigo i,
+.confirmarContraseña i,
+.introducir-telefono i,
+.nombre i,
+.apellido i {
+    color: #1877f2;
+    font-size: 18px;
+    margin-right: 12px;
+}
+
+
+
+/* BOTÓNES  DE ENVIAR*/
+[type="submit"] {
+    display: block;
+    width: 70%;
+    min-height: 50px;
+    border-radius: 8px;
+    margin: 20px auto;
+    border: none;
+    background-color: #04295d;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+[type="submit"]:hover {
+    background-color: #1877f2;
+}
+
+
+/* CAMBIAR CONTRASENA*/
+
+.cambioContraseña {
     display: flex;
     flex-direction: column;
-    padding-left: 380px;
-    margin: 8px;
+    margin: 10px 0;
+    gap: 8px;
+    padding-left: 10;
 }
 
-.opcion{
+
+/* OPCIÓN */
+.opcion {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-top: 20px;
     font-size: 30px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #04295d;
 }
-/* IMPUT DE DATOS  EN REGISTRO */
 
-.introducir-correo, 
-.introducir-contraseña , .introducir-codigo, .confirmarContraseña, .introducir-telefono, .nombre, .apellido{
-  display: flex;
-  align-items: center;  
-  justify-content: space-around;
-  width: 70%;
-  height: 50px;               
-  border: 1px solid;   
-  border-radius: 8px;          
-  padding: 0 15px;             
-  box-sizing: border-box;
-  margin-top: 8px;
-  margin-bottom: 20px;
-  margin-left: 100px;
+
+/* TÉRMINOS Y CONDICIONES */
+
+
+.terminos-condiciones,
+.confirmacion {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    margin: 15px 0;
+    padding: 10px 0;
+    font-size: 14px;
+    color: #555;
+    
 }
 
-/* Terminos y condiciones  */
-.terminos-condiciones, .confirmacion{
-    margin-left: 100px;
-    padding: 20px 15px 10px;
-
+.terminos-condiciones input,
+.confirmacion input {
+    width: auto;
 }
-
-
 
 
 /* ICONOS */
 
-.fa-facebook, .fa-arrow-left{
+.fa-facebook,
+.fa-arrow-left {
     color: #1877f2;
     font-size: 48px;
     margin: 0 25px;
     text-align: center;
-    
 }
-.fa-circle-user{
-     color: #fff;
+
+.fa-circle-user {
+    color: #fff;
     font-size: 25px;
     margin: 0 5px;
 }
 
-.fa-google{
+
+.fa-google {
     font-size: 48px;
     color: #db4437;
-    margin: 50px 50px ;
+    margin: 0 25px;
     text-align: center;
-
-}
-.icono-navegacion{
- display: flex;
- justify-content: center;
- gap: 20px;
 }
 
+.icono-navegacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+/* RESPONSIVE TABLET  */
+
+@media (max-width: 1024px) {
+
+    .main-iniciosesion,
+    .main-recuperarC,
+    .main-registro,
+    .main-restablecer {
+        padding: 40px 30px;
+    }
+
+
+    .formulario-inicio,
+    .formulario-cuenta {
+        max-width: 550px;
+        margin-right: 20px;
+    }
+}
+
+
+/* RESPONSIVE CELULAR */
+
+@media (max-width: 600px) {
+    .main-iniciosesion,
+    .main-recuperarC,
+    .main-registro,
+    .main-restablecer {
+        min-height: 100vh;
+        padding: 20px 12px;
+    }
+
+    /* FORMULARIOS */
+    .formulario-inicio,
+    .formulario-cuenta,
+    .formulario-recuperar-cuenta,
+    .formulario-cuenta-restablecer {
+        width: 100%;
+        max-width: 100%;
+        min-height: auto;
+        margin: auto;
+        padding: 25px 20px;
+        border-radius: 10px;
+    }
+
+
+    /* LOGO */
+    .logo img {
+        width: 100px;
+        height: 100px;
+    }
+
+
+    /* TÍTULOS */
+    .inicio-sesion,
+    .crear-cuenta,
+    .restablecer-contraseña {
+        font-size: 25px;
+    }
+
+    /* SUBTÍTULO */
+    .subtitulo {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+
+    /* INPUTS */
+    .introducir-correo,
+    .introducir-contraseña,
+    .introducir-codigo,
+    .confirmarContraseña,
+    .introducir-telefono,
+    .nombre,
+    .apellido {
+        width: 100%;
+        margin-left: 0;
+        min-height: 48px;
+        margin-bottom: 15px;
+    }
+
+
+    /* BOTÓN SUBMIT */
+    [type="submit"] {
+        width: 100%;
+        min-height: 48px;
+        margin: 20px auto;
+    }
+
+
+    /* PAGINA CAMBIO CONTRASEÑA */
+    .cambioContraseña {
+        padding-left: 0;
+        margin: 10px 0;
+    }
+
+
+    /* OPCIÓN */
+    .opcion {
+        font-size: 20px;
+        margin-top: 15px;
+    }
+
+
+    /* TÉRMINOS  Y CONDICIONES*/
+    .terminos-condiciones,
+    .confirmacion {
+        margin-left: 0;
+        padding: 8px 0;
+        font-size: 13px;
+    }
+
+
+    /* ICONOS */
+    .fa-facebook,
+    .fa-google {
+        font-size: 35px;
+        margin: 0 10px;
+    }
+
+
+    .fa-arrow-left {
+        font-size: 28px;
+        margin: 0 10px;
+    }
+
+
+    .icono-navegacion {
+        gap: 15px;
+    }
+}
+
+/* PAGINA VISUALIZACION DE RESERVA | EDRIGE*/
+
+
+/*CABECERA*/
+
+.contenido-cabecera {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+    background-color: #ffffff;
+    min-height: 100px;
+}
+
+.contenido-cabecera figcaption {
+    display: flex;
+    align-items: center;
+}
+
+.contenido-cabecera img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+}
+
+
+/*MENÚ DE NAVEGACIÓN*/
+
+.menu {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.menu a {
+    flex: 1;
+    text-align: center;
+    text-decoration: none;
+    color: #082b59;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+
+
+.menu a:hover {
+    color: #ec0d0d;
+}
+
+.icono-inicio-sesion {
+    display: flex;
+    align-items: center;
+}
+
+.mi-cuenta {
+    border: 1px solid #082b59;
+    color: #fff;
+    padding: 10px 18px;
+    border-radius: 8px;
+}
+
+.mi-cuenta:hover {
+    background-color: #082b59;
+    color: #fff;
+}
+
+
+/* CONTENEDOR PRINCIPA*/
+
+.contenedor-misreservas {
+    background-image: url("../imagenes/backgroung-fondo.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    padding: 40px 7%;
+}
+
+
+/*  TÍTULOS*/
+
+.titulo {
+    color: #082b59;
+    text-align: left;
+    margin-bottom: 35px;
+}
+
+.titulo h1 {
+    color: #082b59;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.titulo h1 i {
+    background-color: #0c59cf;
+    color: #fff;
+    margin-right: 10px;
+    border-radius: 20px;
+    width: 30px;
+}
+
+.titulo h3 {
+    color: #555;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+/* CONTENIDO PRINCIPAL*/
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex:1;
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* TARJETA DE ALOJAMIENTO*/
+
+.titulo-alojamiento {
+    background-color: #ffffff;
+    width: calc(50% - 15px);
+    min-width: 350px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.10);
+}
+
+
+/* Título del alojamiento */
+
+.titulo-reserva-alojamiento {
+    background-color: #082b59;
+    color: #ffffff;
+    padding: 15px 20px;
+}
+
+.titulo-reserva-alojamiento p {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+
+/*Icono Estrellas  de la seccion de alojamiento*/
+
+.fa-star {
+    color: #ffd900;
+    padding: 2px;
+    font-size: 14px;
+}
+
+
+/* INFORMACIÓN DEL HOTEL */
+
+.Alojamiento {
+    background-color: #ffffff;
+    padding: 20px;
+    width: 100%;
+}
+
+
+/* Entrada, salida y habitación */
+
+.Entrada-hotel,
+.Salida-hotel,
+.habitacion {
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    border-top: 1px solid #eeeeee;
+}
+
+.Entrada-hotel p,
+.Salida-hotel p,
+.habitacion p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+.fa-calendar-days,
+.fa-bed,
+.fa-utensils {
+    color: #1877f2;
+    font-size: 20px;
+    margin-right: 12px;
+}
+
+
+/*  TABLA DESGLOSE DE PAGO  */
+
+.Desglose-pago {
+    background-color: #ffffff;
+    width: calc(50% - 15px);
+    min-width: 350px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.10);
+}
+
+
+/* Tabla  */
+
+.desglose {
+    width: 100%;
+    border-collapse: collapse;
+    border: none;
+}
+
+
+/* Cabecera */
+
+.cabecera-tabla-desglose {
+    background-color: #082b59;
+    color: #ffffff;
+}
+
+.cabecera-tabla-desglose th {
+    padding: 15px;
+    text-align: left;
+}
+
+.cabecera-tabla-desglose th:last-child {
+    text-align: right;
+}
+
+
+/* Filas de la tabla */
+
+.desglose td {
+    padding: 14px 18px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.desglose td:last-child {
+    text-align: right;
+    font-weight: 600;
+}
+
+
+/* Total  de pago*/
+
+.desglose tfoot {
+    background-color: #f2f6fa;
+}
+
+.desglose tfoot td {
+    font-size: 17px;
+    color: #082b59;
+    border-bottom: none;
+}
+
+
+/* Iconos de pago */
+
+.fa-cc-visa,
+.fa-cc-mastercard,
+.fa-cc-paypal {
+    margin-left: 5px;
+    font-size: 20px;
+}
+
+
+/*DATOS DE RESERVA */
+
+.Datos-reserva {
+    background-color: #ffffff;
+    width: calc(50% - 15px);
+    min-width: 350px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.10);
+}
+
+.titulo-reserva-datos {
+    background-color: #082b59;
+    color: #ffffff;
+    padding: 15px 20px;
+}
+
+.titulo-reserva-datos p {
+    font-weight: 600;
+}
+
+.Datos-reserva > div:not(.titulo-reserva-datos) {
+    padding: 8px 20px;
+}
+
+.Datos-reserva p {
+    line-height: 1.5;
+}
+
+.Datos-reserva strong {
+    color: #082b59;
+}
+
+
+/*  ICONOS DE DATOS PERSONALES*/
+
+.fa-user,
+.fa-envelope,
+.fa-phone {
+    color: #1877f2;
+    margin-right: 8px;
+}
+
+
+/*  BOTONES DE DESCARGA Y SOPORTE */
+
+.descargar-soporte {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+.descargar,
+.contactar-soporte {
+    width: 280px;
+    padding: 14px 20px;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.descargar {
+    background-color: #082b59;
+    color: #ffffff;
+}
+
+.contactar-soporte {
+    background-color: #ffffff;
+    color: #082b59;
+    border: 2px solid #082b59;
+}
+
+.descargar:hover {
+    background-color: #1877f2;
+}
+
+.contactar-soporte:hover {
+    background-color: #082b59;
+    color: #ffffff;
+}
+
+.descargar i,
+.contactar-soporte i {
+    margin-right: 8px;
+}
+
+
+/* PIE DE PÁGINA */
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #082b59;
+    color: #ffffff;
+    width: 100%;
+    padding: 30px 50px;
+    gap: 20px;
+}
+
+.item-footer {
+    text-align: center;
+}
+
+.item-footer h4 {
+    margin-bottom: 8px;
+}
+
+.item-footer p {
+    color: #d7e4f3;
+}
+
+
+/* RESPONSIVE - TABLETS*/
+
+@media (max-width: 900px) {
+
+    .contenido-cabecera {
+        padding: 10px 25px 10px;
+    }
+
+    .menu {
+        gap: 10px;
+    }
+
+    .menu a {
+        font-size: 14px;
+    }
+
+    .titulo-alojamiento,
+    .Desglose-pago,
+    .Datos-reserva {
+        width: 100%;
+        max-width: 600px;
+    }
+}
+
+
+/* RESPONSIVE - CELULARES */
+
+@media (max-width: 650px) {
+
+    .contenido-cabecera {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .contenido-cabecera img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .contenedor-misreservas {
+        padding: 30px 15px;
+    }
+
+    .titulo h1 {
+        font-size: 22px;
+    }
+
+    .titulo h3 {
+        font-size: 10px;
+    }
+
+    .titulo-alojamiento,
+    .Desglose-pago,
+    .Datos-reserva {
+        min-width: 100%;
+    }
+
+    .descargar-soporte {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .descargar,
+    .contactar-soporte {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    footer {
+        flex-direction: column;
+        padding: 25px 15px 25px;
+    }
+}
 
 
 
