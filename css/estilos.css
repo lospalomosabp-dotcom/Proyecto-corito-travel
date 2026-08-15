@@ -20,7 +20,7 @@ body {
 .main-recuperarC,
 .main-registro,
 .main-restablecer {
-    background-image: url("../imagenes/backgroung-fondo.png");
+    background-image: url("../imagenes/perfilCliente/fondoPerfilCliente.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -877,6 +877,780 @@ footer {
     }
 }
 
+/* L */
+/* PERFIL DEL CLIENTE*/
+
+
+/*CABECERA*/
+
+body:has(.informacion_cliente) header {
+    position: relative;
+
+    display: grid;
+    grid-template-rows: 90px 190px;
+
+    width: 100%;
+}
+
+
+/* MENÚ PRINCIPAL */
+
+body:has(.informacion_cliente) .menuPrincipal {
+    display: grid;
+    grid-template-columns: 160px 1fr;
+
+    align-items: center;
+
+    width: 100%;
+    min-height: 90px;
+
+    padding: 0 5%;
+
+    background-color: #ffffff;
+
+    position: relative;
+    z-index: 5;
+}
+
+
+/* LOGO */
+
+body:has(.informacion_cliente) .menuPrincipal .logo {
+    display: block;
+
+    margin: 0;
+}
+
+body:has(.informacion_cliente) .menuPrincipal .logo img {
+    width: 120px;
+    height: 80px;
+
+    object-fit: contain;
+}
+
+
+/* MENÚ DE NAVEGACIÓN */
+
+body:has(.informacion_cliente) .menuPrincipal .menu {
+    display: grid;
+
+    grid-template-columns: repeat(6, auto);
+
+    justify-content: end;
+    align-items: center;
+
+    gap: 35px;
+}
+
+body:has(.informacion_cliente) .menuPrincipal .menu a {
+    display: block;
+
+    flex: none;
+
+    text-align: center;
+    text-decoration: none;
+
+    color: #082b59;
+
+    font-size: 15px;
+    font-weight: 600;
+}
+
+body:has(.informacion_cliente) .menuPrincipal .menu a:hover {
+    color: #1877f2;
+}
+
+
+/* BOTÓN MI PERFIL */
+
+body:has(.informacion_cliente) .menuPrincipal .menu .esquinero {
+    padding: 11px 20px;
+
+    background-color: #082b59;
+    color: #ffffff;
+
+    border-radius: 8px;
+}
+
+body:has(.informacion_cliente) .menuPrincipal .menu .esquinero:hover {
+    background-color: #1877f2;
+
+    color: #ffffff;
+}
+
+
+/* BANNER */
+
+body:has(.informacion_cliente) header > figure {
+    grid-row: 2;
+
+    width: 100%;
+    height: 190px;
+
+    margin: 0;
+
+    overflow: hidden;
+}
+
+body:has(.informacion_cliente) header > figure img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/* TÍTULO */
+
+body:has(.informacion_cliente) header > h1 {
+    position: absolute;
+
+    top: 115px;
+    left: 7%;
+
+    z-index: 3;
+
+    color: #082b59;
+
+    font-size: 34px;
+
+    text-transform: uppercase;
+}
+
+
+/* SUBTÍTULO */
+
+body:has(.informacion_cliente) header > p {
+    position: absolute;
+
+    top: 160px;
+    left: 7%;
+
+    z-index: 3;
+
+    color: #082b59;
+
+    font-size: 14px;
+}
+
+
+/* CONTENEDOR DEL PERFIL */
+
+body:has(.informacion_cliente) .informacion_cliente {
+    position: relative;
+    z-index: 10;
+
+    display: grid;
+
+    grid-template-columns: 170px 190px 1fr;
+
+    grid-template-areas:
+        "foto opciones formulario";
+
+    gap: 30px;
+
+    width: 86%;
+    max-width: 1150px;
+
+    margin: -45px auto 35px;
+
+    padding: 30px;
+
+    background-color: #ffffff;
+
+    border-radius: 14px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.16);
+}
+
+
+/* FOTO DEL CLIENTE */
+
+body:has(.informacion_cliente) .fotoPerfil {
+    grid-area: foto;
+
+    display: grid;
+
+    justify-items: center;
+    align-content: start;
+
+    padding-right: 20px;
+
+    border-right: 1px solid #d7dce2;
+
+    text-align: center;
+}
+
+body:has(.informacion_cliente) .fotoPerfil figure {
+    width: 115px;
+    height: 115px;
+
+    margin: 0 0 14px;
+
+    border-radius: 50%;
+
+    overflow: hidden;
+}
+
+body:has(.informacion_cliente) .fotoPerfil figure img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+body:has(.informacion_cliente) .fotoPerfil h2 {
+    margin-bottom: 5px;
+
+    color: #082b59;
+
+    font-size: 18px;
+}
+
+body:has(.informacion_cliente) .fotoPerfil h3 {
+    color: #777777;
+
+    font-size: 13px;
+    font-weight: normal;
+}
+
+
+/* OPCIONES DEL PERFIL*/
+
+body:has(.informacion_cliente) .opciones_cliente {
+    grid-area: opciones;
+}
+
+body:has(.informacion_cliente) .opciones_cliente nav {
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    gap: 5px;
+}
+
+body:has(.informacion_cliente) .opciones_cliente nav a {
+    display: block;
+
+    padding: 11px 12px;
+
+    color: #082b59;
+
+    border-radius: 5px;
+
+    text-align: left;
+    text-decoration: none;
+
+    font-size: 13px;
+}
+
+body:has(.informacion_cliente) .opciones_cliente nav a:first-child {
+    background-color: #e8eef5;
+
+    font-weight: bold;
+}
+
+body:has(.informacion_cliente) .opciones_cliente nav a:hover {
+    background-color: #e8eef5;
+}
+
+
+/* FORMULARIO */
+
+body:has(.informacion_cliente) .formulariosEditables {
+    grid-area: formulario;
+
+    width: 100%;
+}
+
+body:has(.informacion_cliente) .informacionPersonal form {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    grid-template-areas:
+        "titulo titulo"
+        "labelNombre labelFecha"
+        "nombre fecha"
+        "labelCorreo labelNacionalidad"
+        "correo nacionalidad"
+        "labelTelefono labelDireccion"
+        "telefono direccion"
+        "boton boton";
+
+    column-gap: 22px;
+    row-gap: 7px;
+}
+
+
+/* TÍTULO DEL FORMULARIO */
+
+body:has(.informacion_cliente) .informacionPersonal h2 {
+    grid-area: titulo;
+
+    margin-bottom: 15px;
+
+    color: #082b59;
+
+    font-size: 18px;
+}
+
+
+/* LABELS */
+
+body:has(.informacion_cliente) .informacionPersonal label {
+    display: block;
+
+    margin-bottom: 0;
+
+    color: #082b59;
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+/* NOMBRE */
+
+body:has(.informacion_cliente)
+.informacionPersonal label[for="nom"] {
+    grid-area: labelNombre;
+}
+
+body:has(.informacion_cliente) #nom {
+    grid-area: nombre;
+}
+
+
+/* CORREO */
+
+body:has(.informacion_cliente)
+.informacionPersonal label[for="correo"] {
+    grid-area: labelCorreo;
+}
+
+body:has(.informacion_cliente) #correo {
+    grid-area: correo;
+}
+
+
+/* TELÉFONO */
+
+body:has(.informacion_cliente)
+.informacionPersonal label[for="telefono"] {
+    grid-area: labelTelefono;
+}
+
+body:has(.informacion_cliente) #telefono {
+    grid-area: telefono;
+}
+
+
+/* FECHA DE NACIMIENTO */
+
+body:has(.informacion_cliente)
+.informacionPersonal label[for="fecha"] {
+    grid-area: labelFecha;
+}
+
+body:has(.informacion_cliente) #fecha {
+    grid-area: fecha;
+}
+
+
+/* NACIONALIDAD */
+
+body:has(.informacion_cliente)
+.informacionPersonal label[for="nac"] {
+    grid-area: labelNacionalidad;
+}
+
+body:has(.informacion_cliente) #nac {
+    grid-area: nacionalidad;
+}
+
+
+/* DIRECCIÓN */
+
+body:has(.informacion_cliente)
+.informacionPersonal label[for="dir"] {
+    grid-area: labelDireccion;
+}
+
+body:has(.informacion_cliente) #dir {
+    grid-area: direccion;
+}
+
+
+/* INPUTS*/
+
+body:has(.informacion_cliente)
+.informacionPersonal input:not([type="submit"]) {
+    width: 100%;
+    height: 36px;
+
+    padding: 5px 9px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #aab2bc;
+    border-radius: 4px;
+
+    color: #333333;
+
+    font-size: 13px;
+
+    outline: none;
+}
+
+body:has(.informacion_cliente)
+.informacionPersonal input:not([type="submit"]):focus {
+    border-color: #1877f2;
+}
+
+
+/* BOTÓN GUARDAR CAMBIOS*/
+
+body:has(.informacion_cliente)
+.informacionPersonal input[type="submit"] {
+    grid-area: boton;
+
+    display: block;
+
+    justify-self: start;
+
+    width: auto;
+    min-height: auto;
+
+    margin: 12px 0 0;
+
+    padding: 10px 18px;
+
+    background-color: #082b59;
+    color: #ffffff;
+
+    border: none;
+    border-radius: 5px;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+body:has(.informacion_cliente)
+.informacionPersonal input[type="submit"]:hover {
+    background-color: #1877f2;
+}
+
+
+/*  RESERVAS */
+
+body:has(.informacion_cliente) .reservas {
+    display: grid;
+
+    grid-template-columns: 230px 1fr;
+
+    gap: 25px;
+
+    width: 86%;
+    max-width: 1150px;
+
+    margin: 0 auto 50px;
+}
+
+
+/* RESERVAS ACTIVAS */
+
+body:has(.informacion_cliente) .reservas_activas {
+    display: grid;
+
+    gap: 10px;
+
+    padding: 20px;
+
+    background-color: #ffffff;
+
+    border-radius: 10px;
+
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.10);
+}
+
+body:has(.informacion_cliente)
+.reservas_activas h3:first-child {
+    color: #082b59;
+
+    font-size: 14px;
+}
+
+body:has(.informacion_cliente)
+.reservas_activas h3:nth-child(2) {
+    color: #1877f2;
+
+    font-size: 30px;
+}
+
+body:has(.informacion_cliente) .reservas_activas a {
+    color: #1877f2;
+
+    text-decoration: none;
+
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+/*  NOTIFICACIONES */
+
+body:has(.informacion_cliente) .notificaciones {
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    gap: 12px;
+}
+
+body:has(.informacion_cliente) .notificacion {
+    display: grid;
+
+    grid-template-columns: 1fr auto;
+
+    grid-template-areas:
+        "titulo enlace"
+        "texto enlace";
+
+    column-gap: 25px;
+
+    align-items: center;
+
+    padding: 18px 20px;
+
+    background-color: #ffffff;
+
+    border-radius: 10px;
+
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+body:has(.informacion_cliente) .notificacion h3 {
+    grid-area: titulo;
+
+    margin-bottom: 5px;
+
+    color: #082b59;
+
+    font-size: 14px;
+}
+
+body:has(.informacion_cliente) .notificacion p {
+    grid-area: texto;
+
+    color: #666666;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+}
+
+body:has(.informacion_cliente) .notificacion nav {
+    grid-area: enlace;
+}
+
+body:has(.informacion_cliente) .notificacion nav a {
+    color: #1877f2;
+
+    text-decoration: none;
+
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+/* FOOTER*/
+
+body:has(.informacion_cliente) footer {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    align-items: center;
+
+    width: 100%;
+    min-height: 90px;
+
+    padding: 20px 7%;
+
+    background-color: #082b59;
+    color: #ffffff;
+
+    gap: 0;
+}
+
+body:has(.informacion_cliente) footer > div {
+    padding: 5px 20px;
+
+    border-right: 1px solid rgba(255, 255, 255, 0.25);
+
+    text-align: center;
+}
+
+body:has(.informacion_cliente) footer > div:last-child {
+    border-right: none;
+}
+
+body:has(.informacion_cliente) footer p:first-child {
+    margin-bottom: 5px;
+
+    color: #ffffff;
+
+    font-size: 13px;
+    font-weight: bold;
+}
+
+body:has(.informacion_cliente) footer p:last-child {
+    color: #d7e4f3;
+
+    font-size: 11px;
+}
+
+
+/* RESPONSIVE - TABLET*/
+
+@media (max-width: 900px) {
+
+    body:has(.informacion_cliente)
+    .menuPrincipal .menu {
+        gap: 15px;
+    }
+
+    body:has(.informacion_cliente)
+    .menuPrincipal .menu a {
+        font-size: 13px;
+    }
+
+    body:has(.informacion_cliente)
+    .informacion_cliente {
+        grid-template-columns: 160px 1fr;
+
+        grid-template-areas:
+            "foto opciones"
+            "formulario formulario";
+    }
+
+    body:has(.informacion_cliente)
+    .fotoPerfil {
+        border-right: none;
+    }
+
+    body:has(.informacion_cliente)
+    .formulariosEditables {
+        padding-top: 20px;
+
+        border-top: 1px solid #dddddd;
+    }
+}
+
+
+/* RESPONSIVE - CELULAR*/
+
+@media (max-width: 650px) {
+
+    body:has(.informacion_cliente)
+    .menuPrincipal {
+        grid-template-columns: 1fr;
+
+        justify-items: center;
+
+        padding: 10px;
+    }
+
+    body:has(.informacion_cliente)
+    .menuPrincipal .menu {
+        grid-template-columns: repeat(3, auto);
+
+        justify-content: center;
+
+        margin-top: 10px;
+    }
+
+    body:has(.informacion_cliente)
+    .informacion_cliente {
+        width: 94%;
+
+        grid-template-columns: 1fr;
+
+        grid-template-areas:
+            "foto"
+            "opciones"
+            "formulario";
+    }
+
+    body:has(.informacion_cliente)
+    .fotoPerfil {
+        padding-right: 0;
+
+        border-right: none;
+    }
+
+    body:has(.informacion_cliente)
+    .opciones_cliente nav {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    body:has(.informacion_cliente)
+    .informacionPersonal form {
+        grid-template-columns: 1fr;
+
+        grid-template-areas:
+            "titulo"
+            "labelNombre"
+            "nombre"
+            "labelCorreo"
+            "correo"
+            "labelTelefono"
+            "telefono"
+            "labelFecha"
+            "fecha"
+            "labelNacionalidad"
+            "nacionalidad"
+            "labelDireccion"
+            "direccion"
+            "boton";
+    }
+
+    body:has(.informacion_cliente)
+    .reservas {
+        width: 94%;
+
+        grid-template-columns: 1fr;
+    }
+
+    body:has(.informacion_cliente)
+    .notificacion {
+        grid-template-columns: 1fr;
+
+        grid-template-areas:
+            "titulo"
+            "texto"
+            "enlace";
+
+        row-gap: 8px;
+    }
+
+    body:has(.informacion_cliente)
+    footer {
+        grid-template-columns: 1fr 1fr;
+
+        gap: 20px;
+    }
+
+    body:has(.informacion_cliente)
+    footer > div {
+        border-right: none;
+    }
+}
 
 
 
