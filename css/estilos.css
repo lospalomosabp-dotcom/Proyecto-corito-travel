@@ -12,6 +12,39 @@ body {
         Arial,
         sans-serif;
 }
+/*MENÚ DE NAVEGACIÓN*/
+
+.menu {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.menu a {
+    flex: 1;
+    text-align: center;
+    text-decoration: none;
+    color: #082b59;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+
+.menu a:hover {
+    color: #ec0d0d;
+}
+.mi-cuenta {
+    border: 1px solid #082b59;
+    color: #fff;
+    padding: 10px 18px;
+    border-radius: 8px;
+}
+
+.mi-cuenta:hover {
+    background-color: #082b59;
+    color: #fff;
+}
 
 
 /* CONTENEDORES PRINCIPALES */
@@ -139,7 +172,6 @@ label {
     border: none;
     font-size: 18px;
     width: 100%;
-    background-color: transparent;
 }
 
 
@@ -271,12 +303,6 @@ label {
     text-align: center;
 }
 
-.icono-navegacion {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
 
 
 /* RESPONSIVE TABLET  */
@@ -289,6 +315,15 @@ label {
     .main-restablecer {
         padding: 40px 30px;
     }
+
+    .menu {
+        gap: 10px;
+    }
+
+    .menu a {
+        font-size: 14px;
+    }
+
 
 
     .formulario-inicio,
@@ -404,10 +439,6 @@ label {
         margin: 0 10px;
     }
 
-
-    .icono-navegacion {
-        gap: 15px;
-    }
 }
 
 /* PAGINA VISUALIZACION DE RESERVA | EDRIGE*/
@@ -424,10 +455,7 @@ label {
     min-height: 100px;
 }
 
-.contenido-cabecera figcaption {
-    display: flex;
-    align-items: center;
-}
+
 
 .contenido-cabecera img {
     width: 120px;
@@ -436,46 +464,6 @@ label {
 }
 
 
-/*MENÚ DE NAVEGACIÓN*/
-
-.menu {
-    flex: 1;
-    display: flex;
-    align-items: center;
-}
-
-.menu a {
-    flex: 1;
-    text-align: center;
-    text-decoration: none;
-    color: #082b59;
-    font-size: 16px;
-    font-weight: 600;
-    transition: 0.3s;
-}
-
-
-
-.menu a:hover {
-    color: #ec0d0d;
-}
-
-.icono-inicio-sesion {
-    display: flex;
-    align-items: center;
-}
-
-.mi-cuenta {
-    border: 1px solid #082b59;
-    color: #fff;
-    padding: 10px 18px;
-    border-radius: 8px;
-}
-
-.mi-cuenta:hover {
-    background-color: #082b59;
-    color: #fff;
-}
 
 
 /* CONTENEDOR PRINCIPA*/
@@ -556,7 +544,6 @@ main {
 .titulo-reserva-alojamiento p {
     font-size: 16px;
     font-weight: 600;
-    line-height: 1.5;
 }
 
 
@@ -592,8 +579,7 @@ main {
 .Entrada-hotel p,
 .Salida-hotel p,
 .habitacion p {
-    margin: 0;
-    line-height: 1.5;
+    margin: 2px;
 }
 
 .fa-calendar-days,
@@ -621,7 +607,6 @@ main {
 
 .desglose {
     width: 100%;
-    border-collapse: collapse;
     border: none;
 }
 
@@ -700,12 +685,8 @@ main {
     font-weight: 600;
 }
 
-.Datos-reserva > div:not(.titulo-reserva-datos) {
-    padding: 8px 20px;
-}
-
 .Datos-reserva p {
-    line-height: 1.5;
+    padding: 8px 20px;
 }
 
 .Datos-reserva strong {
@@ -803,14 +784,6 @@ footer {
 
     .contenido-cabecera {
         padding: 10px 25px 10px;
-    }
-
-    .menu {
-        gap: 10px;
-    }
-
-    .menu a {
-        font-size: 14px;
     }
 
     .titulo-alojamiento,
