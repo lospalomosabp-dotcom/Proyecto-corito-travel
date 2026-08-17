@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Mi Perfil</title>
+    <title>Métodos de Pago</title>
 
     <link rel="stylesheet" href="css/estilos.css">
 </head>
@@ -18,10 +18,7 @@
         <div class="menuPrincipal">
 
             <figure class="logo">
-                <img src="imagenes/Logo-corito.png"
-                     alt="Logo de Corito Travel"
-                     width="120px"
-                     height="80px">
+                <img src="imagenes/Logo-corito.png" alt="Logo de Corito Travel" width="120px" height="80px">
             </figure>
 
             <nav class="menu">
@@ -35,14 +32,12 @@
 
         </div>
 
-
         <!-- Información de la página -->
         <h1>Mi perfil</h1>
 
         <p>Administra tu información y revisa tus viajes</p>
 
-
-        <!-- Imagen de fondo de la cabecera -->
+        <!-- Imagen de fondo -->
         <figure>
             <img src="imagenes/perfilCliente/fondoPerfilCliente.jpg" alt="">
         </figure>
@@ -61,10 +56,8 @@
                 <img src="imagenes/logoFoto.png" alt="">
             </figure>
 
-            <!-- Nombre del cliente -->
             <h2>Nombre</h2>
 
-            <!-- Ciudad de residencia -->
             <h3>Ciudad</h3>
 
         </div>
@@ -96,82 +89,100 @@
         </div>
 
 
-        <!-- Información personal -->
+        <!-- Métodos de pago -->
         <div class="formulariosEditables">
 
-            <div class="informacionPersonal">
+            <div class="metodosPagoCliente">
 
-                <form action="">
+                <h2>Métodos de Pago</h2>
 
-                    <h2>Información Personal</h2>
-
-
-                    <!-- Nombre -->
-                    <label for="nom">
-                        Nombre Completo
-                    </label>
-
-                    <input type="text"
-                           id="nom"
-                           autocomplete="off"
-                           required>
+                <p>
+                    Administra las tarjetas asociadas a tu cuenta.
+                </p>
 
 
-                    <!-- Correo -->
-                    <label for="correo">
-                        Correo Electrónico
-                    </label>
+                <!-- Tarjetas guardadas -->
+                <div class="tarjetasAgregadas">
 
-                    <input type="email"
-                           id="correo"
-                           autocomplete="off">
+                    <div class="informacionTarjeta">
 
+                        <h3>Visa</h3>
 
-                    <!-- Teléfono -->
-                    <label for="telefono">
-                        Teléfono
-                    </label>
+                        <p>************6162</p>
 
-                    <input type="tel"
-                           id="telefono">
+                        <span>Vence: 09/30</span>
+
+                    </div>
 
 
-                    <!-- Fecha de nacimiento -->
-                    <label for="fecha">
-                        Fecha de nacimiento
-                    </label>
+                    <div class="opcionesTarjeta">
 
-                    <input type="date"
-                           id="fecha">
+                        <button type="button">
+                            Editar
+                        </button>
 
+                        <button type="button">
+                            Eliminar
+                        </button>
 
-                    <!-- Nacionalidad -->
-                    <label for="nac">
-                        Nacionalidad
-                    </label>
+                    </div>
 
-                    <input type="text"
-                           id="nac"
-                           autocomplete="off"
-                           required>
+                </div>
 
 
-                    <!-- Dirección -->
-                    <label for="dir">
-                        Dirección
-                    </label>
+                <!-- Agregar nueva tarjeta -->
+                <div class="agregarTarjeta">
 
-                    <input type="text"
-                           id="dir"
-                           autocomplete="off"
-                           required>
+                    <h3>Agregar nueva tarjeta</h3>
+
+                    <form action="">
+
+                        <label for="titular">
+                            Nombre del titular
+                        </label>
+
+                        <input type="text"
+                               id="titular"
+                               autocomplete="off"
+                               required>
 
 
-                    <!-- Guardar -->
-                    <input type="submit"
-                           value="Guardar Cambios">
+                        <label for="numeroTarjeta">
+                            Número de tarjeta
+                        </label>
 
-                </form>
+                        <input type="text"
+                               id="numeroTarjeta"
+                               autocomplete="off"
+                               required>
+
+
+                        <label for="vencimiento">
+                            Fecha de vencimiento
+                        </label>
+
+                        <input type="month"
+                               id="vencimiento"
+                               required>
+
+
+                        <label for="cvv">
+                            CVV
+                        </label>
+
+                        <input type="text"
+                               id="cvv"
+                               maxlength="4"
+                               autocomplete="off"
+                               required>
+
+
+                        <input type="submit"
+                               value="Agregar Tarjeta">
+
+                    </form>
+
+                </div>
 
             </div>
 
@@ -205,19 +216,15 @@
 
             <div class="notificacion">
 
-                <h3>
-                    Vuelo comprado exitosamente
-                </h3>
+                <h3>Vuelo comprado exitosamente</h3>
 
                 <p>
-                    Su vuelo de Santiago, República Dominicana hacia
-                    París, Francia ha sido comprado de manera exitosa!
+                    Su vuelo de Santiago, República Dominicana hacia París,
+                    Francia ha sido comprado de manera exitosa!
                 </p>
 
                 <nav>
-                    <a href="#">
-                        Ver detalles
-                    </a>
+                    <a href="#">Ver detalles</a>
                 </nav>
 
             </div>
@@ -225,9 +232,7 @@
 
             <div class="notificacion">
 
-                <h3>
-                    Reserva realizada exitosamente
-                </h3>
+                <h3>Reserva realizada exitosamente</h3>
 
                 <p>
                     Su reservación para 2 Personas en Hodelpa ha sido
@@ -235,9 +240,7 @@
                 </p>
 
                 <nav>
-                    <a href="#">
-                        Ver detalles
-                    </a>
+                    <a href="#">Ver detalles</a>
                 </nav>
 
             </div>
@@ -247,7 +250,6 @@
     </div>
 
 
-    <!-- Pie de página -->
     <footer>
 
         <div>

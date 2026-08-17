@@ -1,9 +1,10 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+<<<<<<< HEAD
 @font-face {
     font-family: Corito-letra;
     src: url(../fuentes/Montserrat-VariableFont_wght.ttf);
@@ -388,211 +389,1946 @@ footer {
     background-image: url(../imagenes/Imagen-Inicio.png );
     width: 100%;
     height: 900px;
+=======
+body {
+    font-family: 'Trebuchet MS',
+        'Lucida Sans Unicode',
+        'Lucida Grande',
+        'Lucida Sans',
+        Arial,
+        sans-serif;
+>>>>>>> f5364a078dcd296009a615df3388fe36784a01e8
 }
-.menu{
+/*MENÚ DE NAVEGACIÓN*/
+
+.menu {
+    flex: 1;
     display: flex;
-    margin: 10px 20px 10px;
-    justify-content: space-between;
-    background-color: #fff;
-    width: 100%;
-    font-weight: 600; 
-   
-} 
-.micuenta{
-    color: #fff;
-    font-style: none;
-    padding: 10px 10px 15px;
-    margin: 10px 10px 15px;
+    align-items: center;
 }
 
-a:visited{
-    color: #082b59; 
- }
+.menu a {
+    flex: 1;
+    text-align: center;
+    text-decoration: none;
+    color: #082b59;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s;
+}
 
 
-.icono-inicio-sesion{
+.menu a:hover {
+    color: #10bcd3;
+}
+.mi-cuenta {
+    border: 1px solid #082b59;
+    color: #fff;
+    padding: 10px 18px;
+    border-radius: 8px;
+}
+
+.mi-cuenta:hover {
     background-color: #082b59;
     color: #fff;
-    padding: 2px;
 }
 
-/* Formularios */
-.formulario-inicio{
-   position: relative;
-   left: 600px;
-   border-radius: 10px;
-   background-color: #fff;
-   width: 50%;
-   padding: 0px;
-   top: 20px;
-   height: 800px; 
-}
-.formulario-cuenta{
+
+/* CONTENEDORES PRINCIPALES */
+
+.main-iniciosesion,
+.main-recuperarC,
+.main-registro,
+.main-restablecer {
+    background-image: url("../imagenes/perfilCliente/fondoPerfilCliente.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
     position: relative;
-    left: 600px;
+    padding: 40px 5%;
+}
+
+
+/* FORMULARIOS */
+
+.formulario-inicio,
+.formulario-cuenta {
+    position: relative;
     border-radius: 10px;
     background-color: #fff;
-    width: 50%;
+    width: 100%;
+    max-width: 600px;
+    min-height: 500px;
+    margin-left: auto;
+    margin-right: 3%;
     top: 20px;
-    padding: 0px;
-    margin: 0px;
-    height: 850px;
-}
-.formulario-recuperar-cuenta, .formulario-cuenta-restablecer{
-   position:relative;
-   left: 400px;
-   background-color: #fff;
-   width: 50%;
-   height:600px;
-   top: 50px;
-   border-radius: 20px;
-   margin: 10px;
-
+    padding: 30px 45px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.20);
 }
 
 
-/* imagen logo */
+/*  RECUPERAR Y RESTABLECER */
 
-.logo{
-   display: flex;
-   justify-content: center;
-   margin: 0;
-   padding: auto;
+.formulario-recuperar-cuenta,
+.formulario-cuenta-restablecer {
+    position: relative;
+    background-color: #fff;
+    width: 100%;
+    max-width: 600px;
+    min-height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    padding: 35px 45px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.20);
 }
 
-/* texto central */
-.inicio-sesion,.crear-cuenta,.restablecer-contraseña {
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight : 2px bold;
+
+/*LOGO*/
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    width: 300px;
+    height: 200px;
+    object-fit: contain;
+}
+
+
+/* TÍTULOS */
+
+.inicio-sesion,
+.crear-cuenta,
+.restablecer-contraseña {
+
+    font-family: 'Trebuchet MS',
+        'Lucida Sans Unicode',
+        'Lucida Grande',
+        'Lucida Sans',
+        Arial,
+        sans-serif;
+    font-weight: bold;
     color: #001937;
     text-align: center;
     font-size: 35px;
-    padding: auto;
-    margin: auto;
+    margin-bottom: 15px;
 }
-/* Subtitulos */
-.subtitulo{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+
+/* SUBTÍTULOS*/
+
+.subtitulo {
+    font-family: 'Trebuchet MS',
+        'Lucida Sans Unicode',
+        'Lucida Grande',
+        'Lucida Sans',
+        Arial,
+        sans-serif;
     text-align: center;
     color: #04295d;
     margin-bottom: 25px;
+    line-height: 1.5;
 }
-/* Imput eamil */
-[for|="email"]{
-    padding: 50px;
-    margin: 50px; 
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+
+/* LABELS*/
+
+label {
+    display: block;
     font-size: 16px;
     color: #04295d;
-
-}
-/* input contraseña */
-[for|="Contraseña"]{
-    padding: 50px;
-    margin: 50px; 
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 16px;
-    color: #04295d;
-    position: relative;
+    margin-bottom: 7px;
 }
 
 
-/* Boton de enviar  en registrar clientes*/
+/* INPUTS */
 
-[type|="submit"]{
-   width: 70%;
-   height: 50px;
-   border-radius: 8px;
-   margin-left: 100px;
-   background-color: #04295d;
-   color: #fff;
-}
-
-
-
-/* imput email,password  en recuperar cuenta*/
-[type|="email"],
-[type|="password"],
-[type|="text"]{
+[type="email"],
+[type="password"],
+[type="text"],
+[type="tel"] {
     border: none;
     font-size: 18px;
     width: 100%;
 }
 
 
-.cambioContraseña{
+/* INPUT DE DATOS*/
+
+.introducir-correo,
+.introducir-contraseña,
+.introducir-codigo,
+.confirmarContraseña,
+.introducir-telefono,
+.nombre,
+.apellido {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 50px;
+    border: 1px solid #b8c1cc;
+    border-radius: 8px;
+    padding: 0 15px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    transition: 0.3s;
+}
+
+
+
+/* ICONOS DE LOS INPUTS */
+.introducir-correo i,
+.introducir-contraseña i,
+.introducir-codigo i,
+.confirmarContraseña i,
+.introducir-telefono i,
+.nombre i,
+.apellido i {
+    color: #1877f2;
+    font-size: 18px;
+    margin-right: 12px;
+}
+
+
+
+/* BOTÓNES  DE ENVIAR*/
+[type="submit"] {
+    display: block;
+    width: 70%;
+    min-height: 50px;
+    border-radius: 8px;
+    margin: 20px auto;
+    border: none;
+    background-color: #04295d;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+[type="submit"]:hover {
+    background-color: #1877f2;
+}
+
+
+/* CAMBIAR CONTRASENA*/
+
+.cambioContraseña {
     display: flex;
     flex-direction: column;
-    padding-left: 380px;
-    margin: 8px;
+    margin: 10px 0;
+    gap: 8px;
+    padding-left: 10;
 }
 
-.opcion{
+
+/* OPCIÓN */
+.opcion {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-top: 20px;
     font-size: 30px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #04295d;
 }
-/* IMPUT DE DATOS  EN REGISTRO */
 
-.introducir-correo, 
-.introducir-contraseña , .introducir-codigo, .confirmarContraseña, .introducir-telefono, .nombre, .apellido{
-  display: flex;
-  align-items: center;  
-  justify-content: space-around;
-  width: 70%;
-  height: 50px;               
-  border: 1px solid;   
-  border-radius: 8px;          
-  padding: 0 15px;             
-  box-sizing: border-box;
-  margin-top: 8px;
-  margin-bottom: 20px;
-  margin-left: 100px;
+
+/* TÉRMINOS Y CONDICIONES */
+
+
+.terminos-condiciones,
+.confirmacion {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    margin: 15px 0;
+    padding: 10px 0;
+    font-size: 14px;
+    color: #555;
+    
 }
 
-/* Terminos y condiciones  */
-.terminos-condiciones, .confirmacion{
-    margin-left: 100px;
-    padding: 20px 15px 10px;
-
+.terminos-condiciones input,
+.confirmacion input {
+    width: auto;
 }
-
-
 
 
 /* ICONOS */
 
-.fa-facebook, .fa-arrow-left{
+.fa-facebook,
+.fa-arrow-left {
     color: #1877f2;
     font-size: 48px;
     margin: 0 25px;
     text-align: center;
-    
 }
-.fa-circle-user{
-     color: #fff;
+
+.fa-circle-user {
+    color: #fff;
     font-size: 25px;
     margin: 0 5px;
 }
 
-.fa-google{
+
+.fa-google {
     font-size: 48px;
     color: #db4437;
-    margin: 50px 50px ;
+    margin: 0 25px;
     text-align: center;
-
-}
-.icono-navegacion{
- display: flex;
- justify-content: center;
- gap: 20px;
 }
 
 
 
+/* RESPONSIVE TABLET  */
 
+@media (max-width: 1024px) {
+
+    .main-iniciosesion,
+    .main-recuperarC,
+    .main-registro,
+    .main-restablecer {
+        padding: 40px 30px;
+    }
+
+    .menu {
+        gap: 10px;
+    }
+
+    .menu a {
+        font-size: 14px;
+    }
+
+
+
+    .formulario-inicio,
+    .formulario-cuenta {
+        max-width: 550px;
+        margin-right: 20px;
+    }
+}
+
+
+/* RESPONSIVE CELULAR */
+
+@media (max-width: 600px) {
+    .main-iniciosesion,
+    .main-recuperarC,
+    .main-registro,
+    .main-restablecer {
+        min-height: 100vh;
+        padding: 20px 12px;
+    }
+
+    /* FORMULARIOS */
+    .formulario-inicio,
+    .formulario-cuenta,
+    .formulario-recuperar-cuenta,
+    .formulario-cuenta-restablecer {
+        width: 100%;
+        max-width: 100%;
+        min-height: auto;
+        margin: auto;
+        padding: 25px 20px;
+        border-radius: 10px;
+    }
+
+
+    /* LOGO */
+    .logo img {
+        width: 100px;
+        height: 100px;
+    }
+
+
+    /* TÍTULOS */
+    .inicio-sesion,
+    .crear-cuenta,
+    .restablecer-contraseña {
+        font-size: 25px;
+    }
+
+    /* SUBTÍTULO */
+    .subtitulo {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+
+    /* INPUTS */
+    .introducir-correo,
+    .introducir-contraseña,
+    .introducir-codigo,
+    .confirmarContraseña,
+    .introducir-telefono,
+    .nombre,
+    .apellido {
+        width: 100%;
+        margin-left: 0;
+        min-height: 48px;
+        margin-bottom: 15px;
+    }
+
+
+    /* BOTÓN SUBMIT */
+    [type="submit"] {
+        width: 100%;
+        min-height: 48px;
+        margin: 20px auto;
+    }
+
+
+    /* PAGINA CAMBIO CONTRASEÑA */
+    .cambioContraseña {
+        padding-left: 0;
+        margin: 10px 0;
+    }
+
+
+    /* OPCIÓN */
+    .opcion {
+        font-size: 20px;
+        margin-top: 15px;
+    }
+
+
+    /* TÉRMINOS  Y CONDICIONES*/
+    .terminos-condiciones,
+    .confirmacion {
+        margin-left: 0;
+        padding: 8px 0;
+        font-size: 13px;
+    }
+
+
+    /* ICONOS */
+    .fa-facebook,
+    .fa-google {
+        font-size: 35px;
+        margin: 0 10px;
+    }
+
+
+    .fa-arrow-left {
+        font-size: 28px;
+        margin: 0 10px;
+    }
+
+}
+
+/* PAGINA VISUALIZACION DE RESERVA | EDRIGE*/
+
+
+/*CABECERA*/
+
+.contenido-cabecera {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+    background-color: #ffffff;
+    min-height: 100px;
+}
+
+
+
+.contenido-cabecera img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+}
+
+
+
+
+/* CONTENEDOR PRINCIPA*/
+
+.contenedor-misreservas {
+    background-image: url("../imagenes/backgroung-fondo.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    padding: 40px 7%;
+}
+
+
+/*  TÍTULOS*/
+
+.titulo {
+    color: #082b59;
+    text-align: left;
+    margin-bottom: 35px;
+}
+
+.titulo h1 {
+    color: #082b59;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.titulo h1 i {
+    background-color: #0c59cf;
+    color: #fff;
+    margin-right: 10px;
+    border-radius: 20px;
+    width: 30px;
+}
+
+.titulo h3 {
+    color: #555;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+/* CONTENIDO PRINCIPAL*/
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex:1;
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* TARJETA DE ALOJAMIENTO*/
+
+.titulo-alojamiento {
+    background-color: #ffffff;
+    width: calc(50% - 15px);
+    min-width: 350px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.10);
+}
+
+
+/* Título del alojamiento */
+
+.titulo-reserva-alojamiento {
+    background-color: #082b59;
+    color: #ffffff;
+    padding: 15px 20px;
+}
+
+.titulo-reserva-alojamiento p {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+/*Icono Estrellas  de la seccion de alojamiento*/
+
+.fa-star {
+    color: #ffd900;
+    padding: 2px;
+    font-size: 14px;
+}
+
+
+/* INFORMACIÓN DEL HOTEL */
+
+.Alojamiento {
+    background-color: #ffffff;
+    padding: 20px;
+    width: 100%;
+}
+
+
+/* Entrada, salida y habitación */
+
+.Entrada-hotel,
+.Salida-hotel,
+.habitacion {
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    border-top: 1px solid #eeeeee;
+}
+
+.Entrada-hotel p,
+.Salida-hotel p,
+.habitacion p {
+    margin: 2px;
+}
+
+.fa-calendar-days,
+.fa-bed,
+.fa-utensils {
+    color: #1877f2;
+    font-size: 20px;
+    margin-right: 12px;
+}
+
+
+/*  TABLA DESGLOSE DE PAGO  */
+
+.Desglose-pago {
+    background-color: #ffffff;
+    width: calc(50% - 15px);
+    min-width: 350px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.10);
+}
+
+
+/* Tabla  */
+
+.desglose {
+    width: 100%;
+    border: none;
+}
+
+
+/* Cabecera */
+
+.cabecera-tabla-desglose {
+    background-color: #082b59;
+    color: #ffffff;
+}
+
+.cabecera-tabla-desglose th {
+    padding: 15px;
+    text-align: left;
+}
+
+.cabecera-tabla-desglose th:last-child {
+    text-align: right;
+}
+
+
+/* Filas de la tabla */
+
+.desglose td {
+    padding: 14px 18px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.desglose td:last-child {
+    text-align: right;
+    font-weight: 600;
+}
+
+
+/* Total  de pago*/
+
+.desglose tfoot {
+    background-color: #f2f6fa;
+}
+
+.desglose tfoot td {
+    font-size: 17px;
+    color: #082b59;
+    border-bottom: none;
+}
+
+
+/* Iconos de pago */
+
+.fa-cc-visa,
+.fa-cc-mastercard,
+.fa-cc-paypal {
+    margin-left: 5px;
+    font-size: 20px;
+}
+
+
+/*DATOS DE RESERVA */
+
+.Datos-reserva {
+    background-color: #ffffff;
+    width: calc(50% - 15px);
+    min-width: 350px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.10);
+}
+
+.titulo-reserva-datos {
+    background-color: #082b59;
+    color: #ffffff;
+    padding: 15px 20px;
+}
+
+.titulo-reserva-datos p {
+    font-weight: 600;
+}
+
+.Datos-reserva p {
+    padding: 8px 20px;
+}
+
+.Datos-reserva strong {
+    color: #082b59;
+}
+
+
+/*  ICONOS DE DATOS PERSONALES*/
+
+.fa-user,
+.fa-envelope,
+.fa-phone {
+    color: #1877f2;
+    margin-right: 8px;
+}
+
+
+/*  BOTONES DE DESCARGA Y SOPORTE */
+
+.descargar-soporte {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+.descargar,
+.contactar-soporte {
+    width: 280px;
+    padding: 14px 20px;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.descargar {
+    background-color: #082b59;
+    color: #ffffff;
+}
+
+.contactar-soporte {
+    background-color: #ffffff;
+    color: #082b59;
+    border: 2px solid #082b59;
+}
+
+.descargar:hover {
+    background-color: #1877f2;
+}
+
+.contactar-soporte:hover {
+    background-color: #082b59;
+    color: #ffffff;
+}
+
+.descargar i,
+.contactar-soporte i {
+    margin-right: 8px;
+}
+
+
+/* PIE DE PÁGINA */
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #082b59;
+    color: #ffffff;
+    width: 100%;
+    padding: 30px 50px;
+    gap: 20px;
+}
+
+.item-footer {
+    text-align: center;
+}
+
+.item-footer h4 {
+    margin-bottom: 8px;
+}
+
+.item-footer p {
+    color: #d7e4f3;
+}
+
+
+/* RESPONSIVE - TABLETS*/
+
+@media (max-width: 900px) {
+
+    .contenido-cabecera {
+        padding: 10px 25px 10px;
+    }
+
+    .titulo-alojamiento,
+    .Desglose-pago,
+    .Datos-reserva {
+        width: 100%;
+        max-width: 600px;
+    }
+}
+
+
+/* RESPONSIVE - CELULARES */
+
+@media (max-width: 650px) {
+
+    .contenido-cabecera {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .contenido-cabecera img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .contenedor-misreservas {
+        padding: 30px 15px;
+    }
+
+    .titulo h1 {
+        font-size: 22px;
+    }
+
+    .titulo h3 {
+        font-size: 10px;
+    }
+
+    .titulo-alojamiento,
+    .Desglose-pago,
+    .Datos-reserva {
+        min-width: 100%;
+    }
+
+    .descargar-soporte {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .descargar,
+    .contactar-soporte {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    footer {
+        flex-direction: column;
+        padding: 25px 15px 25px;
+    }
+}
+
+/* Lis */
+/* PERFIL DEL CLIENTE*/
+
+
+/*CABECERA*/
+
+body:has(.informacion_cliente) header {
+    position: relative;
+
+    display: grid;
+    grid-template-rows: 90px 190px;
+
+    width: 100%;
+}
+
+
+/* MENÚ PRINCIPAL */
+
+body:has(.informacion_cliente) .menuPrincipal {
+    display: grid;
+    grid-template-columns: 160px 1fr;
+
+    align-items: center;
+
+    width: 100%;
+    min-height: 90px;
+
+    padding: 0 5%;
+
+    background-color: #ffffff;
+
+    position: relative;
+    z-index: 5;
+}
+
+
+/* LOGO */
+
+body:has(.informacion_cliente) .menuPrincipal .logo {
+    display: block;
+
+    margin: 0;
+}
+
+body:has(.informacion_cliente) .menuPrincipal .logo img {
+    width: 120px;
+    height: 80px;
+
+    object-fit: contain;
+}
+
+
+/* MENÚ DE NAVEGACIÓN */
+
+body:has(.informacion_cliente) .menuPrincipal .menu {
+    display: grid;
+
+    grid-template-columns: repeat(6, auto);
+
+    justify-content: end;
+    align-items: center;
+
+    gap: 35px;
+}
+
+body:has(.informacion_cliente) .menuPrincipal .menu a {
+    display: block;
+
+    flex: none;
+
+    text-align: center;
+    text-decoration: none;
+
+    color: #082b59;
+
+    font-size: 15px;
+    font-weight: 600;
+}
+
+body:has(.informacion_cliente) .menuPrincipal .menu a:hover {
+    color: #1877f2;
+}
+
+
+/* BOTÓN MI PERFIL */
+
+body:has(.informacion_cliente) .menuPrincipal .menu .esquinero {
+    padding: 11px 20px;
+
+    background-color: #082b59;
+    color: #ffffff;
+
+    border-radius: 8px;
+}
+
+body:has(.informacion_cliente) .menuPrincipal .menu .esquinero:hover {
+    background-color: #1877f2;
+
+    color: #ffffff;
+}
+
+
+/* BANNER */
+
+body:has(.informacion_cliente) header > figure {
+    grid-row: 2;
+
+    width: 100%;
+    height: 190px;
+
+    margin: 0;
+
+    overflow: hidden;
+}
+
+body:has(.informacion_cliente) header > figure img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/* TÍTULO */
+
+body:has(.informacion_cliente) header > h1 {
+    position: absolute;
+
+    top: 115px;
+    left: 7%;
+
+    z-index: 3;
+
+    color: #082b59;
+
+    font-size: 34px;
+
+    text-transform: uppercase;
+}
+
+
+/* SUBTÍTULO */
+
+body:has(.informacion_cliente) header > p {
+    position: absolute;
+
+    top: 160px;
+    left: 7%;
+
+    z-index: 3;
+
+    color: #082b59;
+
+    font-size: 14px;
+}
+
+
+/* CONTENEDOR DEL PERFIL */
+
+body:has(.informacion_cliente) .informacion_cliente {
+    position: relative;
+    z-index: 10;
+
+    display: grid;
+
+    grid-template-columns: 170px 190px 1fr;
+
+    grid-template-areas:
+        "foto opciones formulario";
+
+    gap: 30px;
+
+    width: 86%;
+    max-width: 1150px;
+
+    margin: -45px auto 35px;
+
+    padding: 30px;
+
+    background-color: #ffffff;
+
+    border-radius: 14px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.16);
+}
+
+
+/* FOTO DEL CLIENTE */
+
+body:has(.informacion_cliente) .fotoPerfil {
+    grid-area: foto;
+
+    display: grid;
+
+    justify-items: center;
+    align-content: start;
+
+    padding-right: 20px;
+
+    border-right: 1px solid #d7dce2;
+
+    text-align: center;
+}
+
+body:has(.informacion_cliente) .fotoPerfil figure {
+    width: 115px;
+    height: 115px;
+
+    margin: 0 0 14px;
+
+    border-radius: 50%;
+
+    overflow: hidden;
+}
+
+body:has(.informacion_cliente) .fotoPerfil figure img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+body:has(.informacion_cliente) .fotoPerfil h2 {
+    margin-bottom: 5px;
+
+    color: #082b59;
+
+    font-size: 18px;
+}
+
+body:has(.informacion_cliente) .fotoPerfil h3 {
+    color: #777777;
+
+    font-size: 13px;
+    font-weight: normal;
+}
+
+
+/* OPCIONES DEL PERFIL*/
+
+body:has(.informacion_cliente) .opciones_cliente {
+    grid-area: opciones;
+}
+
+body:has(.informacion_cliente) .opciones_cliente nav {
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    gap: 5px;
+}
+
+body:has(.informacion_cliente) .opciones_cliente nav a {
+    display: block;
+
+    padding: 11px 12px;
+
+    color: #082b59;
+
+    border-radius: 5px;
+
+    text-align: left;
+    text-decoration: none;
+
+    font-size: 13px;
+}
+
+body:has(.informacion_cliente) .opciones_cliente nav a:first-child {
+    background-color: #e8eef5;
+
+    font-weight: bold;
+}
+
+body:has(.informacion_cliente) .opciones_cliente nav a:hover {
+    background-color: #e8eef5;
+}
+
+
+/* FORMULARIO */
+
+body:has(.informacion_cliente) .formulariosEditables {
+    grid-area: formulario;
+
+    width: 100%;
+}
+
+body:has(.informacion_cliente) .informacionPersonal form {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    grid-template-areas:
+        "titulo titulo"
+        "labelNombre labelFecha"
+        "nombre fecha"
+        "labelCorreo labelNacionalidad"
+        "correo nacionalidad"
+        "labelTelefono labelDireccion"
+        "telefono direccion"
+        "boton boton";
+
+    column-gap: 22px;
+    row-gap: 7px;
+}
+
+
+/* TÍTULO DEL FORMULARIO */
+
+body:has(.informacion_cliente) .informacionPersonal h2 {
+    grid-area: titulo;
+
+    margin-bottom: 15px;
+
+    color: #082b59;
+
+    font-size: 18px;
+}
+
+
+/* LABELS */
+
+body:has(.informacion_cliente) .informacionPersonal label {
+    display: block;
+
+    margin-bottom: 0;
+
+    color: #082b59;
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+/* NOMBRE */
+
+body:has(.informacion_cliente)
+.informacionPersonal label[for="nom"] {
+    grid-area: labelNombre;
+}
+
+body:has(.informacion_cliente) #nom {
+    grid-area: nombre;
+}
+
+
+/* CORREO */
+
+body:has(.informacion_cliente)
+.informacionPersonal label[for="correo"] {
+    grid-area: labelCorreo;
+}
+
+body:has(.informacion_cliente) #correo {
+    grid-area: correo;
+}
+
+
+/* TELÉFONO */
+
+body:has(.informacion_cliente)
+.informacionPersonal label[for="telefono"] {
+    grid-area: labelTelefono;
+}
+
+body:has(.informacion_cliente) #telefono {
+    grid-area: telefono;
+}
+
+
+/* FECHA DE NACIMIENTO */
+
+body:has(.informacion_cliente)
+.informacionPersonal label[for="fecha"] {
+    grid-area: labelFecha;
+}
+
+body:has(.informacion_cliente) #fecha {
+    grid-area: fecha;
+}
+
+
+/* NACIONALIDAD */
+
+body:has(.informacion_cliente)
+.informacionPersonal label[for="nac"] {
+    grid-area: labelNacionalidad;
+}
+
+body:has(.informacion_cliente) #nac {
+    grid-area: nacionalidad;
+}
+
+
+/* DIRECCIÓN */
+
+body:has(.informacion_cliente)
+.informacionPersonal label[for="dir"] {
+    grid-area: labelDireccion;
+}
+
+body:has(.informacion_cliente) #dir {
+    grid-area: direccion;
+}
+
+
+/* INPUTS*/
+
+body:has(.informacion_cliente)
+.informacionPersonal input:not([type="submit"]) {
+    width: 100%;
+    height: 36px;
+
+    padding: 5px 9px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #aab2bc;
+    border-radius: 4px;
+
+    color: #333333;
+
+    font-size: 13px;
+
+    outline: none;
+}
+
+body:has(.informacion_cliente)
+.informacionPersonal input:not([type="submit"]):focus {
+    border-color: #1877f2;
+}
+
+
+/* BOTÓN GUARDAR CAMBIOS*/
+
+body:has(.informacion_cliente)
+.informacionPersonal input[type="submit"] {
+    grid-area: boton;
+
+    display: block;
+
+    justify-self: start;
+
+    width: auto;
+    min-height: auto;
+
+    margin: 12px 0 0;
+
+    padding: 10px 18px;
+
+    background-color: #082b59;
+    color: #ffffff;
+
+    border: none;
+    border-radius: 5px;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+body:has(.informacion_cliente)
+.informacionPersonal input[type="submit"]:hover {
+    background-color: #1877f2;
+}
+
+
+/*  RESERVAS */
+
+body:has(.informacion_cliente) .reservas {
+    display: grid;
+
+    grid-template-columns: 230px 1fr;
+
+    gap: 25px;
+
+    width: 86%;
+    max-width: 1150px;
+
+    margin: 0 auto 50px;
+}
+
+
+/* RESERVAS ACTIVAS */
+
+body:has(.informacion_cliente) .reservas_activas {
+    display: grid;
+
+    gap: 10px;
+
+    padding: 20px;
+
+    background-color: #ffffff;
+
+    border-radius: 10px;
+
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.10);
+}
+
+body:has(.informacion_cliente)
+.reservas_activas h3:first-child {
+    color: #082b59;
+
+    font-size: 14px;
+}
+
+body:has(.informacion_cliente)
+.reservas_activas h3:nth-child(2) {
+    color: #1877f2;
+
+    font-size: 30px;
+}
+
+body:has(.informacion_cliente) .reservas_activas a {
+    color: #1877f2;
+
+    text-decoration: none;
+
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+/*  NOTIFICACIONES */
+
+body:has(.informacion_cliente) .notificaciones {
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    gap: 12px;
+}
+
+body:has(.informacion_cliente) .notificacion {
+    display: grid;
+
+    grid-template-columns: 1fr auto;
+
+    grid-template-areas:
+        "titulo enlace"
+        "texto enlace";
+
+    column-gap: 25px;
+
+    align-items: center;
+
+    padding: 18px 20px;
+
+    background-color: #ffffff;
+
+    border-radius: 10px;
+
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+body:has(.informacion_cliente) .notificacion h3 {
+    grid-area: titulo;
+
+    margin-bottom: 5px;
+
+    color: #082b59;
+
+    font-size: 14px;
+}
+
+body:has(.informacion_cliente) .notificacion p {
+    grid-area: texto;
+
+    color: #666666;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+}
+
+body:has(.informacion_cliente) .notificacion nav {
+    grid-area: enlace;
+}
+
+body:has(.informacion_cliente) .notificacion nav a {
+    color: #1877f2;
+
+    text-decoration: none;
+
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+/* FOOTER*/
+
+body:has(.informacion_cliente) footer {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    align-items: center;
+
+    width: 100%;
+    min-height: 90px;
+
+    padding: 20px 7%;
+
+    background-color: #082b59;
+    color: #ffffff;
+
+    gap: 0;
+}
+
+body:has(.informacion_cliente) footer > div {
+    padding: 5px 20px;
+
+    border-right: 1px solid rgba(255, 255, 255, 0.25);
+
+    text-align: center;
+}
+
+body:has(.informacion_cliente) footer > div:last-child {
+    border-right: none;
+}
+
+body:has(.informacion_cliente) footer p:first-child {
+    margin-bottom: 5px;
+
+    color: #ffffff;
+
+    font-size: 13px;
+    font-weight: bold;
+}
+
+body:has(.informacion_cliente) footer p:last-child {
+    color: #d7e4f3;
+
+    font-size: 11px;
+}
+
+
+/* RESPONSIVE - TABLET*/
+
+@media (max-width: 900px) {
+
+    body:has(.informacion_cliente)
+    .menuPrincipal .menu {
+        gap: 15px;
+    }
+
+    body:has(.informacion_cliente)
+    .menuPrincipal .menu a {
+        font-size: 13px;
+    }
+
+    body:has(.informacion_cliente)
+    .informacion_cliente {
+        grid-template-columns: 160px 1fr;
+
+        grid-template-areas:
+            "foto opciones"
+            "formulario formulario";
+    }
+
+    body:has(.informacion_cliente)
+    .fotoPerfil {
+        border-right: none;
+    }
+
+    body:has(.informacion_cliente)
+    .formulariosEditables {
+        padding-top: 20px;
+
+        border-top: 1px solid #dddddd;
+    }
+}
+
+
+/* RESPONSIVE - CELULAR*/
+
+@media (max-width: 650px) {
+
+    body:has(.informacion_cliente)
+    .menuPrincipal {
+        grid-template-columns: 1fr;
+
+        justify-items: center;
+
+        padding: 10px;
+    }
+
+    body:has(.informacion_cliente)
+    .menuPrincipal .menu {
+        grid-template-columns: repeat(3, auto);
+
+        justify-content: center;
+
+        margin-top: 10px;
+    }
+
+    body:has(.informacion_cliente)
+    .informacion_cliente {
+        width: 94%;
+
+        grid-template-columns: 1fr;
+
+        grid-template-areas:
+            "foto"
+            "opciones"
+            "formulario";
+    }
+
+    body:has(.informacion_cliente)
+    .fotoPerfil {
+        padding-right: 0;
+
+        border-right: none;
+    }
+
+    body:has(.informacion_cliente)
+    .opciones_cliente nav {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    body:has(.informacion_cliente)
+    .informacionPersonal form {
+        grid-template-columns: 1fr;
+
+        grid-template-areas:
+            "titulo"
+            "labelNombre"
+            "nombre"
+            "labelCorreo"
+            "correo"
+            "labelTelefono"
+            "telefono"
+            "labelFecha"
+            "fecha"
+            "labelNacionalidad"
+            "nacionalidad"
+            "labelDireccion"
+            "direccion"
+            "boton";
+    }
+
+    body:has(.informacion_cliente)
+    .reservas {
+        width: 94%;
+
+        grid-template-columns: 1fr;
+    }
+
+    body:has(.informacion_cliente)
+    .notificacion {
+        grid-template-columns: 1fr;
+
+        grid-template-areas:
+            "titulo"
+            "texto"
+            "enlace";
+
+        row-gap: 8px;
+    }
+
+    body:has(.informacion_cliente)
+    footer {
+        grid-template-columns: 1fr 1fr;
+
+        gap: 20px;
+    }
+
+    body:has(.informacion_cliente)
+    footer > div {
+        border-right: none;
+    }
+}
+
+/* 
+   MÉTODOS DE PAGO*/
+
+
+/* OPCIÓN ACTIVA DEL MENÚ */
+
+body:has(.metodosPagoCliente) .opciones_cliente nav a:first-child {
+    background-color: transparent;
+    font-weight: normal;
+}
+
+body:has(.metodosPagoCliente) .opciones_cliente nav a:nth-child(2) {
+    background-color: #e8eef5;
+    font-weight: bold;
+}
+
+
+/* CONTENEDOR DE MÉTODOS DE PAGO */
+
+body:has(.metodosPagoCliente) .metodosPagoCliente {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+
+    width: 100%;
+}
+
+
+/* TÍTULO */
+
+body:has(.metodosPagoCliente) .metodosPagoCliente > h2 {
+    color: #082b59;
+
+    font-size: 18px;
+
+    margin-bottom: 0;
+}
+
+
+/* TEXTO DE INTRODUCCIÓN */
+
+body:has(.metodosPagoCliente) .metodosPagoCliente > p {
+    color: #666666;
+
+    font-size: 12px;
+
+    margin-top: -12px;
+}
+
+
+/* TARJETA GUARDADA*/
+
+body:has(.metodosPagoCliente) .tarjetasAgregadas {
+    display: grid;
+
+    grid-template-columns: 1fr auto;
+
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 18px;
+
+    border: 1px solid #d7dce2;
+    border-radius: 8px;
+
+    background-color: #ffffff;
+}
+
+
+/* INFORMACIÓN DE LA TARJETA */
+
+body:has(.metodosPagoCliente) .informacionTarjeta {
+    display: grid;
+
+    grid-template-columns: auto 1fr;
+
+    gap: 5px 15px;
+
+    align-items: center;
+}
+
+body:has(.metodosPagoCliente) .informacionTarjeta h3 {
+    grid-column: 1 / 3;
+
+    color: #082b59;
+
+    font-size: 15px;
+}
+
+body:has(.metodosPagoCliente) .informacionTarjeta p {
+    color: #333333;
+
+    font-size: 13px;
+}
+
+body:has(.metodosPagoCliente) .informacionTarjeta span {
+    color: #777777;
+
+    font-size: 11px;
+}
+
+
+/* BOTONES EDITAR Y ELIMINAR */
+
+body:has(.metodosPagoCliente) .opcionesTarjeta {
+    display: grid;
+
+    grid-template-columns: auto auto;
+
+    gap: 8px;
+}
+
+body:has(.metodosPagoCliente) .opcionesTarjeta button {
+    padding: 8px 12px;
+
+    border: 1px solid #082b59;
+    border-radius: 5px;
+
+    background-color: #ffffff;
+
+    color: #082b59;
+
+    font-size: 11px;
+
+    cursor: pointer;
+}
+
+body:has(.metodosPagoCliente) .opcionesTarjeta button:hover {
+    background-color: #082b59;
+
+    color: #ffffff;
+}
+
+
+/* AGREGAR TARJETA*/
+
+body:has(.metodosPagoCliente) .agregarTarjeta {
+    display: grid;
+
+    gap: 15px;
+
+    margin-top: 5px;
+}
+
+body:has(.metodosPagoCliente) .agregarTarjeta h3 {
+    color: #082b59;
+
+    font-size: 16px;
+}
+
+
+/* FORMULARIO */
+
+body:has(.metodosPagoCliente) .agregarTarjeta form {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    grid-template-areas:
+        "labelTitular labelNumero"
+        "titular numero"
+        "labelVencimiento labelCvv"
+        "vencimiento cvv"
+        "boton boton";
+
+    column-gap: 22px;
+    row-gap: 7px;
+}
+
+
+/* LABELS */
+
+body:has(.metodosPagoCliente) .agregarTarjeta label {
+    color: #082b59;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    margin-bottom: 0;
+}
+
+
+/* NOMBRE DEL TITULAR */
+
+body:has(.metodosPagoCliente)
+.agregarTarjeta label[for="titular"] {
+    grid-area: labelTitular;
+}
+
+body:has(.metodosPagoCliente) #titular {
+    grid-area: titular;
+}
+
+
+/* NÚMERO DE TARJETA */
+
+body:has(.metodosPagoCliente)
+.agregarTarjeta label[for="numeroTarjeta"] {
+    grid-area: labelNumero;
+}
+
+body:has(.metodosPagoCliente) #numeroTarjeta {
+    grid-area: numero;
+}
+
+
+/* FECHA DE VENCIMIENTO */
+
+body:has(.metodosPagoCliente)
+.agregarTarjeta label[for="vencimiento"] {
+    grid-area: labelVencimiento;
+}
+
+body:has(.metodosPagoCliente) #vencimiento {
+    grid-area: vencimiento;
+}
+
+
+/* CVV */
+
+body:has(.metodosPagoCliente)
+.agregarTarjeta label[for="cvv"] {
+    grid-area: labelCvv;
+}
+
+body:has(.metodosPagoCliente) #cvv {
+    grid-area: cvv;
+}
+
+
+/* INPUTS */
+
+body:has(.metodosPagoCliente) .agregarTarjeta input:not([type="submit"]) {
+    width: 100%;
+    height: 36px;
+
+    padding: 5px 9px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #aab2bc;
+    border-radius: 4px;
+
+    color: #333333;
+
+    font-size: 13px;
+
+    outline: none;
+}
+
+body:has(.metodosPagoCliente) .agregarTarjeta input:not([type="submit"]):focus {
+    border-color: #1877f2;
+}
+
+
+/* BOTÓN AGREGAR TARJETA */
+
+body:has(.metodosPagoCliente) .agregarTarjeta input[type="submit"] {
+    grid-area: boton;
+
+    justify-self: start;
+
+    width: auto;
+
+    margin-top: 12px;
+
+    padding: 10px 18px;
+
+    background-color: #082b59;
+
+    color: #ffffff;
+
+    border: none;
+    border-radius: 5px;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+body:has(.metodosPagoCliente) .agregarTarjeta input[type="submit"]:hover {
+    background-color: #1877f2;
+}
+
+
+/* RESPONSIVE*/
+
+@media (max-width: 650px) {
+
+    body:has(.metodosPagoCliente) .tarjetasAgregadas {
+        grid-template-columns: 1fr;
+    }
+
+
+    body:has(.metodosPagoCliente) .opcionesTarjeta {
+        justify-content: start;
+    }
+
+
+    body:has(.metodosPagoCliente) .agregarTarjeta form {
+        grid-template-columns: 1fr;
+
+        grid-template-areas:
+            "labelTitular"
+            "titular"
+            "labelNumero"
+            "numero"
+            "labelVencimiento"
+            "vencimiento"
+            "labelCvv"
+            "cvv"
+            "boton";
+    }
+}
 
 
